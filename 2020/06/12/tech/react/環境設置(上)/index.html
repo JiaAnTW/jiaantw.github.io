@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/環境設置(上) - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/hexo-theme-book-demo">首頁</a></li>
+<li><a href="/hexo-theme-book-demo/changelog">關於我</a></li>
+</ul>
+<h1 id="WEB開發"><a href="#WEB開發" class="headerlink" title="WEB開發"></a>WEB開發</h1><h2 id="React-js"><a href="#React-js" class="headerlink" title="React.js"></a>React.js</h2><ul>
+<li><a href="/2020/06/12/tech/react/環境設置(上)">01-環境設定(上)</a></li>
+</ul>
+<h1 id="產品開發"><a href="#產品開發" class="headerlink" title="產品開發"></a>產品開發</h1><h2 id="有關前端技術的那些UX事"><a href="#有關前端技術的那些UX事" class="headerlink" title="有關前端技術的那些UX事"></a>有關前端技術的那些UX事</h2><ul>
+<li><a href="">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js-01】環境設置-上"><a href="#【React-js-01】環境設置-上" class="headerlink" title="【React.js - 01】環境設置(上)"></a>【React.js - 01】環境設置(上)</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>會想寫這系列文，是因為一開始，自己只是知道怎麼用 html/css/js 做出想要做的東西，但很多觀念並不是很清晰，導致當初在學React時遇到了不少困難。近年來框架開始成為前端不可或缺的技能，所以希望能用這系列幫助和我一樣狀況但想入門React的人，能更快上手，另一方面也記錄自己的學習。<br>建議可以搭配目前網路上其他前輩的React教學文，觀念上會更加清晰。</p>
+</blockquote>
+<p>在這系列的文章，我希望自己能盡量:</p>
+<ol>
+<li>以簡單的方式解釋複雜的東西。</li>
+<li>控制每一篇的篇幅不要太長。</li>
+<li>讓讀者知道程式中每一個部分在做什麼。</li>
+<li><strong>讓讀者不只是學React，而是同時學習js框架的使用邏輯。</strong></li>
+</ol>
+<h2 id="Step-0-我真的需要React-React是什麼"><a href="#Step-0-我真的需要React-React是什麼" class="headerlink" title="Step 0 : 我真的需要React ? React是什麼 ?"></a>Step 0 : 我真的需要React ? React是什麼 ?</h2><p> <strong>如果你的專案大/複雜的時候，再來考慮使用React或是其他框架。</strong> </p>
+<p>首先，我們要先知道React和framework是什麼。<br>隨著時代的演進，網頁的功能越來越多、網頁的架構也越來越大。漸漸的，我們的網頁裡面的script標籤越來越多，散布在各個html檔裡。有一天，維護網頁的工程師終於受不了了:</p>
+<blockquote>
+<p>X! 就不能把所有的js檔用更有秩序的方式管理嗎?</p>
+</blockquote>
+<p>身為工程師，遇到問題就要用程式解決。工程師心想，如果平常都在用javascript去處理style和html為何不也用javascript來解決這個問題呢?於是，各家工程師開始編寫處理這個問題的js函式庫，並把這些函式庫稱為框架(framework)。(如果不好理解，可以把框架想像成是「整合html、js和css的格式」)。</p>
+<p>其中，又以Google寫的Angular、中國人寫的Vue、和Facebook寫的React，這三大框架最有名。</p>
+<p><strong>然而我們的瀏覽器不能平白無故認得這些各家自己寫的函式庫。</strong><br>因此，當我們使用這些函式庫時，製作網頁的過程從原本的</p>
+<blockquote>
+<ol>
+<li>編寫程式碼 </li>
+<li>輸出網頁程式(html、php……)</li>
+<li>透過網頁伺服器呈現網頁</li>
+</ol>
+</blockquote>
+<p>變成</p>
+<blockquote>
+<ol>
+<li>載入別人寫好的函式庫(套件)</li>
+<li>編寫程式碼</li>
+<li><strong>將新語法/函式庫的程式碼做「打包、編譯」成瀏覽器認得的程式碼 (preprocessing)</strong></li>
+<li>輸出網頁程式(html、php……)</li>
+<li>透過網頁伺服器呈現網頁</li>
+</ol>
+</blockquote>
+<p>因此我們也會需要下列這幾項工具:</p>
+<ol>
+<li>套件管理工具(ex: npm/yarn)</li>
+<li>打包工具(ex: webpack)</li>
+<li>編譯器(ex: babel)</li>
+</ol>
+<p> 聽到這裡，你可能會有種用React很麻煩的感覺<br> <strong>所以再強調一次: 殺雞焉用牛刀，請評估自己是否真的需要用框架。</strong></p>
+<p> 以下是安裝這些工具的方法。</p>
+<h2 id="Step-1-安裝npm"><a href="#Step-1-安裝npm" class="headerlink" title="Step 1 : 安裝npm"></a>Step 1 : 安裝npm</h2><p>npm是「套件管理系統」。<br>簡單來說，它像是一個能把寫好的程式碼放在上面供別人使用的平台。</p>
+<p>前面有提到React是Facebook寫好的函式庫<br>雖然能透過script使用CDN引入<br>但通常我們都是透過npm使用。</p>
+<p>非Unix系統，到<a href="https://nodejs.org/en/" target="_blank" rel="noopener">這裡</a>進行下載Node.js並安裝<br>npm會一起被安裝<br><strong>安裝完請務必重新開機</strong>。</p>
+<p><img src="https://i.imgur.com/lV2NkYy.png" alt=""></p>
+<h2 id="Step-2-安裝「一次安裝並設定好react、babel、webpack」的create-react-app"><a href="#Step-2-安裝「一次安裝並設定好react、babel、webpack」的create-react-app" class="headerlink" title="Step 2 : 安裝「一次安裝並設定好react、babel、webpack」的create-react-app"></a>Step 2 : 安裝「一次安裝並設定好react、babel、webpack」的create-react-app</h2><p>跟PowerPoint裡面有提供簡報範本一樣。react官方有在npm上提供我們已經設定好webpack、babel和react的範本程式，也就是create-react-app。</p>
+<p>npm安裝套件的方式是透過指令，用 <code>npm install 套件名稱</code> 或 <code>npm i 套件名稱</code> 就能在目錄下安裝指定套件。套件原始碼會存放在目錄底下自動生成的 node_module資料夾內。</p>
+<p>如果在指令後方加上<code>--save</code>，安裝的套件資訊會被記錄在專案底下自動生成的 package-lock.json內。因為node_module資料夾通常很大、超大，所以如果別人想要協作這份專案，只需要你的 package-lock.json，再輸入<code>npm install</code> 或 <code>npm i</code>，就能生成與你相同的 node_module資料夾。</p>
+<p>而在指令中加入 <code>-g</code> 會讓這個套件進行全局安裝 (不管在哪都能使用，像是global和local變數的差別)。*註: 非必要請不要用 <code>-g</code> ，容易造成套件版本衝突問題。</p>
+<p><strong>請打開電腦的終端機(cmd/terminal)，輸入以下指令</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g create-react-app</span><br></pre></td></tr></table></figure>
+<p>create-react-app就會透過npm被安裝好。</p>
+<h2 id="Step-3-IDE-文字編輯器-的安裝和設定-vscode-可跳過"><a href="#Step-3-IDE-文字編輯器-的安裝和設定-vscode-可跳過" class="headerlink" title="Step 3: IDE(文字編輯器)的安裝和設定 - vscode (可跳過)"></a>Step 3: IDE(文字編輯器)的安裝和設定 - vscode (可跳過)</h2><p>vscode是由微軟推出，這幾年急速竄紅的文字編輯器<br>( 如果你已經找到適合的編輯工具，可以直接跳過這一步看下一篇 )</p>
+<ol>
+<li>請到<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a><br>下載 vscode<br><img src="https://i.imgur.com/X9iwWpI.png" alt=""></li>
+</ol>
+<ol start="2">
+<li><p>點選左側Extension<br><img src="https://i.imgur.com/DbtvrlI.png" alt=""></p>
+</li>
+<li><p>搜尋並安裝ESlint<br><img src="https://i.imgur.com/1McDG1H.png" alt=""></p>
+</li>
+<li><p>搜尋並安裝 JS JSX Snippets<br><img src="https://i.imgur.com/OoglLuH.png" alt=""></p>
+</li>
+</ol>
+<p>基礎的編輯環境就設定好了。<br>之後還會有launch.json的設定，在下一篇一起講。</p>
+<h2 id="小結"><a href="#小結" class="headerlink" title="小結:"></a>小結:</h2><p>到這邊，需要的tool都已經安裝完畢。下一篇會講述如何用create-react-app建立專案。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>
