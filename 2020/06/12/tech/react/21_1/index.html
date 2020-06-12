@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
 <li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
 <li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
-<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
 </ul>
 <h1 id="產品開發">產品開發</h1>
 <h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
@@ -172,7 +171,9 @@ function sidebar_toggle() {
         </div>
         <div class="book-content">
           <div class="book-post">
-  <h1 id="【React-js入門-21】-Component的溝通"><a href="#【React-js入門-21】-Component的溝通" class="headerlink" title="【React.js入門 - 21】 Component的溝通"></a>【React.js入門 - 21】 Component的溝通</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><p>在使用component時，我們常會遇到不同元件需要互相傳資料、呼叫函式的情況，大致可分為:</p>
+  <h1 id="【React-js入門-21】-Component的溝通">【React.js入門 - 21】 Component的溝通</h1>
+<h6 id="tags-第11屆鐵人賽">tags: <code>第11屆鐵人賽</code></h6>
+<p>在使用component時，我們常會遇到不同元件需要互相傳資料、呼叫函式的情況，大致可分為:</p>
 <ol>
 <li>子對父</li>
 <li>父對子</li>
@@ -185,69 +186,82 @@ function sidebar_toggle() {
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">index.js</span><br><span class="line">    |____ App.js</span><br><span class="line">          |____ Parent.js</span><br><span class="line">                |____ Sister.js</span><br><span class="line">                |____ Brother.js</span><br></pre></td></tr></table></figure>
 <p>並以class component作為講解的架構。</p>
 <blockquote>
-<p>在某個地方，有一對很開明的父母，育有一對子女。只要子女有求他們必應。<br>有一天孩子長大了，他們決定以總金額100分配給他們兩個零用錢，不過對兒子和女兒兩個人而言，他們各自期望著不同的金額。一開始，他們讓兒子分到60塊。女兒分到40塊，並且先問了女兒的意見。</p>
+<p>在某個地方，有一對很開明的父母，育有一對子女。只要子女有求他們必應。<br>
+有一天孩子長大了，他們決定以總金額100分配給他們兩個零用錢，不過對兒子和女兒兩個人而言，他們各自期望著不同的金額。一開始，他們讓兒子分到60塊。女兒分到40塊，並且先問了女兒的意見。</p>
 </blockquote>
-<p>(寫完的時候才發現命名用daughter和son好像比較好哈哈，不過圖都畫了就算了。)<br>在接下來的說明中，【開始】是表示目前的步驟開始實現標題所指定的行為。不是代表說程式碼寫了【開始】之前的東西後面的東西就會自動跑。</p>
-<h2 id="Part-1-子對父"><a href="#Part-1-子對父" class="headerlink" title="Part.1 - 子對父"></a>Part.1 - 子對父</h2><h3 id="Part-1-1-在子元件主動使用父元素的資料-函式"><a href="#Part-1-1-在子元件主動使用父元素的資料-函式" class="headerlink" title="Part.1-1 - 在子元件主動使用父元素的資料/函式"></a>Part.1-1 - 在子元件主動使用父元素的資料/函式</h3><p>就是props，不解釋</p>
-<h3 id="Part-1-2-在子元件主動修改綁定在自己身上的props-傳資料給父元件-更改父元件"><a href="#Part-1-2-在子元件主動修改綁定在自己身上的props-傳資料給父元件-更改父元件" class="headerlink" title="Part.1-2 - 在子元件主動修改綁定在自己身上的props(傳資料給父元件/更改父元件)"></a>Part.1-2 - 在子元件主動修改綁定在自己身上的props(傳資料給父元件/更改父元件)</h3><p>子元素<strong>不能直接修改props的值(read-only)</strong>，下面這樣的函式就是錯的:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this.props.money&#x3D; 70;</span><br></pre></td></tr></table></figure>
+<p>(寫完的時候才發現命名用daughter和son好像比較好哈哈，不過圖都畫了就算了。)<br>
+在接下來的說明中，【開始】是表示目前的步驟開始實現標題所指定的行為。不是代表說程式碼寫了【開始】之前的東西後面的東西就會自動跑。</p>
+<h2 id="Part-1-子對父">Part.1 - 子對父</h2>
+<h3 id="Part-1-1-在子元件主動使用父元素的資料-函式">Part.1-1 - 在子元件主動使用父元素的資料/函式</h3>
+<p>就是props，不解釋</p>
+<h3 id="Part-1-2-在子元件主動修改綁定在自己身上的props-傳資料給父元件-更改父元件">Part.1-2 - 在子元件主動修改綁定在自己身上的props(傳資料給父元件/更改父元件)</h3>
+<p>子元素<strong>不能直接修改props的值(read-only)</strong>，下面這樣的函式就是錯的:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.props.money= <span class="number">70</span>;</span><br></pre></td></tr></table></figure>
 <p>如果要修改props，只能照以下步驟:</p>
-<p>—————–【準備】—————–</p>
+<p>-----------------【準備】-----------------</p>
 <ol>
 <li>在父元素定義一個函式，用來「修改綁定在子元素props上的state」 (或是純用來接收資料)</li>
 <li>綁定該函式在子元素props上</li>
 </ol>
-<p>—————–【開始】—————–</p>
+<p>-----------------【開始】-----------------</p>
 <ol start="3">
 <li>在子元素中呼叫該函式</li>
 </ol>
-<p>—————–【結束】—————–</p>
-<p>這樣的步驟也等於是<strong>在子元件傳資料給父元件/透過父元件函式更改父元件</strong>。<br>例如Parent中的<code>allocateMoney</code>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; Component &#125; from &#39;react&#39;;</span><br><span class="line">import Brother from &quot;.&#x2F;Brother&quot;;</span><br><span class="line">import Sister from &quot;.&#x2F;Sister&quot;;</span><br><span class="line">class Parent extends Component&#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state&#x3D;&#123; </span><br><span class="line">      moneyForBrother:60,</span><br><span class="line">      moneyForSister:40</span><br><span class="line">    &#125;</span><br><span class="line">    this.allocateMoney&#x3D;this.allocateMoney.bind(this);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    allocateMoney(target,amount)&#123;</span><br><span class="line">        if(target&#x3D;&#x3D;&#x3D;&quot;brother&quot;)</span><br><span class="line">            this.setState(&#123;moneyForBrother:amount&#125;)</span><br><span class="line">        else</span><br><span class="line">            this.setState(&#123;moneyForSister:amount&#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        return(</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">              &lt;Sister money&#x3D;&#123;this.state.moneyForSister&#125; argue&#x3D;&#123;this.allocateMoney&#125;&#x2F;&gt;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">export default Parent;</span><br></pre></td></tr></table></figure>
-<p>這對父母綁定了讓兒女和他們討論的方法allocateMoney在argue上。<br>於是女兒使用了<code>this.props.argue(70);</code>呼叫父母給的函式，把自己的錢提升到70塊</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;* Sister.js *&#x2F;</span><br><span class="line"></span><br><span class="line">import React, &#123; Component &#125; from &#39;react&#39;;</span><br><span class="line">class Sister extends Component&#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state&#x3D;&#123; &#x2F;&#x2F; 宣告state物件，內包含一個變數percent</span><br><span class="line">      feeling:&quot;bad&quot; </span><br><span class="line">    &#125;</span><br><span class="line">    this.argueFor70NTD&#x3D;this.argueFor70NTD.bind(this);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    componentDidMount()&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    argueFor70NTD()&#123;</span><br><span class="line">        this.props.argue(&quot;sister&quot;,70);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        return(&lt;div&gt;我是女兒，我拿到&#123;this.props.money&#125;&lt;button onClick&#x3D;&#123;this.argueFor70NTD&#125;&gt;要求提升到70塊&lt;&#x2F;button&gt;&lt;&#x2F;div&gt;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">export default Sister;</span><br></pre></td></tr></table></figure>
-<p><img src="https://i.imgur.com/KOqJQmy.png" alt=""><br>當你按下女兒的吵架用按鍵，女兒的props就會被改變(錢就會變70塊)</p>
+<p>-----------------【結束】-----------------</p>
+<p>這樣的步驟也等於是<strong>在子元件傳資料給父元件/透過父元件函式更改父元件</strong>。<br>
+例如Parent中的<code>allocateMoney</code>:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> Brother <span class="keyword">from</span> <span class="string">"./Brother"</span>;</span><br><span class="line"><span class="keyword">import</span> Sister <span class="keyword">from</span> <span class="string">"./Sister"</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Parent</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state=&#123; </span><br><span class="line">      moneyForBrother:<span class="number">60</span>,</span><br><span class="line">      moneyForSister:<span class="number">40</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">this</span>.allocateMoney=<span class="keyword">this</span>.allocateMoney.bind(<span class="keyword">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    allocateMoney(target,amount)&#123;</span><br><span class="line">        <span class="keyword">if</span>(target===<span class="string">"brother"</span>)</span><br><span class="line">            <span class="keyword">this</span>.setState(&#123;<span class="attr">moneyForBrother</span>:amount&#125;)</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">this</span>.setState(&#123;<span class="attr">moneyForSister</span>:amount&#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span>(</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">              &lt;Sister money=&#123;<span class="keyword">this</span>.state.moneyForSister&#125; argue=&#123;<span class="keyword">this</span>.allocateMoney&#125;/&gt;</span><br><span class="line">          &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">        );</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">export default Parent;</span></span><br></pre></td></tr></table></figure>
+<p>這對父母綁定了讓兒女和他們討論的方法allocateMoney在argue上。<br>
+於是女兒使用了<code>this.props.argue(70);</code>呼叫父母給的函式，把自己的錢提升到70塊</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* Sister.js */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sister</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state=&#123; <span class="comment">// 宣告state物件，內包含一個變數percent</span></span><br><span class="line">      feeling:<span class="string">"bad"</span> </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">this</span>.argueFor70NTD=<span class="keyword">this</span>.argueFor70NTD.bind(<span class="keyword">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    componentDidMount()&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    argueFor70NTD()&#123;</span><br><span class="line">        <span class="keyword">this</span>.props.argue(<span class="string">"sister"</span>,<span class="number">70</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span>(<span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>我是女兒，我拿到&#123;this.props.money&#125;<span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.argueFor70NTD&#125;</span>&gt;</span>要求提升到70塊<span class="tag">&lt;/<span class="name">button</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Sister;</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/KOqJQmy.png" alt=""><br>
+當你按下女兒的吵架用按鍵，女兒的props就會被改變(錢就會變70塊)</p>
 <p>邏輯圖(<strong>順序由深至淺</strong>):</p>
 <p><img src="https://i.imgur.com/94Ob08R.png" alt=""></p>
-<h2 id="Part-2-父對子"><a href="#Part-2-父對子" class="headerlink" title="Part.2 - 父對子"></a>Part.2 - 父對子</h2><h3 id="Part-2-1-在父元件主動觸發子元件的函式"><a href="#Part-2-1-在父元件主動觸發子元件的函式" class="headerlink" title="Part.2-1 在父元件主動觸發子元件的函式"></a>Part.2-1 在父元件主動觸發子元件的函式</h3><p><strong>父元件是沒有辦法直接觸發子元件的函式的</strong>，必須透過以下步驟<br>—————–【準備】—————–</p>
+<h2 id="Part-2-父對子">Part.2 - 父對子</h2>
+<h3 id="Part-2-1-在父元件主動觸發子元件的函式">Part.2-1 在父元件主動觸發子元件的函式</h3>
+<p><strong>父元件是沒有辦法直接觸發子元件的函式的</strong>，必須透過以下步驟<br>
+-----------------【準備】-----------------</p>
 <ol>
 <li>綁定一個state在子元件props上</li>
 </ol>
-<p>—————–【開始】—————–</p>
+<p>-----------------【開始】-----------------</p>
 <ol start="2">
 <li>改變綁定在子元件props上的state</li>
 <li>讓子元素監測到特定props被改變後觸發函式</li>
 </ol>
-<p>—————–【結束】—————–</p>
+<p>-----------------【結束】-----------------</p>
 <p>例如如果今天兒子的情緒表現是一個函式(Brother.js所有的程式碼等等會有):</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">setMyFeeling()&#123;</span><br><span class="line">    if(this.props.money&lt;40)</span><br><span class="line">        this.setState(&#123;feeling:&quot;不能接受&quot;&#125;)</span><br><span class="line">    else</span><br><span class="line">        this.setState(&#123;feeling:&quot;可以接受&quot;&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">setMyFeeling()&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">this</span>.props.money&lt;<span class="number">40</span>)</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">feeling</span>:<span class="string">"不能接受"</span>&#125;)</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">feeling</span>:<span class="string">"可以接受"</span>&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>而要讓他產生對於錢的心情，我們要在剛剛的Parent.js中加上:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Brother money&#x3D;&#123;this.state.moneyForBrother&#125; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
 <p>讓父母告訴兒子他的錢，然後讓兒子在<code>componentDidUpdate</code>中根據錢的更動做出反應:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; Component &#125; from &#39;react&#39;;</span><br><span class="line">class Brother extends Component&#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state&#x3D;&#123; </span><br><span class="line">      feeling:&quot;?&quot;,</span><br><span class="line">      expectAmount: 40</span><br><span class="line">    &#125;</span><br><span class="line">    this.setMyFeeling&#x3D;this.setMyFeeling.bind(this);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    setMyFeeling()&#123;</span><br><span class="line">        if(this.props.money&lt;this.state.expectAmount)</span><br><span class="line">            this.setState(&#123;feeling:&quot;不能接受&quot;&#125;)</span><br><span class="line">        else</span><br><span class="line">            this.setState(&#123;feeling:&quot;可以接受&quot;&#125;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    componentDidUpdate(prevProps, prevState, snapshot)&#123;</span><br><span class="line">        if(prevProps.money!&#x3D;&#x3D;this.props.money)&#123;</span><br><span class="line">            this.setMyFeeling();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        return(&lt;div&gt;我是兒子，我拿到&#123;this.props.money&#125;，我目前&#123;this.state.feeling&#125;&lt;&#x2F;div&gt;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">export default Brother;</span><br></pre></td></tr></table></figure>
-
-<p>要注意要用<code>if(prevProps.money!==this.props.money)</code>去限制呼叫函式的時機，否則在<code>setMyFeeling();</code>中進行<code>setState</code>時會再次觸發<code>componentDidUpdate</code>造成無限呼叫<code>setMyFeeling();</code>的迴圈。<br>執行結果:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Brother</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state=&#123; </span><br><span class="line">      feeling:<span class="string">"?"</span>,</span><br><span class="line">      expectAmount: <span class="number">40</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">this</span>.setMyFeeling=<span class="keyword">this</span>.setMyFeeling.bind(<span class="keyword">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    setMyFeeling()&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>.props.money&lt;<span class="keyword">this</span>.state.expectAmount)</span><br><span class="line">            <span class="keyword">this</span>.setState(&#123;<span class="attr">feeling</span>:<span class="string">"不能接受"</span>&#125;)</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">this</span>.setState(&#123;<span class="attr">feeling</span>:<span class="string">"可以接受"</span>&#125;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    componentDidUpdate(prevProps, prevState, snapshot)&#123;</span><br><span class="line">        <span class="keyword">if</span>(prevProps.money!==<span class="keyword">this</span>.props.money)&#123;</span><br><span class="line">            <span class="keyword">this</span>.setMyFeeling();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span>(<span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>我是兒子，我拿到&#123;this.props.money&#125;，我目前&#123;this.state.feeling&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Brother;</span><br></pre></td></tr></table></figure>
+<p>要注意要用<code>if(prevProps.money!==this.props.money)</code>去限制呼叫函式的時機，否則在<code>setMyFeeling();</code>中進行<code>setState</code>時會再次觸發<code>componentDidUpdate</code>造成無限呼叫<code>setMyFeeling();</code>的迴圈。<br>
+執行結果:</p>
 <p><img src="https://i.imgur.com/wLZaxry.gif" alt=""></p>
 <p>邏輯圖(順序由深至淺):</p>
 <p><img src="https://i.imgur.com/Uo0hHCR.png" alt=""></p>
-<h3 id="Part-2-2-在父元件主動取得子元素的資料"><a href="#Part-2-2-在父元件主動取得子元素的資料" class="headerlink" title="Part.2-2 - 在父元件主動取得子元素的資料"></a>Part.2-2 - 在父元件主動取得子元素的資料</h3><p>一樣的，父元素沒辦法直接主動取得子元素中的資料。但我們可以結合前面:<br><strong>在父元件主動取得子元素的資料 =  在父元件主動觸發子元件的函式 + 在子元件主動傳資料給父元件</strong><br>也就是:<br>—————–【準備】—————–</p>
+<h3 id="Part-2-2-在父元件主動取得子元素的資料">Part.2-2 - 在父元件主動取得子元素的資料</h3>
+<p>一樣的，父元素沒辦法直接主動取得子元素中的資料。但我們可以結合前面:<br>
+<strong>在父元件主動取得子元素的資料 =  在父元件主動觸發子元件的函式 + 在子元件主動傳資料給父元件</strong><br>
+也就是:<br>
+-----------------【準備】-----------------</p>
 <ol>
 <li>在父元素定義一個函式，用來接收參數，綁在子元件上 (如: <code>allocateMoney</code>)</li>
 <li>綁定一個state在子元件props上 (EX: <code>money</code>)</li>
 </ol>
-<p>—————–【開始】—————–</p>
+<p>-----------------【開始】-----------------</p>
 <ol start="3">
 <li>父元素改變剛剛綁定在子元件props上的state (EX: <code>money</code>)</li>
 <li>讓子元素監測到特定props被改變後觸發剛剛綁的函式，把資料(EX: <code>expectAmount</code>)傳入該函式參數</li>
 <li>父元素透過子元素呼叫的父元素函式取得資料</li>
 </ol>
-<p>—————–【結束】—————–</p>
+<p>-----------------【結束】-----------------</p>
 <p>例如，我們先綁定<code>allocateMoney</code>給Brother</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Brother money&#x3D;&#123;this.state.moneyForBrother&#125; argue&#x3D;&#123;this.allocateMoney&#125;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
-
 <p>然後在Brother剛剛的函式中加上<code>this.props.argue(&quot;brother&quot;,this.state.expectAmount)</code>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setMyFeeling()&#123;</span><br><span class="line">    if(this.props.money&lt;40)</span><br><span class="line">        this.setState(&#123;feeling:&quot;不能接受&quot;&#125;)</span><br><span class="line">    else</span><br><span class="line">        this.setState(&#123;feeling:&quot;可以接受&quot;&#125;)</span><br><span class="line">    this.props.argue(&quot;brother&quot;,this.state.expectAmount);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setMyFeeling()&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">this</span>.props.money&lt;<span class="number">40</span>)</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">feeling</span>:<span class="string">"不能接受"</span>&#125;)</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">feeling</span>:<span class="string">"可以接受"</span>&#125;)</span><br><span class="line">    <span class="keyword">this</span>.props.argue(<span class="string">"brother"</span>,<span class="keyword">this</span>.state.expectAmount);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>就等同於</p>
 <ol>
 <li>我們定義好接收money的<code>allocateMoney()</code></li>
@@ -258,117 +272,143 @@ function sidebar_toggle() {
 <p>也就是我們用Parent主動取得了Brother期望的錢。</p>
 <p>邏輯圖(順序由深至淺):</p>
 <p><img src="https://i.imgur.com/uFWLhNb.png" alt=""></p>
-<h2 id="Part-3-子對子-同父的子類別之間"><a href="#Part-3-子對子-同父的子類別之間" class="headerlink" title="Part.3 - 子對子(同父的子類別之間)"></a>Part.3 - 子對子(同父的子類別之間)</h2><p>實際上剛剛的過程跑完，我們就已經完成同階層子對子的溝通了。<br>我們來解釋一下:</p>
-<h3 id="Part-3-1-同一父元件A中，子元件B主動修改子元件C的props"><a href="#Part-3-1-同一父元件A中，子元件B主動修改子元件C的props" class="headerlink" title="Part.3-1 - 同一父元件A中，子元件B主動修改子元件C的props"></a>Part.3-1 - 同一父元件A中，子元件B主動修改子元件C的props</h3><p>—————–【準備】—————–</p>
+<h2 id="Part-3-子對子-同父的子類別之間">Part.3 - 子對子(同父的子類別之間)</h2>
+<p>實際上剛剛的過程跑完，我們就已經完成同階層子對子的溝通了。<br>
+我們來解釋一下:</p>
+<h3 id="Part-3-1-同一父元件A中，子元件B主動修改子元件C的props">Part.3-1 - 同一父元件A中，子元件B主動修改子元件C的props</h3>
+<p>-----------------【準備】-----------------</p>
 <ol>
-<li>用A的state來綁定C的props，在A中定義一個改變該state的函式<blockquote>
+<li>用A的state來綁定C的props，在A中定義一個改變該state的函式
+<blockquote>
 <p>綁在Brother上的<code>Money</code> &amp; Parent的<code>allocateMoney</code></p>
 </blockquote>
 </li>
-<li>把該函式綁在B上<blockquote>
+<li>把該函式綁在B上
+<blockquote>
 <p>綁在Sister上的<code>allocateMoney</code>(<code>argue</code>)</p>
 </blockquote>
 </li>
 </ol>
-<p>—————–【開始】—————–<br>(按下Sister按鍵)</p>
+<p>-----------------【開始】-----------------<br>
+(按下Sister按鍵)</p>
 <ol start="3">
-<li>在B元件呼叫綁定在props上的A元件函式<blockquote>
+<li>在B元件呼叫綁定在props上的A元件函式
+<blockquote>
 <p>Sister呼叫<code>argue</code>(<code>allocateMoney</code>)</p>
 </blockquote>
 </li>
-<li>A元件的函式修改了綁在C元件上的state，C元件的props就會被改變 <blockquote>
+<li>A元件的函式修改了綁在C元件上的state，C元件的props就會被改變
+<blockquote>
 <p>Parent的<code>allocateMoney</code>改變了<code>Money</code>，綁在Brother上的<code>Money</code>被改變</p>
 </blockquote>
 </li>
 </ol>
-<p>—————–【結束】—————–</p>
+<p>-----------------【結束】-----------------</p>
 <p>邏輯圖(順序由深至淺):</p>
 <p><img src="https://i.imgur.com/276LFcc.png" alt=""></p>
-<h3 id="Part-3-2-同一父元件A中，子元件B主動呼叫子元件C的函式"><a href="#Part-3-2-同一父元件A中，子元件B主動呼叫子元件C的函式" class="headerlink" title="Part.3-2 -同一父元件A中，子元件B主動呼叫子元件C的函式"></a>Part.3-2 -同一父元件A中，子元件B主動呼叫子元件C的函式</h3><p>—————–【準備】—————–</p>
+<h3 id="Part-3-2-同一父元件A中，子元件B主動呼叫子元件C的函式">Part.3-2 -同一父元件A中，子元件B主動呼叫子元件C的函式</h3>
+<p>-----------------【準備】-----------------</p>
 <ol>
-<li>用A的state來綁定C的props，在A中定義一個改變該state的函式<blockquote>
+<li>用A的state來綁定C的props，在A中定義一個改變該state的函式
+<blockquote>
 <p>綁在Brother上的<code>Money</code> &amp; Parent的<code>allocateMoney</code></p>
 </blockquote>
 </li>
-<li>把該函式綁在B上<blockquote>
+<li>把該函式綁在B上
+<blockquote>
 <p>綁在Sister上的<code>allocateMoney</code>(<code>argue</code>)</p>
 </blockquote>
 </li>
 </ol>
-<p>—————–【開始】—————–<br>(按下Sister按鍵)</p>
+<p>-----------------【開始】-----------------<br>
+(按下Sister按鍵)</p>
 <ol start="3">
-<li>在B元件呼叫綁定在props上的A元件函式<blockquote>
+<li>在B元件呼叫綁定在props上的A元件函式
+<blockquote>
 <p>Sister呼叫<code>argue</code>(<code>allocateMoney</code>)</p>
 </blockquote>
 </li>
-<li>A元件的函式修改了綁在C元件上的state，C元件的props就會被改變<blockquote>
-<p>Parent的<code>allocateMoney</code>改變了<code>Money</code>，綁在Brother上的<code>Money</code>被改變 </p>
+<li>A元件的函式修改了綁在C元件上的state，C元件的props就會被改變
+<blockquote>
+<p>Parent的<code>allocateMoney</code>改變了<code>Money</code>，綁在Brother上的<code>Money</code>被改變</p>
 </blockquote>
 </li>
-<li>C元件的偵測到props被改變，呼叫對應C元件函式<blockquote>
+<li>C元件的偵測到props被改變，呼叫對應C元件函式
+<blockquote>
 <p>Brother偵測到<code>Money</code>改變，呼叫<code>setMyFeeling()</code></p>
 </blockquote>
 </li>
 </ol>
-<p>—————–【結束】—————–</p>
+<p>-----------------【結束】-----------------</p>
 <p>邏輯圖(順序由深至淺):</p>
 <p><img src="https://i.imgur.com/wFLcO5c.png" alt=""></p>
-<h3 id="Part-3-3-同一父元件A中，子元件B主動取得子元件C的資料"><a href="#Part-3-3-同一父元件A中，子元件B主動取得子元件C的資料" class="headerlink" title="Part.3-3 - 同一父元件A中，子元件B主動取得子元件C的資料"></a>Part.3-3 - 同一父元件A中，子元件B主動取得子元件C的資料</h3><p>這裡，我們只要把兒子的錢也綁在女兒上就完成了:</p>
+<h3 id="Part-3-3-同一父元件A中，子元件B主動取得子元件C的資料">Part.3-3 - 同一父元件A中，子元件B主動取得子元件C的資料</h3>
+<p>這裡，我們只要把兒子的錢也綁在女兒上就完成了:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Sister money&#x3D;&#123;this.state.moneyForSister&#125; moneyBrother&#x3D;&#123;this.state.moneyForBrother&#125; argue&#x3D;&#123;this.allocateMoney&#125;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>—————–【準備】—————–</p>
+<p>-----------------【準備】-----------------</p>
 <ol>
-<li>用A的state來綁定B和C的props，在A中對兩個state定義會改變個別state的函式<blockquote>
-<p>綁在Sister上的<code>MoneyBrother</code> &amp; 綁在Brother上的<code>Money</code> &amp; Parent的<code>allocateMoney</code><br>(這個例子中，此函式兩個state都能設定)</p>
+<li>用A的state來綁定B和C的props，在A中對兩個state定義會改變個別state的函式
+<blockquote>
+<p>綁在Sister上的<code>MoneyBrother</code> &amp; 綁在Brother上的<code>Money</code> &amp; Parent的<code>allocateMoney</code><br>
+(這個例子中，此函式兩個state都能設定)</p>
 </blockquote>
 </li>
-<li>把該函式綁在B上<blockquote>
+<li>把該函式綁在B上
+<blockquote>
 <p>綁在Sister上的<code>allocateMoney</code>(<code>argue</code>)</p>
 </blockquote>
 </li>
 </ol>
-<p>—————–【開始】—————–<br>(按下Sister按鍵)</p>
+<p>-----------------【開始】-----------------<br>
+(按下Sister按鍵)</p>
 <ol start="3">
-<li>在B元件呼叫綁定在props上的A元件函式<blockquote>
+<li>在B元件呼叫綁定在props上的A元件函式
+<blockquote>
 <p>Sister呼叫<code>argue</code>(<code>allocateMoney</code>)</p>
 </blockquote>
 </li>
-<li>A元件的函式修改了綁在C上的state，C元件的props就會被改變<blockquote>
-<p>Parent的<code>allocateMoney</code>改變了<code>Money</code>，綁在Brother上的<code>Money</code>被改變 </p>
+<li>A元件的函式修改了綁在C上的state，C元件的props就會被改變
+<blockquote>
+<p>Parent的<code>allocateMoney</code>改變了<code>Money</code>，綁在Brother上的<code>Money</code>被改變</p>
 </blockquote>
 </li>
-<li>C元件的偵測到props被改變，用C資料作為參數呼叫對應C元件函式<blockquote>
+<li>C元件的偵測到props被改變，用C資料作為參數呼叫對應C元件函式
+<blockquote>
 <p>Brother偵測到<code>Money</code>改變，以<code>expectAmount</code>為參數呼叫<code>argue</code>(透過<code>setMyFeeling</code>間接呼叫)</p>
 </blockquote>
 </li>
-<li>A元件綁在B元件props上的state就會被改變, B元件透過props取得資料<blockquote>
+<li>A元件綁在B元件props上的state就會被改變, B元件透過props取得資料
+<blockquote>
 <p>A元件的<code>moneyForBrother</code>，也就是綁在Sister上的<code>moneyBrother</code>被改變為Brother的<code>expectAmount</code></p>
 </blockquote>
 </li>
 </ol>
-<p>—————–【結束】—————–</p>
-<p>邏輯圖(順序由深至淺):<br><img src="https://i.imgur.com/3DlTpyL.png" alt=""></p>
-<h2 id="Part-4-祖先對某代孫子"><a href="#Part-4-祖先對某代孫子" class="headerlink" title="Part.4 - 祖先對某代孫子"></a>Part.4 - 祖先對某代孫子</h2><p>假設今天我們要在某個父元件直接傳值、讓他的孫子直接使用他綁的props，像是這個架構:</p>
+<p>-----------------【結束】-----------------</p>
+<p>邏輯圖(順序由深至淺):<br>
+<img src="https://i.imgur.com/3DlTpyL.png" alt=""></p>
+<h2 id="Part-4-祖先對某代孫子">Part.4 - 祖先對某代孫子</h2>
+<p>假設今天我們要在某個父元件直接傳值、讓他的孫子直接使用他綁的props，像是這個架構:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Parent.js</span><br><span class="line">|____ Brother.js</span><br><span class="line">       |____GrandSon.js</span><br></pre></td></tr></table></figure>
 <p>在這個狀況下，階層中間的元件(ex: Brother.js)只是一個中繼站的感覺。就變成是多層父子溝通。但如果要傳的東西很多，每一層都要綁this.props.名稱會有點麻煩。</p>
-<h3 id="Part-4-1-有沒有辦法能把Parent給Brother所有的props一次綁給GrandSon呢"><a href="#Part-4-1-有沒有辦法能把Parent給Brother所有的props一次綁給GrandSon呢" class="headerlink" title="Part. 4-1 - 有沒有辦法能把Parent給Brother所有的props一次綁給GrandSon呢?"></a>Part. 4-1 - 有沒有辦法能把Parent給Brother所有的props一次綁給GrandSon呢?</h3><p>有的，要運用<a href="https://ithelp.ithome.com.tw/articles/10215265" target="_blank" rel="noopener">【React.js入門 - 03】 開始之前應該要知道的DOM和ES6</a>講過的<strong>spread operator</strong>:</p>
+<h3 id="Part-4-1-有沒有辦法能把Parent給Brother所有的props一次綁給GrandSon呢">Part. 4-1 - 有沒有辦法能把Parent給Brother所有的props一次綁給GrandSon呢?</h3>
+<p>有的，要運用<a href="https://ithelp.ithome.com.tw/articles/10215265" target="_blank" rel="noopener">【React.js入門 - 03】 開始之前應該要知道的DOM和ES6</a>講過的<strong>spread operator</strong>:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;* Brother.js *&#x2F;</span><br><span class="line"></span><br><span class="line">&lt;GrandSon &#123;...this.props&#125;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
 <p>利用上方的寫法，就能把Brother所有的props全部綁在GrandSon上，且在GrandSon使用的方法完全一模一樣。 這樣就能避免在多階層溝通中，因為綁很多props讓可讀性大幅降低。</p>
-<h3 id="Part-4-2-有沒有更簡易的方法"><a href="#Part-4-2-有沒有更簡易的方法" class="headerlink" title="Part. 4-2 - 有沒有更簡易的方法?"></a>Part. 4-2 - 有沒有更簡易的方法?</h3><p>有的，要運用Bracket notation(以中括號存取物件)。</p>
+<h3 id="Part-4-2-有沒有更簡易的方法">Part. 4-2 - 有沒有更簡易的方法?</h3>
+<p>有的，要運用Bracket notation(以中括號存取物件)。</p>
 <p>也就是在作為<strong>第一個中繼站的父元素</strong>中，定義兩個函式:</p>
 <ol>
-<li>存取資料用: 接收一個名字參數，然後把這個名字丟到Bracket notation中，去存取想要的props資料並回傳。 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">handleSendData(name)&#123;</span><br><span class="line">    return this.props[name];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>存取函式用: 接收兩個參數，第一個參數是用來接收要呼叫的函式名稱，第二個參數用spread operator去把剩餘所有的參數複製成一個array。然後把函式名稱丟到Bracket notation中，去呼叫想要的函式，並再次利用spread operator把剛剛複製的array展開丟到參數內(也就是剛剛複製的array就是真正要丟到呼叫函式的參數)，最後回傳函式return值。     <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">handleSendFunc(method, ...arg)&#123;</span><br><span class="line">    return this.props[method](...arg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-然後把這兩個函式綁在夾在目標子元素跟第一個中繼站之間所有中繼站上(目標子元素也要綁)。</li>
+<li>存取資料用: 接收一個名字參數，然後把這個名字丟到Bracket notation中，去存取想要的props資料並回傳。 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">handleSendData(name)&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.props[name];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>存取函式用: 接收兩個參數，第一個參數是用來接收要呼叫的函式名稱，第二個參數用spread operator去把剩餘所有的參數複製成一個array。然後把函式名稱丟到Bracket notation中，去呼叫想要的函式，並再次利用spread operator把剛剛複製的array展開丟到參數內(也就是剛剛複製的array就是真正要丟到呼叫函式的參數)，最後回傳函式return值。 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">handleSendFunc(method, ...arg)&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.props[method](...arg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;GrandSon handleSendData&#x3D;&#123;this.handleSendData&#125; handleSendFunc&#x3D;&#123;this.handleSendFunc&#125; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p>然後把這兩個函式綁在夾在目標子元素跟第一個中繼站之間所有中繼站上(目標子元素也要綁)。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;GrandSon handleSendData=&#123;<span class="keyword">this</span>.handleSendData&#125; handleSendFunc=&#123;<span class="keyword">this</span>.handleSendFunc&#125; /&gt;</span><br></pre></td></tr></table></figure>
 <p>最後，我們只要在目標子元素呼叫這兩個函式，並把要存取/呼叫的東西以字串丟入函式參數，就能拿到/呼叫想要的東西:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;* 存取綁在Brother.js上的money *&#x2F;</span><br><span class="line">let dadMoney&#x3D;this.handleSendData(&quot;money&quot;); </span><br><span class="line"></span><br><span class="line">&#x2F;* 呼叫綁在brother上的argue函式(allocateMoney)。</span><br><span class="line">「brother」和「5」是原本allocateMoney規定需要的參數。 *&#x2F;</span><br><span class="line">this.handleSendFunc(&quot;argue&quot;,&quot;brother&quot;,5);</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="小結"><a href="#小結" class="headerlink" title="小結:"></a>小結:</h2><p>這一篇是我認為新手學習現代框架最重要的觀念，對物件導向很熟悉的人來說應該會容易理 解。如果能夠熟悉從props到這一篇為止的操作，那麼再去學習其他框架時也能很快的上手。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 存取綁在Brother.js上的money */</span></span><br><span class="line"><span class="keyword">let</span> dadMoney=<span class="keyword">this</span>.handleSendData(<span class="string">"money"</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">/* 呼叫綁在brother上的argue函式(allocateMoney)。</span></span><br><span class="line"><span class="comment">「brother」和「5」是原本allocateMoney規定需要的參數。 */</span></span><br><span class="line"><span class="keyword">this</span>.handleSendFunc(<span class="string">"argue"</span>,<span class="string">"brother"</span>,<span class="number">5</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="小結">小結:</h2>
+<p>這一篇是我認為新手學習現代框架最重要的觀念，對物件導向很熟悉的人來說應該會容易理 解。如果能夠熟悉從props到這一篇為止的操作，那麼再去學習其他框架時也能很快的上手。</p>
 
 </div>
 

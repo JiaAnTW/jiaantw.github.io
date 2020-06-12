@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
 <li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
 <li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
-<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
 </ul>
 <h1 id="產品開發">產品開發</h1>
 <h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
@@ -172,31 +171,52 @@ function sidebar_toggle() {
         </div>
         <div class="book-content">
           <div class="book-post">
-  <h1 id="【React-js入門-14】-Debug利器-React-Developer-Tools"><a href="#【React-js入門-14】-Debug利器-React-Developer-Tools" class="headerlink" title="【React.js入門 - 14】 Debug利器 : React-Developer-Tools"></a>【React.js入門 - 14】 Debug利器 : React-Developer-Tools</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><p>當專案規模到一定程度的時候，state、props和函式會變的很多，debug上越來越困難。這時我們就會用到一款在chrome上協助開發者debug的插件:React-Developer-Tools。</p>
-<p>接下來都會以這份程式碼來示範使用方式:<br>index.js</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import React from &#39;react&#39;;</span><br><span class="line">import ReactDOM from &#39;react-dom&#39;;</span><br><span class="line">import &#39;.&#x2F;index.css&#39;;</span><br><span class="line">import App from &#39;.&#x2F;App&#39;;</span><br><span class="line">import * as serviceWorker from &#39;.&#x2F;serviceWorker&#39;;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;App name&#x3D;&quot;我是進度條&quot;&gt;在index.js中轉換百分比&lt;&#x2F;App&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;,</span><br><span class="line">    document.getElementById(&#39;root&#39;)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+  <h1 id="【React-js入門-14】-Debug利器-React-Developer-Tools">【React.js入門 - 14】 Debug利器 : React-Developer-Tools</h1>
+<h6 id="tags-第11屆鐵人賽">tags: <code>第11屆鐵人賽</code></h6>
+<p>當專案規模到一定程度的時候，state、props和函式會變的很多，debug上越來越困難。這時我們就會用到一款在chrome上協助開發者debug的插件:React-Developer-Tools。</p>
+<p>接下來都會以這份程式碼來示範使用方式:<br>
+index.js</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'./index.css'</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App'</span>;</span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> serviceWorker <span class="keyword">from</span> <span class="string">'./serviceWorker'</span>;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;App name=<span class="string">"我是進度條"</span>&gt;在index.js中轉換百分比&lt;<span class="regexp">/App&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;,</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">'root'</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 <p>App.js</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; Component &#125; from &#39;react&#39;;</span><br><span class="line">class App extends Component&#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state&#x3D;&#123;</span><br><span class="line">      percent:&quot;30%&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    this.name&#x3D;&quot;舊的名字&quot;;</span><br><span class="line">    this.changePercent&#x3D;this.changePercent.bind(this);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  changePercent()&#123;</span><br><span class="line">    this.setState(&#123;percent:(this.state.percent&#x3D;&#x3D;&#x3D;&quot;70%&quot;)?&quot;30%&quot;:&quot;70%&quot;&#125;)</span><br><span class="line">    console.log(&quot;hey&quot;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        return(</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">            &lt;div className&#x3D;&quot;progress-back&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;rgba(0,0,0,0.2)&quot;,width:&quot;200px&quot;,height:&quot;7px&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;</span><br><span class="line">              &lt;div className&#x3D;&quot;progress-bar&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;#fe5196&quot;,width:this.state.percent,height:&quot;100%&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;button onClick&#x3D;&#123;this.changePercent&#125;&gt; &#123;this.props.children&#125; &lt;&#x2F;button&gt;</span><br><span class="line">            &#123;this.props.name&#125;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">export default App;</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><ol>
-<li><p>進入chrome的線上應用程式商店，搜尋React後，就會看到React-Developer-Tools:<br><img src="https://i.imgur.com/PsnGZuq.png" alt=""></p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state=&#123;</span><br><span class="line">      percent:<span class="string">"30%"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">this</span>.name=<span class="string">"舊的名字"</span>;</span><br><span class="line">    <span class="keyword">this</span>.changePercent=<span class="keyword">this</span>.changePercent.bind(<span class="keyword">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  changePercent()&#123;</span><br><span class="line">    <span class="keyword">this</span>.setState(&#123;<span class="attr">percent</span>:(<span class="keyword">this</span>.state.percent===<span class="string">"70%"</span>)?<span class="string">"30%"</span>:<span class="string">"70%"</span>&#125;)</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"hey"</span>)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span>(</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">            &lt;div className=<span class="string">"progress-back"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"rgba(0,0,0,0.2)"</span>,<span class="attr">width</span>:<span class="string">"200px"</span>,<span class="attr">height</span>:<span class="string">"7px"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;</span><br><span class="line">              &lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:<span class="keyword">this</span>.state.percent,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">            &lt;button onClick=&#123;<span class="keyword">this</span>.changePercent&#125;&gt; &#123;<span class="keyword">this</span>.props.children&#125; &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">            &#123;this.props.name&#125;</span></span><br><span class="line"><span class="regexp">          &lt;/</span>div&gt;</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure>
+<h2 id="安裝">安裝</h2>
+<ol>
+<li>
+<p>進入chrome的線上應用程式商店，搜尋React後，就會看到React-Developer-Tools:<br>
+<img src="https://i.imgur.com/PsnGZuq.png" alt=""></p>
 </li>
-<li><p>點選「加到chrome」後，等待安裝，安裝完畢後重新打開chrome。</p>
+<li>
+<p>點選「加到chrome」後，等待安裝，安裝完畢後重新打開chrome。</p>
 </li>
-<li><p>當你開啟任何一個以React.js撰寫的網站時，React的logo會在右上角發亮<br><img src="https://i.imgur.com/KGseXlI.png" alt=""></p>
+<li>
+<p>當你開啟任何一個以React.js撰寫的網站時，React的logo會在右上角發亮<br>
+<img src="https://i.imgur.com/KGseXlI.png" alt=""></p>
 </li>
 </ol>
-<p>以及F12的more中，點選就能夠使用。(以compoent和profiler標籤顯示)<br><img src="https://i.imgur.com/Od64Ko3.png" alt=""></p>
-<h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><p>React-Developer-Tools功能很多，稍微簡介一下。</p>
-<h3 id="1-監控Component。"><a href="#1-監控Component。" class="headerlink" title="1. 監控Component。"></a>1. 監控Component。</h3><p>打開React-Developer-Tools的Component後，會出現目前專案中Component的結構(目前只有App一個component)<br><img src="https://i.imgur.com/hZ5Aeak.png" alt=""></p>
-<p>點擊之後，右方就會出現有關於這個component的資訊，當相關的資料被改變時，這個介面也會更新該資料的值:<br><img src="https://i.imgur.com/lzB6ZbJ.png" alt=""></p>
-<h3 id="2-暫時修改state、props的值。"><a href="#2-暫時修改state、props的值。" class="headerlink" title="2. 暫時修改state、props的值。"></a>2. 暫時修改state、props的值。</h3><p>右鍵點擊資料的值兩下，就能在瀏覽器中模擬修改state/props…之後的狀況，且不影響原本程式碼。<br>修改前:<br><img src="https://i.imgur.com/0HxSRGj.png" alt=""></p>
-<p>修改後:<br><img src="https://i.imgur.com/EsFVWHN.png" alt=""></p>
-<h3 id="3-尋找Component在DOM上的位置"><a href="#3-尋找Component在DOM上的位置" class="headerlink" title="3. 尋找Component在DOM上的位置"></a>3. 尋找Component在DOM上的位置</h3><p>因為React-Developer-Tools<strong>並不能用來測試修改style、elements等</strong>，我們必須點擊右邊的眼睛:<br><img src="https://i.imgur.com/zVJvPYB.png" alt=""></p>
+<p>以及F12的more中，點選就能夠使用。(以compoent和profiler標籤顯示)<br>
+<img src="https://i.imgur.com/Od64Ko3.png" alt=""></p>
+<h2 id="主要功能">主要功能</h2>
+<p>React-Developer-Tools功能很多，稍微簡介一下。</p>
+<h3 id="1-監控Component。">1. 監控Component。</h3>
+<p>打開React-Developer-Tools的Component後，會出現目前專案中Component的結構(目前只有App一個component)<br>
+<img src="https://i.imgur.com/hZ5Aeak.png" alt=""></p>
+<p>點擊之後，右方就會出現有關於這個component的資訊，當相關的資料被改變時，這個介面也會更新該資料的值:<br>
+<img src="https://i.imgur.com/lzB6ZbJ.png" alt=""></p>
+<h3 id="2-暫時修改state、props的值。">2. 暫時修改state、props的值。</h3>
+<p>右鍵點擊資料的值兩下，就能在瀏覽器中模擬修改state/props…之後的狀況，且不影響原本程式碼。<br>
+修改前:<br>
+<img src="https://i.imgur.com/0HxSRGj.png" alt=""></p>
+<p>修改後:<br>
+<img src="https://i.imgur.com/EsFVWHN.png" alt=""></p>
+<h3 id="3-尋找Component在DOM上的位置">3. 尋找Component在DOM上的位置</h3>
+<p>因為React-Developer-Tools<strong>並不能用來測試修改style、elements等</strong>，我們必須點擊右邊的眼睛:<br>
+<img src="https://i.imgur.com/zVJvPYB.png" alt=""></p>
 <p>Dev tool會自動切換到Elements標籤，並標示出該Component實際render到DOM上的元素位置。這時就能用和一般網頁一樣的方式debug。</p>
-<h2 id="4-配合console使用"><a href="#4-配合console使用" class="headerlink" title="4. 配合console使用"></a>4. 配合console使用</h2><p>當你在component點擊該元件後，回到console，輸入<code>$r</code>，就會跳出和此元件相關屬性，讓你可以選擇並搭配console做一些監控、模擬事件等等常見的debug方式。<br><img src="https://i.imgur.com/bX7WmTr.gif" alt=""></p>
-<h2 id="小結"><a href="#小結" class="headerlink" title="小結:"></a>小結:</h2><p>這四個是我覺得最常用到的。除此之外React-Developer-Tools還有監控效能等其他功能，可以試試看~</p>
+<h2 id="4-配合console使用">4. 配合console使用</h2>
+<p>當你在component點擊該元件後，回到console，輸入<code>$r</code>，就會跳出和此元件相關屬性，讓你可以選擇並搭配console做一些監控、模擬事件等等常見的debug方式。<br>
+<img src="https://i.imgur.com/bX7WmTr.gif" alt=""></p>
+<h2 id="小結">小結:</h2>
+<p>這四個是我覺得最常用到的。除此之外React-Developer-Tools還有監控效能等其他功能，可以試試看~</p>
 
 </div>
 

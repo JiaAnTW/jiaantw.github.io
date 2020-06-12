@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
 <li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
 <li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
-<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
 </ul>
 <h1 id="產品開發">產品開發</h1>
 <h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
@@ -172,7 +171,10 @@ function sidebar_toggle() {
         </div>
         <div class="book-content">
           <div class="book-post">
-  <h1 id="【React-js入門-19】-React生命週期-4-4-Update系列一次講完"><a href="#【React-js入門-19】-React生命週期-4-4-Update系列一次講完" class="headerlink" title="【React.js入門 - 19】 React生命週期(4/4): Update系列一次講完"></a>【React.js入門 - 19】 React生命週期(4/4): Update系列一次講完</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><p>在前面的文章，我們一直提到<strong>在state或props被改變時會觸發re-render程序。</strong><br>那這個神祕的程序是什麼? 就是React update的生命週期。</p>
+  <h1 id="【React-js入門-19】-React生命週期-4-4-Update系列一次講完">【React.js入門 - 19】 React生命週期(4/4): Update系列一次講完</h1>
+<h6 id="tags-第11屆鐵人賽">tags: <code>第11屆鐵人賽</code></h6>
+<p>在前面的文章，我們一直提到<strong>在state或props被改變時會觸發re-render程序。</strong><br>
+那這個神祕的程序是什麼? 就是React update的生命週期。</p>
 <p>在Ver.17前，React update的生命週期是這樣的:</p>
 <blockquote>
 <ol>
@@ -198,28 +200,34 @@ function sidebar_toggle() {
 </blockquote>
 <p>注意<code>render()</code>前從3變成只剩2個函數，<code>render()</code>後從1變成2個函數。</p>
 <p>因為舊的函數有些不太常用到，在這邊我們直接來講新的函數。</p>
-<h2 id="static-getDerivedStateFromProps-props-state"><a href="#static-getDerivedStateFromProps-props-state" class="headerlink" title="static getDerivedStateFromProps(props, state)"></a>static getDerivedStateFromProps(props, state)</h2><p>對，跟mount中的那一個是一樣、共用的。比較特別的是因為它的功能是「從props中取得state要設定的值」，所以<strong>只有props被改變時才會觸發，state被改變時並不會。</strong> 在這裡，參數的<code>props</code>和<code>state</code>是更新過後的。</p>
-<p>注意在這個函數是<code>static</code>的，也就是<code>this</code>是不能使用的。<br>(static指的是這函式不屬於以這個類別被宣告出來的單一物件，而是只屬於這個類別)</p>
-<h2 id="shouldComponentUpdate-nextProps-nextState"><a href="#shouldComponentUpdate-nextProps-nextState" class="headerlink" title="shouldComponentUpdate(nextProps, nextState)"></a>shouldComponentUpdate(nextProps, nextState)</h2><p>這個函數的功用像是守門員，用來做確認是不是真的要update。這個函數要return一個布林值。當函數<strong>回傳<code>false</code>時，元件就不會更新，也不會繼續執行接下來的<code>render()</code>以及剩下的update生命週期函數</strong>。預設會回傳<code>true</code>。</p>
+<h2 id="static-getDerivedStateFromProps-props-state">static getDerivedStateFromProps(props, state)</h2>
+<p>對，跟mount中的那一個是一樣、共用的。比較特別的是因為它的功能是「從props中取得state要設定的值」，所以<strong>只有props被改變時才會觸發，state被改變時並不會。</strong> 在這裡，參數的<code>props</code>和<code>state</code>是更新過後的。</p>
+<p>注意在這個函數是<code>static</code>的，也就是<code>this</code>是不能使用的。<br>
+(static指的是這函式不屬於以這個類別被宣告出來的單一物件，而是只屬於這個類別)</p>
+<h2 id="shouldComponentUpdate-nextProps-nextState">shouldComponentUpdate(nextProps, nextState)</h2>
+<p>這個函數的功用像是守門員，用來做確認是不是真的要update。這個函數要return一個布林值。當函數<strong>回傳<code>false</code>時，元件就不會更新，也不會繼續執行接下來的<code>render()</code>以及剩下的update生命週期函數</strong>。預設會回傳<code>true</code>。</p>
 <p>在這邊，<code>this.props</code>和<code>this.state</code>是更新之前的，新的props和state在參數中以<code>nextProps</code>和<code>nextState</code>存在。你可以在這裡對這四者做比較。</p>
-<h2 id="render"><a href="#render" class="headerlink" title="render"></a>render</h2><p>和前面一樣、共用，不解釋…。</p>
-<h2 id="getSnapshotBeforeUpdate-prevProps-prevProps"><a href="#getSnapshotBeforeUpdate-prevProps-prevProps" class="headerlink" title="getSnapshotBeforeUpdate(prevProps, prevProps)"></a>getSnapshotBeforeUpdate(prevProps, prevProps)</h2><blockquote>
+<h2 id="render">render</h2>
+<p>和前面一樣、共用，不解釋…。</p>
+<h2 id="getSnapshotBeforeUpdate-prevProps-prevProps">getSnapshotBeforeUpdate(prevProps, prevProps)</h2>
+<blockquote>
 <p>來，在妳離開我們前，拍張照片吧!</p>
 </blockquote>
-<p>這個函式夾在「<code>render()</code>收集完要更新的東西」跟「React真的拿<code>render()</code>中的東西去更新DOM」之間。它的用途是讓你可以把更新前的最後一刻DOM的狀況紀錄下來，然後用return值傳參數到<code>componentDidUpdate</code>中。所以如果沒有要傳東西給<code>componentDidUpdate</code>，就要回傳<code>null</code>。</p>
+<p>這個函式夾在「<code>render()</code>收集完要更新的東西」跟「React真的拿<code>render()</code>中的東西去更新DOM」之間。它的用途是讓你可以把更新前的最後一刻DOM的狀況紀錄下來，然後用return值傳參數到<code> componentDidUpdate</code>中。所以如果沒有要傳東西給<code> componentDidUpdate</code>，就要回傳<code>null</code>。</p>
 <p>在這邊<strong>和前面相反</strong>，<code>this.props</code>和<code>this.state</code>是更新之後的，舊的props和state在參數中以<code>prevProps</code>和<code>prevProps</code>存在。</p>
 <p><code>getSnapshotBeforeUpdate(prevProps, prevState)</code>不常使用，不過可以參考一下<a href="https://zh-hant.reactjs.org/docs/react-component.html#getsnapshotbeforeupdate" target="_blank" rel="noopener">官方的範例。</a></p>
-<h2 id="componentDidUpdate-prevProps-prevState-snapshot"><a href="#componentDidUpdate-prevProps-prevState-snapshot" class="headerlink" title="componentDidUpdate(prevProps, prevState, snapshot)"></a>componentDidUpdate(prevProps, prevState, snapshot)</h2><p>和<code>componentDidMount</code>一樣，這個函數被強烈建議把「更新後想做的事情」放在這裡，包括先前提過的fetch等。因為這個函數是<strong>唯一也是最後在DOM真的被更新後執行的週期函數</strong>。</p>
+<h2 id="componentDidUpdate-prevProps-prevState-snapshot">componentDidUpdate(prevProps, prevState, snapshot)</h2>
+<p>和<code>componentDidMount</code>一樣，這個函數被強烈建議把「更新後想做的事情」放在這裡，包括先前提過的fetch等。因為這個函數是<strong>唯一也是最後在DOM真的被更新後執行的週期函數</strong>。</p>
 <p>在這邊<code>this.props</code>和<code>this.state</code>是更新之前的，舊的props和state在參數中以<code>prevProps</code>和<code>prevProps</code>存在，<code>snapshot</code>是<code>getSnapshotBeforeUpdate(prevProps, prevProps)</code>傳來的參數。</p>
 <p>使用這個函數時有一個很重要的事情: <strong>只要任何一個props/state被設定(assign)，就會重新進入Update週期，導致此函數再次被執行</strong>。為甚麼這件事很重要呢? 假設今天有一個props叫A，一個state叫B，我們希望A被改變為true時，給予B一個值:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">componentDidUpdate(prevProps, prevState, snapshot)&#123;</span><br><span class="line">    if(this.props.A&#x3D;&#x3D;&#x3D;true)</span><br><span class="line">        this.setState(&#123;B: &quot;A是真的!&quot;&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">componentDidUpdate(prevProps, prevState, snapshot)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">this</span>.props.A===<span class="literal">true</span>)</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">B</span>: <span class="string">"A是真的!"</span>&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>實際執行你會發現，react在A第一次被設定後，<strong>開始瘋狂的重複設定B</strong>。然後你的網頁就死掉了。</p>
 <p>為什麼會這樣? 因為你在<code>componentDidUpdate</code>中設定<code>state</code>或<code>props</code>時，又會進入re-render的update生命週期，也就是進入像這樣的無限循環:</p>
 <blockquote>
 <p>偵測到A被設定-&gt; 在<code>componentDidUpdate</code>中設定B -&gt; 偵測到B被設定 -&gt; 在<code>componentDidUpdate</code>中設定B -&gt; 偵測到B被設定 -&gt; …</p>
 </blockquote>
 <p>如果要避免無限循環，就要改成這樣:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">componentDidUpdate(prevProps, prevState, snapshot)&#123;</span><br><span class="line">    if(this.props.A&#x3D;&#x3D;&#x3D;true &amp;&amp; prevProps.A !&#x3D; this.props.A)</span><br><span class="line">        this.setState(&#123;B: &quot;A是真的!&quot;&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">componentDidUpdate(prevProps, prevState, snapshot)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">this</span>.props.A===<span class="literal">true</span> &amp;&amp; prevProps.A != <span class="keyword">this</span>.props.A)</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">B</span>: <span class="string">"A是真的!"</span>&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>偵測到A被設定-&gt; 在<code>componentDidUpdate</code>中設定B -&gt; 偵測到B被設定 -&gt; 發現A的值和之前一樣 -&gt; 不設定B</p>
 </blockquote>
@@ -228,12 +236,17 @@ function sidebar_toggle() {
 <p>偵測到A被更新-&gt; 在<code>componentDidUpdate</code>中更新B -&gt; 偵測到B被更新 -&gt; 在<code>componentDidUpdate</code>中更新B -&gt; 偵測到B被更新 -&gt; 發現B的值和之前一樣 -&gt; 不更新B</p>
 </blockquote>
 <p>以上是常用的處理方法，當然要視遇到的狀況作調整。</p>
-<h2 id="最後-流程圖終於來了"><a href="#最後-流程圖終於來了" class="headerlink" title="最後 - 流程圖終於來了"></a>最後 - 流程圖終於來了</h2><p>這是<a href="https://twitter.com/dan_abramov/status/981712092611989509" target="_blank" rel="noopener">外國一位工程師</a>做的React生命週期流程圖，搭配這張圖，應該會對這幾篇有比較具體的了解:<br><img src="https://miro.medium.com/max/3348/1*cEWErpe-oY-_S1dOaT1NtA.jpeg" alt=""></p>
+<h2 id="最後-流程圖終於來了">最後 - 流程圖終於來了</h2>
+<p>這是<a href="https://twitter.com/dan_abramov/status/981712092611989509" target="_blank" rel="noopener">外國一位工程師</a>做的React生命週期流程圖，搭配這張圖，應該會對這幾篇有比較具體的了解:<br>
+<img src="https://miro.medium.com/max/3348/1*cEWErpe-oY-_S1dOaT1NtA.jpeg" alt=""></p>
 <p>在Update週期中，最需要注意的就是「如果沒有使用週期函數中提供的修改方法，只要任何一個props/state被更新就會re-render」這件事。很容易一不小心就segmentation fault(記憶體分配失敗，為無限迴圈常導致的錯誤)</p>
 <p>生命週期雖然很多，但你不需要每個都記住，有印象就可以，只需要特別記得我們最常用到的三個週期函數<code>componentDidMount</code>、<code>componentWillUnmount</code>和<code>componentDidUpdate</code>，可以參考<a href="http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/" target="_blank" rel="noopener">這個網站</a>，它整理了新/舊/常用/不常用的生命週期圖，還有多國語言翻譯，相當讚。</p>
-<p>截自此網站:<br><img src="https://i.imgur.com/ybBFyNp.png" alt=""></p>
-<h2 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h2><p>到這篇，三大React生命週期都已經講完了，另外React還有一個處理error用的週期，由於這系列只是入門就不特別講了。有興趣可以參考<a href="https://zh-hant.reactjs.org/docs/react-component.html#static-getderivedstatefromerror" target="_blank" rel="noopener">官方文件</a>。</p>
-<p>過去在看大家對於React的討論，最常被提到的就是生命週期這東西並不是很多人真正的了解。<br>坦白說，我也不認為自己熟悉這一塊，自己目前做過的專案也只有碰到部分的函數。如果有錯誤的地方，希望各位前輩能指點~</p>
+<p>截自此網站:<br>
+<img src="https://i.imgur.com/ybBFyNp.png" alt=""></p>
+<h2 id="小結">小結</h2>
+<p>到這篇，三大React生命週期都已經講完了，另外React還有一個處理error用的週期，由於這系列只是入門就不特別講了。有興趣可以參考<a href="https://zh-hant.reactjs.org/docs/react-component.html#static-getderivedstatefromerror" target="_blank" rel="noopener">官方文件</a>。</p>
+<p>過去在看大家對於React的討論，最常被提到的就是生命週期這東西並不是很多人真正的了解。<br>
+坦白說，我也不認為自己熟悉這一塊，自己目前做過的專案也只有碰到部分的函數。如果有錯誤的地方，希望各位前輩能指點~</p>
 <p>下一篇，我們會來講在function component中生命週期的使用。</p>
 
 </div>

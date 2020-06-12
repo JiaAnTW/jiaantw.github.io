@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
 <li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
 <li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
-<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
 </ul>
 <h1 id="產品開發">產品開發</h1>
 <h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
@@ -172,47 +171,76 @@ function sidebar_toggle() {
         </div>
         <div class="book-content">
           <div class="book-post">
-  <h1 id="【React-js入門-30】-學了React之後，然後呢"><a href="#【React-js入門-30】-學了React之後，然後呢" class="headerlink" title="【React.js入門 - 30】 學了React之後，然後呢?"></a>【React.js入門 - 30】 學了React之後，然後呢?</h1><blockquote>
+  <h1 id="【React-js入門-30】-學了React之後，然後呢">【React.js入門 - 30】 學了React之後，然後呢?</h1>
+<blockquote>
 <p>太好了，我好像有辦法用一個前端框架寫專案了，那接下來我該做什麼?</p>
 </blockquote>
-<p>(借一下JSDC的標題，我覺得很酷XD)<br>從學了React，到寫了兩三個前端框架專案之後，我的感想是這樣的:</p>
-<h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><h2 id="學習如何拆出好的元件架構"><a href="#學習如何拆出好的元件架構" class="headerlink" title="學習如何拆出好的元件架構"></a>學習如何拆出好的元件架構</h2><p>我覺得學習完現代框架最重要的事情是練習「把一個頁面拆成多個元件」的這個過程。<br>舉例來說，這是Dcard的頁面:</p>
+<p>(借一下JSDC的標題，我覺得很酷XD)<br>
+從學了React，到寫了兩三個前端框架專案之後，我的感想是這樣的:</p>
+<h6 id="tags-第11屆鐵人賽">tags: <code>第11屆鐵人賽</code></h6>
+<h2 id="學習如何拆出好的元件架構">學習如何拆出好的元件架構</h2>
+<p>我覺得學習完現代框架最重要的事情是練習「把一個頁面拆成多個元件」的這個過程。<br>
+舉例來說，這是Dcard的頁面:</p>
 <p><img src="https://i.imgur.com/jyYdYhA.png" alt=""></p>
-<p>如果不論Layout最上面的部分的話，以前我會這樣拆(同色代表同元件):<br><img src="https://i.imgur.com/yELhKRu.png" alt=""></p>
-<p>可是我現在會這樣拆:<br><img src="https://i.imgur.com/MrVca0u.png" alt=""></p>
+<p>如果不論Layout最上面的部分的話，以前我會這樣拆(同色代表同元件):<br>
+<img src="https://i.imgur.com/yELhKRu.png" alt=""></p>
+<p>可是我現在會這樣拆:<br>
+<img src="https://i.imgur.com/MrVca0u.png" alt=""></p>
 <p>理由不是因為拆的元件比較多所以比較好，而是我做類似專案時，寫到後面發現拆成這樣拿到其他地方或是架構改變時比較方便。像是左邊的那個List如果拆成List+ListItem，如果我突然哪天想要做出「List中的List」就很簡單，讓List成為List的children就可以了。不過也有可能有更好的拆法~</p>
 <p>如果能夠拆出好的元件架構，看到你code的同事，會幸福吧。</p>
-<h2 id="培養設計「可重複利用的元件」的思維"><a href="#培養設計「可重複利用的元件」的思維" class="headerlink" title="培養設計「可重複利用的元件」的思維"></a>培養設計「可重複利用的元件」的思維</h2><p>「想辦法減少重複寫的地方」算是軟體工程師的基礎能力吧，自己認為前端工程師在這方面又要多一點想像或是經驗，有些直覺上會覺得不一樣的UI，其實只要用幾個參數去控制它們就能包成同一個檔案。這點在前端框架的元件概念出現後又更重要了，<strong>如果剛開始寫的時候有預想這個元件出現在其他場景的處理方法，別的地方要用的話就不用整個重刻</strong>。像是在設計元件的時候，元件的大小是要用絕對還是相對單位，哪些東西要用props控制之類的。</p>
-<h2 id="從插件工程師，學習成為插件工程師"><a href="#從插件工程師，學習成為插件工程師" class="headerlink" title="從插件工程師，學習成為插件工程師"></a>從插件工程師，學習成為插件工程師</h2><p>專案一旦大起來，每個東西都自己手刻會很麻煩，所以「使用別人的插件」是一項不可或缺的技能，要懂得看api、了解什麼地方是可以更改的、甚至是找插件的能力…</p>
+<h2 id="培養設計「可重複利用的元件」的思維">培養設計「可重複利用的元件」的思維</h2>
+<p>「想辦法減少重複寫的地方」算是軟體工程師的基礎能力吧，自己認為前端工程師在這方面又要多一點想像或是經驗，有些直覺上會覺得不一樣的UI，其實只要用幾個參數去控制它們就能包成同一個檔案。這點在前端框架的元件概念出現後又更重要了，<strong>如果剛開始寫的時候有預想這個元件出現在其他場景的處理方法，別的地方要用的話就不用整個重刻</strong>。像是在設計元件的時候，元件的大小是要用絕對還是相對單位，哪些東西要用props控制之類的。</p>
+<h2 id="從插件工程師，學習成為插件工程師">從插件工程師，學習成為插件工程師</h2>
+<p>專案一旦大起來，每個東西都自己手刻會很麻煩，所以「使用別人的插件」是一項不可或缺的技能，要懂得看api、了解什麼地方是可以更改的、甚至是找插件的能力…</p>
 <p>那為什麼說從插件工程師學習成為插件工程師呢?</p>
 <p>以前忘記在哪看過一篇文章，說有的人只會用別人寫的插件，導致這些人的實力就永遠停留在那了。而我自己是覺得，新手不知道怎麼實現功能是很正常的，用插件也有助於維持專案的穩定性。但是在使用插件的同時，應該觀察別人寫的方法，像是多認識幾個DOM api、學別人分割架構的邏輯、分析作者提供給別人的介面優缺點… 久了就會發現慢慢有能力可以靠自己實現想要的元件，甚至寫出別人會想用的東西，成為有能力寫完整插件的工程師。</p>
-<p>順便分享一個很好用的資源: <a href="https://github.com/brillout/awesome-react-components" target="_blank" rel="noopener">brillout/awesome-react-components</a><br>這裡面收集了超多專門給React的插件，想的到基本元件的幾乎都有。<br><img src="https://i.imgur.com/CgcUiPH.png" alt=""></p>
-<h2 id="更深的React-那些被我略過的事情"><a href="#更深的React-那些被我略過的事情" class="headerlink" title="更深的React - 那些被我略過的事情"></a>更深的React - 那些被我略過的事情</h2><ul>
-<li><p>React Virtual DOM<br>  前面我只是很簡單的帶過大概的概念而已，但React Virtual DOM是React和其他框架不同的重點之一。</p>
-<p>  在一開始我說過，我們寫的網頁就像是一棵有很多節點的樹，而React Virtual DOM的原理是，每次要更新時，對新產生的樹做dfs(深度優先搜尋)，每拜訪一個節點，就跟原本舊樹的節點比較，若有差異，就紀錄下來。最後實際只去DOM更改有差異的地方。</p>
-<p>  那麼會什麼這樣會比原本操作DOM好呢?</p>
-<p>  過去我們常常用<code>元素.innerHTML</code>去更改元素在DOM上的內容。但是這樣做有個缺點，即便我們新的內容只有一部份不一樣，還是要把該位置的內容完全更新。而Virtual DOM的好處就是只更新用JS比較後發現不一樣的地方，所以比起直接操作DOM可以節省不少資源。注意<strong>Virtual DOM是能降低浪費的資源，直接操作DOM的速度平均還是會比加一層Virtual DOM快</strong>。</p>
-<p>  參考資料:</p>
+<p>順便分享一個很好用的資源: <a href="https://github.com/brillout/awesome-react-components" target="_blank" rel="noopener">brillout/awesome-react-components</a><br>
+這裡面收集了超多專門給React的插件，想的到基本元件的幾乎都有。<br>
+<img src="https://i.imgur.com/CgcUiPH.png" alt=""></p>
+<h2 id="更深的React-那些被我略過的事情">更深的React - 那些被我略過的事情</h2>
+<ul>
+<li>
+<p>React Virtual DOM<br>
+前面我只是很簡單的帶過大概的概念而已，但React Virtual DOM是React和其他框架不同的重點之一。</p>
+<p>在一開始我說過，我們寫的網頁就像是一棵有很多節點的樹，而React Virtual DOM的原理是，每次要更新時，對新產生的樹做dfs(深度優先搜尋)，每拜訪一個節點，就跟原本舊樹的節點比較，若有差異，就紀錄下來。最後實際只去DOM更改有差異的地方。</p>
+<p>那麼會什麼這樣會比原本操作DOM好呢?</p>
+<p>過去我們常常用<code>元素.innerHTML</code>去更改元素在DOM上的內容。但是這樣做有個缺點，即便我們新的內容只有一部份不一樣，還是要把該位置的內容完全更新。而Virtual DOM的好處就是只更新用JS比較後發現不一樣的地方，所以比起直接操作DOM可以節省不少資源。注意<strong>Virtual DOM是能降低浪費的資源，直接操作DOM的速度平均還是會比加一層Virtual DOM快</strong>。</p>
+<p>參考資料:</p>
 <ol>
 <li><a href="https://www.zhihu.com/question/31809713/answer/53544875" target="_blank" rel="noopener">网上都说操作真实 DOM 慢，但测试结果却比 React 更快，为什么？</a></li>
 <li><a href="https://github.com/y8n/blog/issues/5" target="_blank" rel="noopener">理解 Virtual DOM </a></li>
 </ol>
 </li>
-<li><p>React hooks<br>  這系列我們只講了兩個，但React hook還有很多，強烈建議可以搭配現在版上其他的系列文來了解他們。<br>  <img src="https://i.imgur.com/92vznpJ.png" alt=""></p>
+<li>
+<p>React hooks<br>
+這系列我們只講了兩個，但React hook還有很多，強烈建議可以搭配現在版上其他的系列文來了解他們。<br>
+<img src="https://i.imgur.com/92vznpJ.png" alt=""></p>
 </li>
-<li><p>webpack或是其他打包工具<br>  在這系列我們使用了React幫我們設定好一切東西的create-react-app，但是有些狀況下不會允許我們使用這項工具。學習好webpack，不但有助於以後在React專案中加入更多協助開發的工具，未來如果要轉換成React以外的工具也能在設定上更快上手。</p>
+<li>
+<p>webpack或是其他打包工具<br>
+在這系列我們使用了React幫我們設定好一切東西的create-react-app，但是有些狀況下不會允許我們使用這項工具。學習好webpack，不但有助於以後在React專案中加入更多協助開發的工具，未來如果要轉換成React以外的工具也能在設定上更快上手。</p>
 </li>
-<li><p>PWA(Progressive Web App)<br>  先前我們在解析index.js的時候跳過了這個東西，簡單來說它是能夠把網站包成App的一個技術。目前鐵人賽也有專門在講PWA的文章，<strong>如果你是為了之後要寫React Native而順便來學React的，可以考慮一下</strong>。</p>
+<li>
+<p>PWA(Progressive Web App)<br>
+先前我們在解析index.js的時候跳過了這個東西，簡單來說它是能夠把網站包成App的一個技術。目前鐵人賽也有專門在講PWA的文章，<strong>如果你是為了之後要寫React Native而順便來學React的，可以考慮一下</strong>。</p>
 </li>
-<li><p>Context api &amp; Redux<br>前面那一篇提過了，基本上有點規模的專案都會用到。</p>
+<li>
+<p>Context api &amp; Redux<br>
+前面那一篇提過了，基本上有點規模的專案都會用到。</p>
 </li>
-<li><p>React-router-dom的api<br>Link那邊我略過滿多功能，<a href="https://reacttraining.com/react-router/web/guides/quick-start" target="_blank" rel="noopener">官方文件</a>寫得挺清楚，不過有需要再去查就好。</p>
+<li>
+<p>React-router-dom的api<br>
+Link那邊我略過滿多功能，<a href="https://reacttraining.com/react-router/web/guides/quick-start" target="_blank" rel="noopener">官方文件</a>寫得挺清楚，不過有需要再去查就好。</p>
 </li>
-<li><p>其他<br>應該還有一些是我略過但我忘記我略過(?)的東西哈哈，多看看其他鐵人賽的系列，會有更多收穫的!</p>
+<li>
+<p>其他<br>
+應該還有一些是我略過但我忘記我略過(?)的東西哈哈，多看看其他鐵人賽的系列，會有更多收穫的!</p>
 </li>
 </ul>
-<h2 id="我還是要學React-Native，轉換上會有困難嗎"><a href="#我還是要學React-Native，轉換上會有困難嗎" class="headerlink" title="我還是要學React Native，轉換上會有困難嗎?"></a>我還是要學React Native，轉換上會有困難嗎?</h2><p>自己目前也在學React Native，目前我覺得大部份的架構、元件之間的邏輯都是差不多的，只要把DOM元素轉成對應元件(例如: div轉view，span轉text)，以及插件改成RN專用的就可以。</p>
-<h2 id="更多其他的工具"><a href="#更多其他的工具" class="headerlink" title="更多其他的工具"></a>更多其他的工具</h2><p>「前處理」的概念下，也誕生了不少好用的東西，常見像是:</p>
+<h2 id="我還是要學React-Native，轉換上會有困難嗎">我還是要學React Native，轉換上會有困難嗎?</h2>
+<p>自己目前也在學React Native，目前我覺得大部份的架構、元件之間的邏輯都是差不多的，只要把DOM元素轉成對應元件(例如: div轉view，span轉text)，以及插件改成RN專用的就可以。</p>
+<h2 id="更多其他的工具">更多其他的工具</h2>
+<p>「前處理」的概念下，也誕生了不少好用的東西，常見像是:</p>
 <ul>
 <li>Javascript: TypeScript</li>
 <li>HTML: Pug</li>
@@ -220,8 +248,10 @@ function sidebar_toggle() {
 <li>測試單元 : Jest、Mocha</li>
 </ul>
 <p>還有好多好多提高效率的各種工具。有興趣去看看是什麼吧!</p>
-<h2 id="善用框架，不要被框架綁架"><a href="#善用框架，不要被框架綁架" class="headerlink" title="善用框架，不要被框架綁架"></a>善用框架，不要被框架綁架</h2><p>雖然React好用，學完會有回不去的感覺(?)，但它只是一個工具，不要為了用而用。如果是簡單的專案就用原生javascript/jQuery解決就好。</p>
-<h2 id="然後這系列結束了"><a href="#然後這系列結束了" class="headerlink" title="然後這系列結束了"></a>然後這系列結束了</h2><p>如果你是新手，希望這個系列有幫助你進入React，也希望你能從鐵人賽其他講React的系列學到更多東西。</p>
+<h2 id="善用框架，不要被框架綁架">善用框架，不要被框架綁架</h2>
+<p>雖然React好用，學完會有回不去的感覺(?)，但它只是一個工具，不要為了用而用。如果是簡單的專案就用原生javascript/jQuery解決就好。</p>
+<h2 id="然後這系列結束了">然後這系列結束了</h2>
+<p>如果你是新手，希望這個系列有幫助你進入React，也希望你能從鐵人賽其他講React的系列學到更多東西。</p>
 <p>晚點或這幾天可能會發一篇講個心得跟自己參賽的狀況吧，也有可能不會發就是了。</p>
 <p>嗯，就這樣。</p>
 
