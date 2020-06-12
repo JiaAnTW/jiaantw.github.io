@@ -418,7 +418,7 @@ img {
   @media all and (max-width: 1280px) {
     .book-navbar {
       padding-right: 1.25rem;
-      padding-left: 1.25rem; } }
+      padding-left: 0rem; } }
 
 .book-sidebar {
   position: fixed;
@@ -519,6 +519,9 @@ img {
     .book-sidebar .book-menu .current-tab {
       color: #004ed0;
       font-weight: 600; }
+
+.navbar .navbar-section {
+  position: fixed; }
 
 .sidebar-toggle {
   position: fixed;

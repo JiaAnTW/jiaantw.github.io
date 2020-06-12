@@ -106,3 +106,17 @@ if (window.localStorage.sidebarPos) {
     let sidebarPos = window.localStorage.sidebarPos
     document.querySelector('.book-menu').scrollTop = sidebarPos
 }
+
+/*set meta browser color*/
+let chromeHead=document.createElement('meta');
+chromeHead.name="theme-color";
+chromeHead.content="#3D3D3B";
+document.getElementsByTagName('head')[0].appendChild(chromeHead);
+let edgeHead=document.createElement('meta');
+edgeHead.name="msapplication-navbutton-color";
+edgeHead.content="#3D3D3B";
+document.getElementsByTagName('head')[0].appendChild(edgeHead);
+let iosHead=document.createElement('meta');
+iosHead.name="apple-mobile-web-app-status-bar-style";
+iosHead.content="#3D3D3B";
+document.getElementsByTagName('head')[0].appendChild(iosHead);
