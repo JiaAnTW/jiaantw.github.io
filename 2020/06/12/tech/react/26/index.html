@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/26 - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129888855-4', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首頁</a></li>
+<li><a href="/">關於我</a></li>
+</ul>
+<h1 id="WEB開發">WEB開發</h1>
+<h2 id="React-js">React.js</h2>
+<ul>
+<li><a href="/2020/06/12/tech/react/01">環境設定</a></li>
+<li><a href="/2020/06/12/tech/react/02">使用create-react-app</a></li>
+<li><a href="/2020/06/12/tech/react/03">DOM和ES6</a></li>
+<li><a href="/2020/06/12/tech/react/04">HelloWorld!</a></li>
+<li><a href="/2020/06/12/tech/react/05">JSX (上)</a></li>
+<li><a href="/2020/06/12/tech/react/06">JSX (下)</a></li>
+<li><a href="/2020/06/12/tech/react/07">function component</a></li>
+<li><a href="/2020/06/12/tech/react/08">props:綁定資料</a></li>
+<li><a href="/2020/06/12/tech/react/09">props:綁定函式</a></li>
+<li><a href="/2020/06/12/tech/react/10">props: children</a></li>
+<li><a href="/2020/06/12/tech/react/11">class component</a></li>
+<li><a href="/2020/06/12/tech/react/12">state與詳解setState語法</a></li>
+<li><a href="/2020/06/12/tech/react/13">useState</a></li>
+<li><a href="/2020/06/12/tech/react/14">React-Developer-Tools</a></li>
+<li><a href="/2020/06/12/tech/react/15">Http request:Fetch Api</a></li>
+<li><a href="/2020/06/12/tech/react/16">生命週期(1/4):Mount(上)</a></li>
+<li><a href="/2020/06/12/tech/react/17">生命週期(2/4):Mount(下)</a></li>
+<li><a href="/2020/06/12/tech/react/18">生命週期(3/4):Unmount</a></li>
+<li><a href="/2020/06/12/tech/react/19">生命週期(4/4):Update</a></li>
+<li><a href="/2020/06/12/tech/react/20">useEffect</a></li>
+<li><a href="/2020/06/12/tech/react/21_1">各階層Component的溝通</a></li>
+<li><a href="/2020/06/12/tech/react/21_2">useContext和useReducer</a></li>
+<li><a href="/2020/06/12/tech/react/22">元件練習(上)</a></li>
+<li><a href="/2020/06/12/tech/react/23">元件練習(下)</a></li>
+<li><a href="/2020/06/12/tech/react/24">Custom hook</a></li>
+<li><a href="/2020/06/12/tech/react/25">Custom hook練習</a></li>
+<li><a href="/2020/06/12/tech/react/26">輸入元素與控制組件</a></li>
+<li><a href="/2020/06/12/tech/react/27">react-router-dom (上)</a></li>
+<li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
+<li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+</ul>
+<h1 id="產品開發">產品開發</h1>
+<h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
+<ul>
+<li><a href="/2020/06/12/product/UX/maskMap">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js入門-26】-input使用、input與state的互動-控制組件"><a href="#【React-js入門-26】-input使用、input與state的互動-控制組件" class="headerlink" title="【React.js入門 - 26】 input使用、input與state的互動 (控制組件)"></a>【React.js入門 - 26】 input使用、input與state的互動 (控制組件)</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><p>先前我們在<a href="https://ithelp.ithome.com.tw/articles/10216468" target="_blank" rel="noopener">【React.js入門 - 06】 JSX (下)</a>有稍微帶過說<code>&lt;input/&gt;</code>類的元件在取得使用者的輸入值時，必須透過<code>e.target.value</code>的方式取得，但是並沒有仔細講取得輸入值的範例。這是因為我們經常把<code>&lt;input/&gt;</code>和state一起使用，有的時候還會搭配生命週期，所以才拖到現在講。</p>
+<p>現在，我們創建一個新的檔案LoginForm.js，並在裡面宣告、輸出同名的function component，並在App.js使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import React from &quot;react&quot;;</span><br><span class="line">const LoginForm&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">    return (</span><br><span class="line"></span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line">export default LoginForm;</span><br></pre></td></tr></table></figure>
+
+<h2 id="基礎使用-以onChange取得輸入值"><a href="#基礎使用-以onChange取得輸入值" class="headerlink" title="基礎使用 - 以onChange取得輸入值"></a>基礎使用 - 以onChange取得輸入值</h2><p><code>&lt;input/&gt;</code>取得輸入值的方法不是onClick，而是onChange。但是在綁定的方法和onClick一模一樣，通常會這樣搭配setState取得輸入值:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&quot;text&quot; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123; &#x2F;* 用e.target.value去setState *&#x2F; &#125;&#125; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;textarea onChange&#x3D;&#123;(e)&#x3D;&gt;&#123; &#x2F;* 用e.target.value去setState *&#x2F; &#125;&#125; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p>現在，請利用useState在LoginForm.js建立一個名為Account的state，初始值為空字串。引入部份不再多提。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import React,&#123;useState&#125; from &quot;react&quot;;</span><br><span class="line">const LoginForm&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">    const [account,setAccount]&#x3D;useState(&quot;&quot;);</span><br><span class="line">    return (</span><br><span class="line"></span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line">export default LoginForm;</span><br></pre></td></tr></table></figure>
+
+<p>接著，在return值中加入text type的<code>&lt;input/&gt;</code>，並綁定<code>setAccount</code>，丟入e.target.value。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&quot;text&quot; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123; setAccount(e.target.value) &#125;&#125;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p>最後我們在return值那邊加入一行用來觀察輸入值的<code>&lt;div&gt;</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import React,&#123;useState&#125; from &quot;react&quot;;</span><br><span class="line">const LoginForm&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">    const [account,setAccount]&#x3D;useState(&quot;&quot;);</span><br><span class="line">    </span><br><span class="line">    return (</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;input type&#x3D;&quot;text&quot; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setAccount(e.target.value)&#125;&#125;&#x2F;&gt;</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                目前account:&#123;account&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default LoginForm;</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/GTgW6BT.gif" alt=""></p>
+<h2 id="用defaultValue給予初始值"><a href="#用defaultValue給予初始值" class="headerlink" title="用defaultValue給予初始值"></a>用defaultValue給予初始值</h2><p>以前在使用純html時，如果我們要讓input有初始值，是像這樣直接在value中賦予:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&quot;text&quot; value&#x3D;&quot;account&quot;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p>然而在JSX的input中value的定義並不是「初始值」，初始值是用另外一個屬性 - defaultValue來設定。現在，我們先給我們的account一個初始值<code>&quot;快來輸入我&quot;</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const [account,setAccount]&#x3D;useState(&quot;快來輸入我&quot;);</span><br></pre></td></tr></table></figure>
+<p>接著你重新整理網頁，發現只有下面顯示目前account值的<code>&lt;div&gt;</code>初始值被改變。<br><img src="https://i.imgur.com/oIOodm0.png" alt=""></p>
+<p>這是因為我們還沒有綁定defaultValue上去。所以現在就來綁:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import React,&#123;useState&#125; from &quot;react&quot;;</span><br><span class="line">const LoginForm&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">    const [account,setAccount]&#x3D;useState(&quot;快來輸入我&quot;);</span><br><span class="line">    const [password,setPassword]&#x3D;useState(&quot;&quot;);</span><br><span class="line">    </span><br><span class="line">    return (</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;input type&#x3D;&quot;text&quot; defaultValue&#x3D;&#123;account&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setAccount(e.target.value)&#125;&#125;&#x2F;&gt;</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                目前account:&#123;account&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line">export default LoginForm;</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/LXJSAND.png" alt=""></p>
+<h2 id="value、state、控制組件"><a href="#value、state、控制組件" class="headerlink" title="value、state、控制組件"></a>value、state、控制組件</h2><blockquote>
+<p>那value被拿去幹嘛了呢? 幹嘛還要多一個defaultValue ?</p>
+</blockquote>
+<p>value在JSX中是「目前input中的值」的意思。這樣講可能不太懂，所以來看一下這個範例。我們很常遇到一個狀況: 在不移除input時，需要在程式中的其他地方改變input值(例如:當使用者輸入不合規定，清空input內容)。 現在，我們在最底下再新增一個button來模擬這個狀況。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">return (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;text&quot; defaultValue&#x3D;&#123;account&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setAccount(e.target.value)&#125;&#125;&#x2F;&gt;</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            目前account:&#123;account&#125;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">        &lt;button onClick&#x3D;&#123;()&#x3D;&gt;&#123;setAccount(&quot;&quot;)&#125;&#125;&gt;用按鍵取得新的account&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>執行看看，你會發現input中的值並沒有跟著account一起被清空<br><img src="https://i.imgur.com/vsXj7hh.gif" alt=""></p>
+<p>這是因為defaultValue只是初始值，元件被建立後它就不會影響輸入值。而<strong>onChange只有在使用者改變input時才會觸發，和它用來改變的state無關</strong>。</p>
+<p>如果你希望「input中的值只在一開始受state影響」，就要用該state去綁定defaultValue；相反的，如果你希望「input中的值始終跟著state」，就要用該state去綁定value。「input中的值始終跟著state」這樣的狀況我們會稱為控制組件(or 受控組件):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import React,&#123;useState&#125; from &quot;react&quot;;</span><br><span class="line">const LoginForm&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">    const [account,setAccount]&#x3D;useState(&quot;快來輸入我&quot;);</span><br><span class="line"></span><br><span class="line">    return (</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;input type&#x3D;&quot;text&quot; defaultValue&#x3D;&#123;account&#125; value&#x3D;&#123;account&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setAccount(e.target.value)&#125;&#125;&#x2F;&gt;</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                目前account:&#123;account&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;button onClick&#x3D;&#123;()&#x3D;&gt;&#123;setAccount(&quot;&quot;)&#125;&#125;&gt;用按鍵取得新的account&lt;&#x2F;button&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line">export default LoginForm;</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/GuaagzK.gif" alt=""></p>
+<p>接著在這個例子我們就可以把defaultValue移除了。因為value會始終跟著我們的state，且這個例子中state一開始就有給定初始值。另</p>
+<h2 id="disabled-把input關起來"><a href="#disabled-把input關起來" class="headerlink" title="disabled - 把input關起來"></a>disabled - 把input關起來</h2><p>如果你要讓input暫時不能更動，可以透過disabled這個props來控制:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&quot;text&quot; disabled&#x3D;&#123;true&#125; defaultValue&#x3D;&#123;account&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setAccount(e.target.value)&#125;&#125;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/aFbvauG.png" alt=""><br>另外，因為這個props要求的是一個布林值，你也可以只寫關鍵字，input一樣會收到disabled=true</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&quot;text&quot; disabled defaultValue&#x3D;&#123;account&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setAccount(e.target.value)&#125;&#125;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="和componentDidMount搭配時容易發生的錯誤使用"><a href="#和componentDidMount搭配時容易發生的錯誤使用" class="headerlink" title="和componentDidMount搭配時容易發生的錯誤使用"></a>和componentDidMount搭配時容易發生的錯誤使用</h2><p>如果你想要在componentDidMount中去取得初始input值(一般發生在用fetch去取得該資料)，<strong>那麼你不該使用defaultValue來設定</strong>。以下是用componentDidMount+defaultValue的狀況:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import React,&#123;useState,useEffect&#125; from &quot;react&quot;;</span><br><span class="line">const LoginForm&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">    const [account,setAccount]&#x3D;useState(&quot;快來輸入我&quot;);</span><br><span class="line">    </span><br><span class="line">    useEffect(()&#x3D;&gt;&#123;</span><br><span class="line">        setTimeout(()&#x3D;&gt;&#123;setAccount(&quot;用fetch拿到的資料&quot;)&#125;,2000);</span><br><span class="line">    &#125;,[])</span><br><span class="line"></span><br><span class="line">    return (</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;input type&#x3D;&quot;text&quot; defaultValue&#x3D;&#123;account&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setAccount(e.target.value)&#125;&#125;&#x2F;&gt;</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                目前account:&#123;account&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;button onClick&#x3D;&#123;()&#x3D;&gt;&#123;setAccount(&quot;&quot;)&#125;&#125;&gt;用按鍵取得新的account&lt;&#x2F;button&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line">export default LoginForm;</span><br></pre></td></tr></table></figure>
+<p>你會發現input值並沒有跟隨fetch到的值<br><img src="https://i.imgur.com/c0Ga6wx.gif" alt=""><br>這是因為defaultValue在render前就決定了。也就是用state綁定defaultValue的整個流程為:</p>
+<blockquote>
+<p>在render return前決定state初始值 -&gt; 在render return時決定defaultValue值 -&gt; 渲染畫面  -&gt; 執行componentDidMount，在其中改變state值 -&gt; defaultValue值不變</p>
+</blockquote>
+<p>因為在componentDidMount中設定state等同於我們在非input處修改state的狀況，所以如果你要讓input值等同從server取得的值，應該要用value來綁定。</p>
+<h2 id="如果綁了state在value上而沒有綁onChange"><a href="#如果綁了state在value上而沒有綁onChange" class="headerlink" title="如果綁了state在value上而沒有綁onChange?"></a>如果綁了state在value上而沒有綁onChange?</h2><p>在這個狀況下，input會變成無法修改的鎖死狀態。你只能透過在從其他地方更改該state來修改input中的值。</p>
+<h2 id="其他的輸入元素"><a href="#其他的輸入元素" class="headerlink" title="其他的輸入元素"></a>其他的輸入元素</h2><h3 id="textarea"><a href="#textarea" class="headerlink" title="textarea"></a>textarea</h3><p><code>&lt;textarea&gt;&lt;/textarea&gt;</code>和<code>&lt;input type=&quot;text&quot;/&gt;</code>的用法是一模一樣的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea value&#x3D;&#123;account&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setAccount(e.target.value)&#125;&#125;&gt;&lt;&#x2F;textarea&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="select"><a href="#select" class="headerlink" title="select"></a>select</h3><p>select和option是要在select中設定value、onChange、defaultValue。特別的地方是當<strong>value、defaultValue的值被指定為不是存在任一option中的值時，就不會顯示該值，而是顯示第一個option的值</strong>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">import React,&#123;useState&#125; from &quot;react&quot;;</span><br><span class="line">const LoginForm&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">    const [select,setSelect]&#x3D;useState(&quot;789&quot;);</span><br><span class="line"></span><br><span class="line">    return (</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;select value&#x3D;&#123;select&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setSelect(e.target.value)&#125;&#125;&gt;</span><br><span class="line">                &lt;option value&#x3D;&quot;123&quot;&gt;123&lt;&#x2F;option&gt;</span><br><span class="line">                &lt;option value&#x3D;&quot;456&quot; disabled&gt;456&lt;&#x2F;option&gt;</span><br><span class="line">            &lt;&#x2F;select&gt;</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                目前account:&#123;account&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;button onClick&#x3D;&#123;(e)&#x3D;&gt;&#123;setSelect(&quot;789&quot;)&#125;&#125;&gt;改變為789&lt;&#x2F;button&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line">export default LoginForm;</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/ouUrIaV.gif" alt=""><br>另外，你也可以在option透過selected這個props來控制預選取的option，但是當select標籤有設定value或defaultValue時，以select標籤的設定值為主。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;select onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setSelect(e.target.value)&#125;&#125;&gt;</span><br><span class="line">    &lt;option value&#x3D;&quot;123&quot;&gt;123&lt;&#x2F;option&gt;</span><br><span class="line">    &lt;option selected&#x3D;&#123;true&#125; value&#x3D;&quot;456&quot; &gt;456&lt;&#x2F;option&gt;</span><br><span class="line">&lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure>
+<p>和上面disabled一樣，可以這樣寫:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;option selected value&#x3D;&quot;456&quot; &gt;456&lt;&#x2F;option&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="選取input、核取input"><a href="#選取input、核取input" class="headerlink" title="選取input、核取input"></a>選取input、核取input</h3><p>這兩個比較特別，它們是用checked這個props去控制是否被選取。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const [check,setCheck]&#x3D;useState(false);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&quot;radio&quot; value&#x3D;&quot;123&quot; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setCheck(true)&#125;&#125; checked&#x3D;&#123;check&#125;&#x2F;&gt;123&lt;br&#x2F;&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;radio&quot; value&#x3D;&quot;456&quot; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setCheck(false)&#125;&#125; checked&#x3D;&#123;!check&#125;&#x2F;&gt;456</span><br></pre></td></tr></table></figure>
+
+<p>因為checked是用布林值去控制，我們如果要取得value值，用「比較是否和value相同」的方式來設定會比較方便，就不需要多用一個函式去設定value。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const [select,setSelect]&#x3D;useState(&quot;789&quot;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&quot;radio&quot; value&#x3D;&quot;123&quot; checked&#x3D;&#123;select&#x3D;&#x3D;&#x3D;&quot;123&quot;&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setSelect(&quot;123&quot;)&#125;&#125; &#x2F;&gt;123&lt;br&#x2F;&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;radio&quot; value&#x3D;&quot;456&quot; checked&#x3D;&#123;select&#x3D;&#x3D;&#x3D;&quot;456&quot;&#125; onChange&#x3D;&#123;(e)&#x3D;&gt;&#123;setSelect(&quot;456&quot;)&#125;&#125;&#x2F;&gt;456</span><br></pre></td></tr></table></figure>
+<h2 id="form-amp-submit"><a href="#form-amp-submit" class="headerlink" title="form &amp; submit"></a>form &amp; submit</h2><p>form的subimt要觸發的事件是用onSubmit去綁定函式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;form onSubmit&#x3D;&#123;this.handleSubmit&#125;&gt;</span><br><span class="line">     &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;Submit&quot; &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;form&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h2><p>input的基礎互動也是我猶豫很久應該要在哪裡講的一個主題，因為想讓前面講hook的時候比較順暢，所以就拉到這裡才講。</p>
+<p>下一篇會開始講react-router-dom。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

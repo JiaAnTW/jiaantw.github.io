@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/02 - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129888855-4', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首頁</a></li>
+<li><a href="/">關於我</a></li>
+</ul>
+<h1 id="WEB開發">WEB開發</h1>
+<h2 id="React-js">React.js</h2>
+<ul>
+<li><a href="/2020/06/12/tech/react/01">環境設定</a></li>
+<li><a href="/2020/06/12/tech/react/02">使用create-react-app</a></li>
+<li><a href="/2020/06/12/tech/react/03">DOM和ES6</a></li>
+<li><a href="/2020/06/12/tech/react/04">HelloWorld!</a></li>
+<li><a href="/2020/06/12/tech/react/05">JSX (上)</a></li>
+<li><a href="/2020/06/12/tech/react/06">JSX (下)</a></li>
+<li><a href="/2020/06/12/tech/react/07">function component</a></li>
+<li><a href="/2020/06/12/tech/react/08">props:綁定資料</a></li>
+<li><a href="/2020/06/12/tech/react/09">props:綁定函式</a></li>
+<li><a href="/2020/06/12/tech/react/10">props: children</a></li>
+<li><a href="/2020/06/12/tech/react/11">class component</a></li>
+<li><a href="/2020/06/12/tech/react/12">state與詳解setState語法</a></li>
+<li><a href="/2020/06/12/tech/react/13">useState</a></li>
+<li><a href="/2020/06/12/tech/react/14">React-Developer-Tools</a></li>
+<li><a href="/2020/06/12/tech/react/15">Http request:Fetch Api</a></li>
+<li><a href="/2020/06/12/tech/react/16">生命週期(1/4):Mount(上)</a></li>
+<li><a href="/2020/06/12/tech/react/17">生命週期(2/4):Mount(下)</a></li>
+<li><a href="/2020/06/12/tech/react/18">生命週期(3/4):Unmount</a></li>
+<li><a href="/2020/06/12/tech/react/19">生命週期(4/4):Update</a></li>
+<li><a href="/2020/06/12/tech/react/20">useEffect</a></li>
+<li><a href="/2020/06/12/tech/react/21_1">各階層Component的溝通</a></li>
+<li><a href="/2020/06/12/tech/react/21_2">useContext和useReducer</a></li>
+<li><a href="/2020/06/12/tech/react/22">元件練習(上)</a></li>
+<li><a href="/2020/06/12/tech/react/23">元件練習(下)</a></li>
+<li><a href="/2020/06/12/tech/react/24">Custom hook</a></li>
+<li><a href="/2020/06/12/tech/react/25">Custom hook練習</a></li>
+<li><a href="/2020/06/12/tech/react/26">輸入元素與控制組件</a></li>
+<li><a href="/2020/06/12/tech/react/27">react-router-dom (上)</a></li>
+<li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
+<li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+</ul>
+<h1 id="產品開發">產品開發</h1>
+<h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
+<ul>
+<li><a href="/2020/06/12/product/UX/maskMap">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js-02】環境設置-下-使用create-react-app"><a href="#【React-js-02】環境設置-下-使用create-react-app" class="headerlink" title="【React.js - 02】環境設置(下) - 使用create-react-app"></a>【React.js - 02】環境設置(下) - 使用create-react-app</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><h2 id="建立專案"><a href="#建立專案" class="headerlink" title="建立專案"></a>建立專案</h2><p>在前一篇，我們安裝好了create-react-app，現在就可以用它來建立我們的專案。</p>
+<ol>
+<li><p>請建立一個放專案的資料夾</p>
+</li>
+<li><p>開啟終端機 ( terminal/cmd )</p>
+</li>
+<li><p>移動至「步驟1建立的資料夾」的位置<br>在windows/linux/mac中，移動的指令都是<code>cd 路徑</code><br>如果要回到上一層，則是使用<code>cd ..</code><br>(windows系統當打開cmd時，會預設在<code>C:\User\使用者名稱</code>下。)</p>
+</li>
+<li><p>輸入以下指令:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create-react-app hello-world</span><br></pre></td></tr></table></figure>
+<p> 等跑完後，專案就會被建立。<br> hello-world是我們的專案名稱，你也可以把它改成你想要的名字。</p>
+</li>
+<li><p>用終端機移動到「步驟1資料夾」中的hello-world資料夾<br>或是<br>用vscode的open folder開啟「步驟1資料夾」中的hello-world資料夾，因為vscode的終端機會自動切換到開啟的目錄下<br><img src="https://i.imgur.com/IV9Ox85.png" alt=""></p>
+</li>
+</ol>
+<ol start="6">
+<li><p>用終端機輸入(如果你是用vscode的，可以用vscode所提供的終端機)</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure>
+<p> 如果有出現下圖，就代表專案建立成功了</p>
+<p> <img src="https://i.imgur.com/yhsNx2B.png" alt=""></p>
+</li>
+<li><p>瀏覽器就會自動打開進入<code>localhost:3000</code><br> 網頁出現下圖:<br><img src="https://i.imgur.com/aTQvF0s.png" alt=""><br> 這就是create-react-app預先寫好的網頁<br> 當你做更改時，結果也會呈現在這個頁面。</p>
+</li>
+</ol>
+<h2 id="要怎麼開發"><a href="#要怎麼開發" class="headerlink" title="要怎麼開發"></a>要怎麼開發</h2><p>前面有提過，像React這類的新JS語法，必須要經由打包、編譯 (preprocessing)，才能在瀏覽器上運作。然而編譯這個動作需要花上一點點時間。如果我們在撰寫程式的過程中，想一邊寫一邊看結果是否正確，這樣每次都要花時間preprocessing不是很浪費時間嗎?</p>
+<p>還好，打包工具(webpack)有類似預覽的功能，而在create-react-app中已經幫我們設定好了:</p>
+<p>打開terminal<strong>切換至專案目錄</strong>，執行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure>
+<p>稍微跑一下之後，網站就會以local端3000 port自動跳出。此時只要你修改程式碼之後儲存，編譯器就會先幫你檢查程式是不是有語法等錯誤後(顯示在terminal)，立即把更改的結果顯示在剛剛跳出網站上。這也是為什麼在前面我們用這個指令來確認專案是否建立成功。create-react-app已經幫我們設定好打包，因此寫完code之後我們只要做編譯的動作。</p>
+<h2 id="完成開發"><a href="#完成開發" class="headerlink" title="完成開發"></a>完成開發</h2><p>打開terminal<strong>切換至專案目錄</strong>，執行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+<p>這個時候編譯就會開始。當編譯結束時，專案目錄底下會出現build資料夾，<strong>build裡面的檔案就是部署網站所需要的靜態檔案(可以點開index.html試試看)，其他檔案在部署時可以不用上傳</strong>。</p>
+<h2 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h2><p>要注意的是，<code>npm start</code>所預覽的結果仍然有可能和<code>npm run build</code>有誤差，原因是<code>npm run build</code>預設是<strong>把所有程式碼打包成一個.html &amp; .js &amp; .css檔</strong>。容易發生誤差的點在之後的章節會提到。</p>
+<p>總結來說，開發的流程像是這個樣子:</p>
+<blockquote>
+<p>建立react專案 -&gt; npm start -&gt; 編寫程式碼 -&gt; 在local端確認執行結果 -&gt; npm run build -&gt; 將build資料夾內的檔案部署到伺服器。</p>
+</blockquote>
+<p>接下來，我們就可以開始寫code囉~</p>
+<h2 id="簡介專案結構-可省略"><a href="#簡介專案結構-可省略" class="headerlink" title="簡介專案結構(可省略)"></a>簡介專案結構(可省略)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">(.vscode) (如果你有設定vscode的debugger)</span><br><span class="line">|____ (launch.json)</span><br><span class="line"></span><br><span class="line">build (如果你執行過npm run build)</span><br><span class="line"></span><br><span class="line">public</span><br><span class="line">|____ index.html</span><br><span class="line">|____ favicon.ico</span><br><span class="line">|____ manifest.json</span><br><span class="line"></span><br><span class="line">src</span><br><span class="line">|____ index.js</span><br><span class="line">|____ index.css</span><br><span class="line">|____ App.js</span><br><span class="line">|____ App.css</span><br><span class="line">    </span><br><span class="line">node_modules</span><br><span class="line">package.json</span><br><span class="line">package-lock.json</span><br><span class="line">README.md</span><br><span class="line">(.gitignore)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>.vscode(預設隱藏):<br>  設定vscode的debugger。</li>
+<li>build:<br>  經preprocessing之後用來部署的檔案，<code>npm run build</code>後出現。</li>
+<li>public:<br>  放打包前html檔的地方，favicon.ico 和 manifest.json 是跟預設頁面的logo有關。</li>
+<li>src:<br>  在preprocessing前的程式碼，<strong>我們大部份都會編輯這個資料夾內的程式碼</strong>。</li>
+<li>node_modules:<br>  開發者用 npm/yarn 所載下來的套件會放在這裡。<br>  ( 如果套件出了問題，可以試著把這個資料夾砍掉之後執行<code>npm i</code> )</li>
+<li>package.json:<br>  和設定打包工具(webpack)有關，前面提到的指令也設定在裡面。</li>
+<li>package-lock.json:<br>  專案資訊。主要是用來紀錄你在這個專案用 npm/yarn 載了哪些套件。因為node_modules很大，一般如果要和別人一起開發專案，我們不會把node_modules傳給協作者，而是把package-lock.json傳給協作者後，協作者執行<code>npm i</code>(或<code>yarn</code>)就能載到相同的套件。</li>
+<li>.gitignore(預設隱藏):<br>  設定在使用版本控制軟體git時，哪些東西<strong>不能</strong>被add (例如: node_modules)，執行<code>git add --all</code>時會自動忽略這些檔案。</li>
+</ul>
+<h2 id="額外-設定vscode的debug-可省略"><a href="#額外-設定vscode的debug-可省略" class="headerlink" title="額外: 設定vscode的debug(可省略)"></a>額外: 設定vscode的debug(可省略)</h2><p>就只是設定當按下綠色三角形時會自動用瀏覽器開啟localhost:3000。<br>如果你使用vscode，可以照著以下方法設定debugger:</p>
+<ol>
+<li>點擊左側Debug<br> <img src="https://i.imgur.com/p3s6Sof.png" alt=""></li>
+</ol>
+<ol start="2">
+<li>點開左上綠色三角形旁邊的選單中的add configuration<br> <img src="https://i.imgur.com/awEOB10.png" alt=""></li>
+</ol>
+<ol start="3">
+<li><p>此時vscode會自動建立.vscode資料夾，以及launch.json。<br> launch.json會自動跳出頁面<br> 請把launch.json改成以下內容:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;type&quot;: &quot;chrome&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;launch&quot;,</span><br><span class="line">            &quot;name&quot;: &quot;Launch Chrome against localhost&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;http:&#x2F;&#x2F;localhost:3000&#x2F;&quot;,</span><br><span class="line">            &quot;webRoot&quot;: &quot;$&#123;workspaceFolder&#125;&quot;,</span><br><span class="line">        </span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> <img src="https://i.imgur.com/Sf7Ibfy.png" alt=""></p>
+</li>
+<li><p>點擊左上綠色三角形，選擇右側選單中的「Launch Chrome against localhost」，vscode就會自動用chrome打開目前撰寫的網頁。<br> <img src="https://i.imgur.com/anKRWiv.png" alt=""></p>
+</li>
+</ol>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

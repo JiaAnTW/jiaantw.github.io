@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/15 - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129888855-4', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首頁</a></li>
+<li><a href="/">關於我</a></li>
+</ul>
+<h1 id="WEB開發">WEB開發</h1>
+<h2 id="React-js">React.js</h2>
+<ul>
+<li><a href="/2020/06/12/tech/react/01">環境設定</a></li>
+<li><a href="/2020/06/12/tech/react/02">使用create-react-app</a></li>
+<li><a href="/2020/06/12/tech/react/03">DOM和ES6</a></li>
+<li><a href="/2020/06/12/tech/react/04">HelloWorld!</a></li>
+<li><a href="/2020/06/12/tech/react/05">JSX (上)</a></li>
+<li><a href="/2020/06/12/tech/react/06">JSX (下)</a></li>
+<li><a href="/2020/06/12/tech/react/07">function component</a></li>
+<li><a href="/2020/06/12/tech/react/08">props:綁定資料</a></li>
+<li><a href="/2020/06/12/tech/react/09">props:綁定函式</a></li>
+<li><a href="/2020/06/12/tech/react/10">props: children</a></li>
+<li><a href="/2020/06/12/tech/react/11">class component</a></li>
+<li><a href="/2020/06/12/tech/react/12">state與詳解setState語法</a></li>
+<li><a href="/2020/06/12/tech/react/13">useState</a></li>
+<li><a href="/2020/06/12/tech/react/14">React-Developer-Tools</a></li>
+<li><a href="/2020/06/12/tech/react/15">Http request:Fetch Api</a></li>
+<li><a href="/2020/06/12/tech/react/16">生命週期(1/4):Mount(上)</a></li>
+<li><a href="/2020/06/12/tech/react/17">生命週期(2/4):Mount(下)</a></li>
+<li><a href="/2020/06/12/tech/react/18">生命週期(3/4):Unmount</a></li>
+<li><a href="/2020/06/12/tech/react/19">生命週期(4/4):Update</a></li>
+<li><a href="/2020/06/12/tech/react/20">useEffect</a></li>
+<li><a href="/2020/06/12/tech/react/21_1">各階層Component的溝通</a></li>
+<li><a href="/2020/06/12/tech/react/21_2">useContext和useReducer</a></li>
+<li><a href="/2020/06/12/tech/react/22">元件練習(上)</a></li>
+<li><a href="/2020/06/12/tech/react/23">元件練習(下)</a></li>
+<li><a href="/2020/06/12/tech/react/24">Custom hook</a></li>
+<li><a href="/2020/06/12/tech/react/25">Custom hook練習</a></li>
+<li><a href="/2020/06/12/tech/react/26">輸入元素與控制組件</a></li>
+<li><a href="/2020/06/12/tech/react/27">react-router-dom (上)</a></li>
+<li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
+<li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+</ul>
+<h1 id="產品開發">產品開發</h1>
+<h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
+<ul>
+<li><a href="/2020/06/12/product/UX/maskMap">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js入門-14】-使用http-request-Fetch-Api"><a href="#【React-js入門-14】-使用http-request-Fetch-Api" class="headerlink" title="【React.js入門 - 14】 使用http request - Fetch Api"></a>【React.js入門 - 14】 使用http request - Fetch Api</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><blockquote>
+<p>不對啊，幹嘛不用jQuery的ajax?</p>
+</blockquote>
+<p>簡單來說，因為jQuery運作模式/渲染DOM的方式和React不太一樣，為避免發生衝突，一般不會希望在React中使用jQuery，而是用其他native或專為React設計的方式來取代。所以這邊要介紹的，就是取代jQuery的Ajax的其中一個方法: Fetch Api。</p>
+<p>Fetch Api是內建於JavaScript web api的一部份。使用時，不需要額外下載或嵌入CDN。<strong>Fetch是一個Promise</strong>，我們有在第3篇<a href="https://ithelp.ithome.com.tw/articles/10215265" target="_blank" rel="noopener">【React.js入門 - 03】 開始之前應該要知道的DOM和ES6</a>提過Promise的語法，而Fetch的用法是這樣的:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fetch( request的url, &#123; &#x2F;*設定request內容*&#x2F;&#125;)</span><br><span class="line">    .then(res &#x3D;&gt; res.json()) &#x2F;*把request json化*&#x2F;</span><br><span class="line">    .then(data &#x3D;&gt; &#123;</span><br><span class="line">          &#x2F;*接到request data後要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(e &#x3D;&gt; &#123;</span><br><span class="line">        &#x2F;*發生錯誤時要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<p>url的地方是你request的路徑，接收的是字串型態。<strong>因為fetch要先把接到的response json化之後才能拿到response中的data，所以這邊會有兩個<code>.then()</code></strong>。接下來我們來講常見fetch使用方法:</p>
+<h2 id="最基本的使用方式-設定-method"><a href="#最基本的使用方式-設定-method" class="headerlink" title="最基本的使用方式 - 設定 method"></a>最基本的使用方式 - 設定 method</h2><p>設定fetch所執行的method，是使用字串。這個範例是使用GET方法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fetch( request的url, &#123;method: &quot;GET&quot;&#125;) &#x2F;*設定使用GET*&#x2F;</span><br><span class="line">    .then(res &#x3D;&gt; res.json()) </span><br><span class="line">    .then(data &#x3D;&gt; &#123;</span><br><span class="line">          &#x2F;*接到request data後要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(e &#x3D;&gt; &#123;</span><br><span class="line">        &#x2F;*發生錯誤時要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="加上headers-1-2-設定Content-Type"><a href="#加上headers-1-2-設定Content-Type" class="headerlink" title="加上headers(1/2) - 設定Content-Type"></a>加上headers(1/2) - 設定Content-Type</h2><p>headers必須要是個Headers物件。在下面的範例我們先用來設定Content-Type</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">fetch( request的url, &#123;</span><br><span class="line">        method: &quot;GET&quot;,</span><br><span class="line">        headers: new Headers(&#123;</span><br><span class="line">            &#39;Content-Type&#39;: &#39;application&#x2F;json&#39;,</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(res &#x3D;&gt; res.json())</span><br><span class="line">    .then(data &#x3D;&gt; &#123;</span><br><span class="line">          &#x2F;*接到request data後要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(e &#x3D;&gt; &#123;</span><br><span class="line">        &#x2F;*發生錯誤時要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="加上headers-2-2-我要傳token"><a href="#加上headers-2-2-我要傳token" class="headerlink" title="加上headers(2/2) - 我要傳token!!!!!!!"></a>加上headers(2/2) - 我要傳token!!!!!!!</h2><p>在認證、會員系統中，後端常常會要求在要求只有該會員才能看到的資料時，由前端在header中傳送在登入時取得的token。在fetch api中要這樣夾帶:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">const token &#x3D; &quot;Bearer &quot;+ 我存好的token ;</span><br><span class="line"></span><br><span class="line">fetch( request的url, &#123;</span><br><span class="line">        method: &quot;GET&quot;,</span><br><span class="line">        headers: new Headers(&#123;</span><br><span class="line">            &#39;Content-Type&#39;: &#39;application&#x2F;json&#39;,</span><br><span class="line">            &#39;Authorization&#39;: token, &#x2F;* 把token放在這 *&#x2F;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(res &#x3D;&gt; res.json())</span><br><span class="line">    .then(data &#x3D;&gt; &#123;</span><br><span class="line">          &#x2F;*接到request data後要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(e &#x3D;&gt; &#123;</span><br><span class="line">        &#x2F;*發生錯誤時要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<p>注意要視你儲存token的方式、token的類型，決定是不是要做前處理，像jwt要在token前面加上<code>&quot;Bearer &quot;</code>。</p>
+<p>另外，token也能透過url以參數方式傳送。方式是<code>url= 原url + &#39;?token=&#39; + 存好的token;</code>，但一般還是會希望透過header傳token。</p>
+<h2 id="加上body-1-2-使用JSON-type傳送資料"><a href="#加上body-1-2-使用JSON-type傳送資料" class="headerlink" title="加上body(1/2) - 使用JSON type傳送資料"></a>加上body(1/2) - 使用JSON type傳送資料</h2><p>用fetch在body傳送 json type的資料時，<strong>要把原資料字串化，接收者才會接到json格式的資料</strong>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">const data&#x3D; &#123; A:&quot;資料A&quot;, B:&quot;資料B&quot; &#125;</span><br><span class="line"></span><br><span class="line">fetch( request的url, &#123;</span><br><span class="line">        method: &quot;GET&quot;,</span><br><span class="line">        body: JSON.stringify(data),   &#x2F;*把json資料字串化*&#x2F;</span><br><span class="line">        headers: new Headers(&#123;</span><br><span class="line">            &#39;Content-Type&#39;: &#39;application&#x2F;json&#39;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(res &#x3D;&gt; res.json())</span><br><span class="line">    .then(data &#x3D;&gt; &#123;</span><br><span class="line">          &#x2F;*接到request data後要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(e &#x3D;&gt; &#123;</span><br><span class="line">        &#x2F;*發生錯誤時要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="加上body-2-2-使用x-www-form-urlencoded-type傳送資料"><a href="#加上body-2-2-使用x-www-form-urlencoded-type傳送資料" class="headerlink" title="加上body(2/2) - 使用x-www-form-urlencoded type傳送資料"></a>加上body(2/2) - 使用x-www-form-urlencoded type傳送資料</h2><p>這個比較麻煩，我們必須要對data做這樣的前處理:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const data&#x3D; &#123; A:&quot;資料A&quot;, B:&quot;資料B&quot; &#125;;</span><br><span class="line">const formData &#x3D; Object.keys(data).map(</span><br><span class="line">    function (keyName) &#123;</span><br><span class="line">        return encodeURIComponent(keyName) + &#39;&#x3D;&#39; + encodeURIComponent(data[keyName])</span><br><span class="line">    &#125;</span><br><span class="line">).join(&#39;&amp;&#39;);</span><br></pre></td></tr></table></figure>
+<p>其他就和前面差不多，改一下headers的content-type就好</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">const data&#x3D; &#123; A:&quot;資料A&quot;, B:&quot;資料B&quot; &#125;;</span><br><span class="line">const formData &#x3D; Object.keys(data).map(</span><br><span class="line">    function (keyName) &#123;</span><br><span class="line">        return encodeURIComponent(keyName) + &#39;&#x3D;&#39; + encodeURIComponent(data[keyName])</span><br><span class="line">    &#125;</span><br><span class="line">).join(&#39;&amp;&#39;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">fetch( request的url, &#123;</span><br><span class="line">        method: &quot;GET&quot;,</span><br><span class="line">        body: formData,   &#x2F;*使用處理後的資料*&#x2F;</span><br><span class="line">        headers: new Headers(&#123;</span><br><span class="line">            &quot;Content-type&quot;: &quot;application&#x2F;x-www-form-urlencoded&quot;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(res &#x3D;&gt; res.json())</span><br><span class="line">    .then(data &#x3D;&gt; &#123;</span><br><span class="line">          &#x2F;*接到request data後要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(e &#x3D;&gt; &#123;</span><br><span class="line">        &#x2F;*發生錯誤時要做的事情*&#x2F;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="範例-取得在jserv大神-黃敬群教授-的Github中，以英文字母排序的第一個repo"><a href="#範例-取得在jserv大神-黃敬群教授-的Github中，以英文字母排序的第一個repo" class="headerlink" title="範例: 取得在jserv大神(黃敬群教授)的Github中，以英文字母排序的第一個repo"></a>範例: 取得在jserv大神(黃敬群教授)的Github中，以英文字母排序的第一個repo</h2><p>這個範例中，只要我們按下按鍵，就能取得jserv大神在github中的repo，並顯示以英文字母排序後，第一個repo的名字。</p>
+<p>獲取github上特定使用者repo的url是<code>&#39;https://api.github.com/users/使用者名稱/repos&#39;</code>。它是GET method，response data的格式是這個樣子的:</p>
+<p><img src="https://i.imgur.com/J0K5hRj.png" alt=""></p>
+<p>我們必須觸發fetch後，存取response第0個資料的「name」，才能做到我們要做的事情。<br>也就是所有的程式碼長這樣:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; Component &#125; from &#39;react&#39;;</span><br><span class="line">class App extends Component &#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state&#x3D;&#123;</span><br><span class="line">      repoName: null</span><br><span class="line">    &#125;</span><br><span class="line">    this.handleClick&#x3D;this.handleClick.bind(this);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">  handleClick()&#123;</span><br><span class="line">    fetch( &#39;https:&#x2F;&#x2F;api.github.com&#x2F;users&#x2F;jserv&#x2F;repos&#39;,&#123;method:&quot;GET&quot;&#125;)</span><br><span class="line">    .then(res &#x3D;&gt; res.json())</span><br><span class="line">    .then(data &#x3D;&gt; &#123;</span><br><span class="line">          &#x2F;*接到request data後要做的事情*&#x2F;</span><br><span class="line">          this.setState(&#123;repoName: data[0][&#39;name&#39;]&#125;);</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(e &#x3D;&gt; &#123;</span><br><span class="line">        &#x2F;*發生錯誤時要做的事情*&#x2F;</span><br><span class="line">        console.log(e);</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  render() &#123;</span><br><span class="line">      return (</span><br><span class="line">        &lt;div className&#x3D;&quot;App&quot;&gt;</span><br><span class="line">          &lt;div className&#x3D;&quot;data-display&quot;&gt;</span><br><span class="line">            &#123;(this.state.repoName&#x3D;&#x3D;&#x3D;null)?&quot;目前還有沒有資料&quot;:this.state.repoName&#125;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">          &lt;button onClick&#x3D;&#123;this.handleClick&#125;&gt;取得jserv以英文字母排序的第一個repo&lt;&#x2F;button&gt;</span><br><span class="line">    	&lt;&#x2F;div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>執行結果:<br><img src="https://i.imgur.com/VD9qGKM.gif" alt=""><br>來看看老師是不是真的有這個repo:<br><img src="https://i.imgur.com/zoESWwf.png" alt=""></p>
+<h2 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h2><p>fetch還有許多可以設定的地方，可以翻閱<a href="https://developer.mozilla.org/zh-TW/docs/Web/API/Fetch_API" target="_blank" rel="noopener">MDN</a>了解細節。</p>
+<p>到這邊，你應該知道了fetch的使用方法。搭配button，你也有辦法<strong>讓網頁被動讓使用者呼叫fetch</strong>。但是有的時候，我們希望載入網頁時就主動用ajax去取得資料，這又要怎麼處理呢?</p>
+<p>從下一篇，我們會開始講生命週期，到時候就會討論到這個問題。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

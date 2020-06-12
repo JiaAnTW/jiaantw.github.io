@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/04 - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129888855-4', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首頁</a></li>
+<li><a href="/">關於我</a></li>
+</ul>
+<h1 id="WEB開發">WEB開發</h1>
+<h2 id="React-js">React.js</h2>
+<ul>
+<li><a href="/2020/06/12/tech/react/01">環境設定</a></li>
+<li><a href="/2020/06/12/tech/react/02">使用create-react-app</a></li>
+<li><a href="/2020/06/12/tech/react/03">DOM和ES6</a></li>
+<li><a href="/2020/06/12/tech/react/04">HelloWorld!</a></li>
+<li><a href="/2020/06/12/tech/react/05">JSX (上)</a></li>
+<li><a href="/2020/06/12/tech/react/06">JSX (下)</a></li>
+<li><a href="/2020/06/12/tech/react/07">function component</a></li>
+<li><a href="/2020/06/12/tech/react/08">props:綁定資料</a></li>
+<li><a href="/2020/06/12/tech/react/09">props:綁定函式</a></li>
+<li><a href="/2020/06/12/tech/react/10">props: children</a></li>
+<li><a href="/2020/06/12/tech/react/11">class component</a></li>
+<li><a href="/2020/06/12/tech/react/12">state與詳解setState語法</a></li>
+<li><a href="/2020/06/12/tech/react/13">useState</a></li>
+<li><a href="/2020/06/12/tech/react/14">React-Developer-Tools</a></li>
+<li><a href="/2020/06/12/tech/react/15">Http request:Fetch Api</a></li>
+<li><a href="/2020/06/12/tech/react/16">生命週期(1/4):Mount(上)</a></li>
+<li><a href="/2020/06/12/tech/react/17">生命週期(2/4):Mount(下)</a></li>
+<li><a href="/2020/06/12/tech/react/18">生命週期(3/4):Unmount</a></li>
+<li><a href="/2020/06/12/tech/react/19">生命週期(4/4):Update</a></li>
+<li><a href="/2020/06/12/tech/react/20">useEffect</a></li>
+<li><a href="/2020/06/12/tech/react/21_1">各階層Component的溝通</a></li>
+<li><a href="/2020/06/12/tech/react/21_2">useContext和useReducer</a></li>
+<li><a href="/2020/06/12/tech/react/22">元件練習(上)</a></li>
+<li><a href="/2020/06/12/tech/react/23">元件練習(下)</a></li>
+<li><a href="/2020/06/12/tech/react/24">Custom hook</a></li>
+<li><a href="/2020/06/12/tech/react/25">Custom hook練習</a></li>
+<li><a href="/2020/06/12/tech/react/26">輸入元素與控制組件</a></li>
+<li><a href="/2020/06/12/tech/react/27">react-router-dom (上)</a></li>
+<li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
+<li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+</ul>
+<h1 id="產品開發">產品開發</h1>
+<h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
+<ul>
+<li><a href="/2020/06/12/product/UX/maskMap">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js-04】HelloWorld-從ReactDOM開始">【React.js - 04】HelloWorld! - 從ReactDOM開始</h1>
+<h6 id="tags-第11屆鐵人賽">tags: <code>第11屆鐵人賽</code></h6>
+<blockquote>
+<p>請記得先執行<code>npm start</code>後，開啟localhost:3000。</p>
+</blockquote>
+<h2 id="【-3-1-】-HelloWorld">【 3-1 】 HelloWorld</h2>
+<p>現在，我們的專案結構應該是這個樣子:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">(.vscode)</span><br><span class="line">|____ (launch.json)</span><br><span class="line">    </span><br><span class="line">public</span><br><span class="line">|____ index.html</span><br><span class="line">|____ favicon.ico</span><br><span class="line">|____ manifest.json</span><br><span class="line"></span><br><span class="line">src</span><br><span class="line">|____ index.js</span><br><span class="line">|____ index.css</span><br><span class="line">|____ App.js</span><br><span class="line">|____ App.css</span><br><span class="line">    </span><br><span class="line">node_modules</span><br><span class="line">package.json</span><br><span class="line">package-lock.json</span><br><span class="line">README.md</span><br><span class="line">.gitignore</span><br></pre></td></tr></table></figure>
+<ol>
+<li>請打開src資料夾下的<strong>index.js</strong></li>
+<li>將下面這一行</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ReactDOM.render(<span class="xml"><span class="tag">&lt;<span class="name">App</span> /&gt;</span></span>, <span class="built_in">document</span>.getElementById(<span class="string">'root'</span>));</span><br></pre></td></tr></table></figure>
+<p>修改為</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ReactDOM.render(</span><br><span class="line">    &lt;h1&gt; Hello world!&lt;<span class="regexp">/h1&gt;, </span></span><br><span class="line"><span class="regexp">    document.getElementById('root')</span></span><br><span class="line"><span class="regexp">);</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>現在打開<code>localhost:3000</code>，就會看到<br>
+<img src="https://i.imgur.com/JQGHp6B.png" alt=""><br>
+我們的第一個React程式就完成了。</li>
+</ol>
+<h2 id="【-3-2-】React運作原理">【 3-2 】React運作原理</h2>
+<blockquote>
+<p>咦? 我到底做了什麼?</p>
+</blockquote>
+<p>你現在心裡一定這麼想著<br>
+現在，我們就來解析這個Hello world的運作流程。<br>
+<strong>建議先了解DOM的概念再開始往下閱讀歐~</strong></p>
+<h3 id="【-3-2-1-】-程式流程">【 3-2-1  】 程式流程</h3>
+<p>首先<strong>請打開src資料夾下的index.js</strong>，你會看到:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'./index.css'</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App'</span>;</span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> serviceWorker <span class="keyword">from</span> <span class="string">'./serviceWorker'</span>;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">    &lt;h1&gt; Hello world!&lt;<span class="regexp">/h1&gt;, </span></span><br><span class="line"><span class="regexp">    document.getElementById('root')</span></span><br><span class="line"><span class="regexp">);</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ If you want your app to work offline and load faster, you can change</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ unregister() to register() below. Note this comes with some pitfalls.</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ Learn more about service workers: https:/</span><span class="regexp">/bit.ly/</span>CRA-PWA</span><br><span class="line">serviceWorker.unregister();</span><br></pre></td></tr></table></figure>
+<p>其中</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ReactDOM.render(</span><br><span class="line">    &lt;h1&gt; Hello world!&lt;<span class="regexp">/h1&gt;, </span></span><br><span class="line"><span class="regexp">    document.getElementById('root')</span></span><br><span class="line"><span class="regexp">);</span></span><br></pre></td></tr></table></figure>
+<p>就是React的程式進入點。<br>
+在這裡我們呼叫一個物件「ReactDOM」的render函式<br>
+此函式接收兩個參數:<br>
+第一個參數<code>&lt;h1&gt; Hello world!&lt;/h1&gt;</code>是我們所渲染到畫面上的內容。<br>
+第二個參數<code>document.getElementById('root')</code>是React所綁定的原始div元素。<br>
+下面的serviceWorker是和PWA有關，在這邊我們先不理他。</p>
+<p>*註: 容易搞混的是這裡是使用<strong>已定義好的函式</strong>，照平常的排版習慣來看應該是:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ReactDOM.render( <span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span> Hello world!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span> ,  <span class="built_in">document</span>.getElementById(<span class="string">'root'</span>));</span><br></pre></td></tr></table></figure>
+<p>只是因為render函式通常有很多參數，到最後會變很長，所以排版上習慣換行。</p>
+<p>接下來我們回過頭來看這個div在哪。<strong>打開public資料夾底下的 index.html</strong>，你會看到: (為方便閱讀，註解我先拿掉)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;link rel=<span class="string">"shortcut icon"</span> href=<span class="string">"%PUBLIC_URL%/favicon.ico"</span> /&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1"</span> /&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"theme-color"</span> content=<span class="string">"#000000"</span> /&gt;</span><br><span class="line">    &lt;link rel=<span class="string">"manifest"</span> href=<span class="string">"%PUBLIC_URL%/manifest.json"</span> /&gt;</span><br><span class="line"></span><br><span class="line">    &lt;title&gt;React App&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;noscript&gt;You need to enable JavaScript to run <span class="keyword">this</span> app.&lt;<span class="regexp">/noscript&gt;</span></span><br><span class="line"><span class="regexp">    &lt;div id="root"&gt;&lt;/</span>div&gt;</span><br><span class="line">  &lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
+<p>你會發現在body內只有一個 id 為 root 的「div」標籤，React就是被綁定在這裡。</p>
+<p>總體來說，React運作的流程是這樣的</p>
+<blockquote>
+<p>把要渲染的內容丟入ReactDOM -&gt; ReactDOM整理要渲染的內容後，把它們丟入原始html 所綁定的div -&gt; 完成畫面渲染</p>
+</blockquote>
+<p>看到這裡，又有兩個問題出現了:</p>
+<blockquote>
+<ol>
+<li>為什麼要呼叫ReactDOM ?</li>
+<li>為什麼js裡面出現了html ?</li>
+</ol>
+</blockquote>
+<h3 id="【-3-2-2-】-React的-virtual-DOM">【 3-2-2 】 React的 virtual DOM</h3>
+<p>先解釋ReactDOM。<br>
+ReactDOM函式是React的程式進入點，正確的說法是React的 virtual DOM 。<br>
+那什麼是virtual DOM ? 這是React官方的解釋:</p>
+<blockquote>
+<p>The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM. This process is called reconciliation.</p>
+</blockquote>
+<p>用比喻的方式來說，React不是像過去我們操作DOM時一樣「一個指令一個動作」，而是整理所有的指令後再把動作做完。也就是用virtual DOM整理所有的操作後再去渲染DOM。</p>
+<p>接下來，我們會在下一篇解釋為什麼在js函式裡面出現了html。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/24 - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129888855-4', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首頁</a></li>
+<li><a href="/">關於我</a></li>
+</ul>
+<h1 id="WEB開發">WEB開發</h1>
+<h2 id="React-js">React.js</h2>
+<ul>
+<li><a href="/2020/06/12/tech/react/01">環境設定</a></li>
+<li><a href="/2020/06/12/tech/react/02">使用create-react-app</a></li>
+<li><a href="/2020/06/12/tech/react/03">DOM和ES6</a></li>
+<li><a href="/2020/06/12/tech/react/04">HelloWorld!</a></li>
+<li><a href="/2020/06/12/tech/react/05">JSX (上)</a></li>
+<li><a href="/2020/06/12/tech/react/06">JSX (下)</a></li>
+<li><a href="/2020/06/12/tech/react/07">function component</a></li>
+<li><a href="/2020/06/12/tech/react/08">props:綁定資料</a></li>
+<li><a href="/2020/06/12/tech/react/09">props:綁定函式</a></li>
+<li><a href="/2020/06/12/tech/react/10">props: children</a></li>
+<li><a href="/2020/06/12/tech/react/11">class component</a></li>
+<li><a href="/2020/06/12/tech/react/12">state與詳解setState語法</a></li>
+<li><a href="/2020/06/12/tech/react/13">useState</a></li>
+<li><a href="/2020/06/12/tech/react/14">React-Developer-Tools</a></li>
+<li><a href="/2020/06/12/tech/react/15">Http request:Fetch Api</a></li>
+<li><a href="/2020/06/12/tech/react/16">生命週期(1/4):Mount(上)</a></li>
+<li><a href="/2020/06/12/tech/react/17">生命週期(2/4):Mount(下)</a></li>
+<li><a href="/2020/06/12/tech/react/18">生命週期(3/4):Unmount</a></li>
+<li><a href="/2020/06/12/tech/react/19">生命週期(4/4):Update</a></li>
+<li><a href="/2020/06/12/tech/react/20">useEffect</a></li>
+<li><a href="/2020/06/12/tech/react/21_1">各階層Component的溝通</a></li>
+<li><a href="/2020/06/12/tech/react/21_2">useContext和useReducer</a></li>
+<li><a href="/2020/06/12/tech/react/22">元件練習(上)</a></li>
+<li><a href="/2020/06/12/tech/react/23">元件練習(下)</a></li>
+<li><a href="/2020/06/12/tech/react/24">Custom hook</a></li>
+<li><a href="/2020/06/12/tech/react/25">Custom hook練習</a></li>
+<li><a href="/2020/06/12/tech/react/26">輸入元素與控制組件</a></li>
+<li><a href="/2020/06/12/tech/react/27">react-router-dom (上)</a></li>
+<li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
+<li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+</ul>
+<h1 id="產品開發">產品開發</h1>
+<h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
+<ul>
+<li><a href="/2020/06/12/product/UX/maskMap">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js入門-24】-Custom-hook-給我另一個超推React-hook的理由"><a href="#【React-js入門-24】-Custom-hook-給我另一個超推React-hook的理由" class="headerlink" title="【React.js入門 - 24】 Custom hook - 給我另一個超推React hook的理由"></a>【React.js入門 - 24】 Custom hook - 給我另一個超推React hook的理由</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><p>(標題致敬JSDC工作坊的主題XD)</p>
+<p>前面在講為什麼今年這麼多人推薦React hook時，我只有提說它讓簡單的元件可以不用class component的方式寫。實際上還有一個很重要的原因。</p>
+<p><strong>它能讓我們在class component常用的React特性被模組化。</strong></p>
+<p>什麼意思?為什麼好?</p>
+<h2 id="在過去React的問題"><a href="#在過去React的問題" class="headerlink" title="在過去React的問題"></a>在過去React的問題</h2><p>在物件導向程式語言中，我們在講到使用class的好處時，通常會提到它能夠讓變數和函式被模組化。也就是當我們宣告並使用多個相同class的物件時，這些物件雖然<strong>結構相同，但是會獨立運作，其中的變數、函式不受其他實體的同class物件影響</strong>(不論static)。</p>
+<p>但是React在這點卻遇到了一個問題:  <strong>當我們想要在多個地方使用有相同結構的React特性時(如:state、生命週期等)，如果要使每個都獨立運作不受彼此影響，就要直接多做出一個class component</strong>，並沒有其他更簡易的模組化方法。這樣程式碼不但笨重，而且不符合直覺。</p>
+<p>例如當我們想在多個地方使用一個純用來以特殊邏輯計算次數的計次器Counter，即使我們只是要在不同地方讓不同計次器能獨立的回傳「次數」這個資料，<strong>並沒有要它在DOM上渲染什麼東西，卻還是要以class component撰寫</strong>，且要在父元件中使用<code>&lt;Counter/&gt;</code>。</p>
+<p>custom hook的出現為類似的問題找到了解答。</p>
+<h2 id="Custom-hook的用途"><a href="#Custom-hook的用途" class="headerlink" title="Custom hook的用途"></a>Custom hook的用途</h2><p>「創造自己的React hook」</p>
+<p>這是custom hook的定義。最常用來讓其他hook互相搭配、組合後，把React的特性模組化，在多個function component中使用。</p>
+<p>你可以在custom hook中創造state、生命週期……等，而對於同樣但呼叫的元件、順序不同的custom hook而言，他們彼此是獨立的。</p>
+<blockquote>
+<p>聽不太懂捏?</p>
+</blockquote>
+<p>等等看實例比較好了解。</p>
+<h2 id="Custom-hook的語法"><a href="#Custom-hook的語法" class="headerlink" title="Custom hook的語法"></a>Custom hook的語法</h2><ol>
+<li>以use開頭的函式。<strong>這不是約定成俗</strong>，以下是官方說法:<blockquote>
+<p>Without it, we wouldn’t be able to automatically check for violations of rules of Hooks because we couldn’t tell if a certain function contains calls to Hooks inside of it.</p>
+</blockquote>
+</li>
+<li>可以在裡面使用其他React hook。</li>
+</ol>
+<p>沒了。</p>
+<blockquote>
+<p>啥? 這樣就沒有了? 你什麼都沒有講啊?</p>
+</blockquote>
+<p>對，它的寫法就是普通的函式，你要定義什麼、回傳什麼都可以。其它的語法規定都跟React hook的規定一樣，像是<strong>只能在function component中呼叫</strong>、不能在if-else中定義……等，我們在<a href="https://ithelp.ithome.com.tw/articles/10220063" target="_blank" rel="noopener">【React.js入門 - 13】 useState - 在function component用state</a>和<a href="https://ithelp.ithome.com.tw/articles/10223344" target="_blank" rel="noopener">【React.js入門 - 20】 useEffect - 在function component用生命週期</a>都提過。</p>
+<p>還是看不懂就來看Custom hook實例吧!</p>
+<h2 id="step-0-我們要做什麼"><a href="#step-0-我們要做什麼" class="headerlink" title="step 0 : 我們要做什麼?"></a>step 0 : 我們要做什麼?</h2><p>我們在<a href="https://ithelp.ithome.com.tw/articles/10224560" target="_blank" rel="noopener">【React.js入門 - 23】 元件練習(下) - 在function利用useEffect遞迴+useState實作動畫</a>的程式碼中做了一個「動態漸變的進度條」。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; useState,useEffect,useRef,Component&#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">const</span> ProgressDIY=<span class="function">(<span class="params">props</span>)=&gt;</span>&#123;</span><br><span class="line">  <span class="keyword">const</span> [percent,setPercent]=useState(<span class="number">10</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">const</span> mounted=useRef();</span><br><span class="line">  <span class="keyword">const</span> tm=useRef();</span><br><span class="line">  <span class="keyword">const</span> tmTwo=useRef();</span><br><span class="line">  </span><br><span class="line">  useEffect(<span class="function"><span class="params">()</span>=&gt;</span>&#123; </span><br><span class="line">    <span class="keyword">if</span>(!mounted.current)&#123;<span class="comment">//componentDidMount</span></span><br><span class="line">      setPercent(props.value);</span><br><span class="line">      mounted.current=<span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123; <span class="comment">//componentDidUpdate</span></span><br><span class="line">      <span class="keyword">if</span>(percent&gt;props.value)&#123;</span><br><span class="line">        <span class="keyword">if</span>(tm.current)</span><br><span class="line">          clearTimeout(tm.current)</span><br><span class="line">        tmTwo.current=setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;setPercent(percent<span class="number">-1</span>)&#125;,<span class="number">20</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">if</span>(percent&lt;props.value)&#123;</span><br><span class="line">        <span class="keyword">if</span>(tmTwo.current)</span><br><span class="line">          clearTimeout(tmTwo.current)</span><br><span class="line">        tm.current=setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;setPercent(percent+<span class="number">1</span>)&#125;,<span class="number">20</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;,[props.value,percent]);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span>(</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;div className=<span class="string">"progress-back"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"rgba(0,0,0,0.2)"</span>,<span class="attr">width</span>:<span class="string">"200px"</span>,<span class="attr">height</span>:<span class="string">"7px"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;</span><br><span class="line">        &lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:percent.toString()+<span class="string">"%"</span>,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/</span>div&gt;</span><br><span class="line">      目前比率: &#123;percent&#125;%</span><br><span class="line">      &lt;button value=&#123;<span class="number">90</span>&#125; onClick=&#123;props.onClick&#125;&gt;增加比率至<span class="number">90</span>&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">      &lt;button value=&#123;10&#125; onClick=&#123;props.onClick&#125;&gt;減少比率至10&lt;/</span>button&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  )</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">export default ProgressDIY;</span></span><br></pre></td></tr></table></figure>
+
+<p>現在我們要<strong>把其中「漸變數字」這個功能模組化</strong>:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> [percent,setPercent]=useState(<span class="number">10</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mounted=useRef();</span><br><span class="line"><span class="keyword">const</span> tm=useRef();</span><br><span class="line"><span class="keyword">const</span> tmTwo=useRef();</span><br><span class="line"></span><br><span class="line">useEffect(<span class="function"><span class="params">()</span>=&gt;</span>&#123; </span><br><span class="line">  <span class="keyword">if</span>(!mounted.current)&#123;<span class="comment">//componentDidMount</span></span><br><span class="line">    setPercent(props.value);</span><br><span class="line">    mounted.current=<span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span>&#123; <span class="comment">//componentDidUpdate</span></span><br><span class="line">    <span class="keyword">if</span>(percent&gt;props.value)&#123;</span><br><span class="line">      <span class="keyword">if</span>(tm.current)</span><br><span class="line">        clearTimeout(tm.current)</span><br><span class="line">      tmTwo.current=setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;setPercent(percent<span class="number">-1</span>)&#125;,<span class="number">20</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(percent&lt;props.value)&#123;</span><br><span class="line">      <span class="keyword">if</span>(tmTwo.current)</span><br><span class="line">        clearTimeout(tmTwo.current)</span><br><span class="line">      tm.current=setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;setPercent(percent+<span class="number">1</span>)&#125;,<span class="number">20</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;,[props.value,percent]);</span><br></pre></td></tr></table></figure>
+
+<p>做出一個這樣的函式(hook):</p>
+<ol>
+<li>輸入為一個目標數字</li>
+<li>當輸入的目標數字改變時，在此函式中由前一刻數字往目標數字漸變</li>
+<li>以state的類別去輸出目前漸變到的值</li>
+</ol>
+<p>然後同時在ProgressDIY和一個完全無關的新元件中使用，並且兩者的運作要是獨立的。我們會專注在寫custom hook上，新的元件是直接用我寫好的。</p>
+<h2 id="step-1-完成我們的custom-hook"><a href="#step-1-完成我們的custom-hook" class="headerlink" title="step 1 : 完成我們的custom hook"></a>step 1 : 完成我們的custom hook</h2><h3 id="step-1-1-建立一個新檔案useRate-js，並且在裡面宣告、export同名字函式。"><a href="#step-1-1-建立一個新檔案useRate-js，並且在裡面宣告、export同名字函式。" class="headerlink" title="step 1-1 : 建立一個新檔案useRate.js，並且在裡面宣告、export同名字函式。"></a>step 1-1 : 建立一個新檔案useRate.js，並且在裡面宣告、export同名字函式。</h3><p>因為我們希望有一個輸入數字，所以要在函式接收一個參數。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> useRate=<span class="function">(<span class="params">value</span>)=&gt;</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> useRate;</span><br></pre></td></tr></table></figure>
+
+<h3 id="step-1-2-引入要用的react-hook"><a href="#step-1-2-引入要用的react-hook" class="headerlink" title="step 1-2 : 引入要用的react hook"></a>step 1-2 : 引入要用的react hook</h3><p>因為要實現漸變，我們需要state、componentDidMount跟componentDidUpdate，所以和上一篇要引入的hook相同:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; useState,useEffect,useRef&#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br></pre></td></tr></table></figure>
+<p>另外因為custom hook不是component，不用引入React。</p>
+<h3 id="step-1-3-把ProgressDIY函式中除了return外的所有東西剪下貼過來"><a href="#step-1-3-把ProgressDIY函式中除了return外的所有東西剪下貼過來" class="headerlink" title="step 1-3 : 把ProgressDIY函式中除了return外的所有東西剪下貼過來"></a>step 1-3 : 把ProgressDIY函式中除了return外的所有東西剪下貼過來</h3><p>對。你可以直接剪下貼過來。</p>
+<p>這樣等於是我們在custom hook中，建立了屬於custom hook的state和生命週期，並且把接到的value以<a href="https://ithelp.ithome.com.tw/articles/10224560" target="_blank" rel="noopener">上一篇</a>的邏輯做運算後，給予state新的值。 </p>
+<blockquote>
+<p>和之前ProgressDIY有什麼差別呢?</p>
+</blockquote>
+<p>差別在原本的ProgressDIY除了在不同時期去做state運算，還要渲染元素到畫面上，成為一個元件。而現在我們等於讓「在不同時期去做state運算」這件事情給custom hook去處理，ProgressDIY改專心渲染元素就好。 有點像是從原本連磨麵粉都自己做的日式麵包店，開始把磨麵粉的工作包給外面廠商的感覺。之後即使有另外一個人開了歐式的麵包店，因為麵粉這個材料是相同的，所以他也可以跟這家廠商買。</p>
+<p><strong>為了要方便分辨，我這裡把所有percent的名稱改成rate</strong>。不過你也可以直接沿用percent這個名稱。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">const useRate&#x3D;(value)&#x3D;&gt;&#123;</span><br><span class="line">    const [rate,setRate]&#x3D;useState(0);</span><br><span class="line">    const mounted&#x3D;useRef();</span><br><span class="line">    const tm&#x3D;useRef();</span><br><span class="line">    const tmTwo&#x3D;useRef();</span><br><span class="line">    </span><br><span class="line">    useEffect(()&#x3D;&gt;&#123; </span><br><span class="line">      if(!mounted.current)&#123; &#x2F;&#x2F;componentDidMount</span><br><span class="line">        setRate(value);</span><br><span class="line">        mounted.current&#x3D;true;</span><br><span class="line">      &#125;</span><br><span class="line">      else&#123; &#x2F;&#x2F;componentDidUpdate</span><br><span class="line">        if(rate&gt;value)&#123;</span><br><span class="line">            if(tm.current)</span><br><span class="line">                clearTimeout(tm.current)</span><br><span class="line">            tmTwo.current&#x3D;setTimeout(()&#x3D;&gt;&#123;setPercent(percent-1)&#125;,20);</span><br><span class="line">        &#125;</span><br><span class="line">        else if(rate&lt;value)&#123;</span><br><span class="line">            if(tmTwo.current)</span><br><span class="line">                clearTimeout(tmTwo.current)</span><br><span class="line">            tm.current&#x3D;setTimeout(()&#x3D;&gt;&#123;setPercent(percent+1)&#125;,20);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">  </span><br><span class="line">    &#125;,[value,rate]);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="step-1-4-回傳用來漸變的state"><a href="#step-1-4-回傳用來漸變的state" class="headerlink" title="step 1-4 : 回傳用來漸變的state"></a>step 1-4 : 回傳用來漸變的state</h3><p>在函式的最後面加上<code>return rate;</code>(請注意我是用改過的名稱，它就是我們原本在ProgressDIY中的percent)，讓使用這個hook的人可以透過回傳值接收到我們經過運算之後的新state，也就是漸變值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const useRate&#x3D;(value)&#x3D;&gt;&#123;</span><br><span class="line">    const [rate,setRate]&#x3D;useState(0);</span><br><span class="line">    const mounted&#x3D;useRef();</span><br><span class="line">    const tm&#x3D;useRef();</span><br><span class="line">    const tmTwo&#x3D;useRef();</span><br><span class="line">    useEffect(()&#x3D;&gt;&#123; </span><br><span class="line">        &#x2F;* 略 *&#x2F;</span><br><span class="line">      &#125;</span><br><span class="line">  </span><br><span class="line">    &#125;,[value,rate]);</span><br><span class="line"></span><br><span class="line">    return rate;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>到這邊，我們的custom hook就做好了。</p>
+<h2 id="step-2-在ProgressDIY使用custom-hook"><a href="#step-2-在ProgressDIY使用custom-hook" class="headerlink" title="step 2 : 在ProgressDIY使用custom hook"></a>step 2 : 在ProgressDIY使用custom hook</h2><h3 id="step-2-1-回到ProgressDIY，引入剛剛寫的useRate"><a href="#step-2-1-回到ProgressDIY，引入剛剛寫的useRate" class="headerlink" title="step 2-1 : 回到ProgressDIY，引入剛剛寫的useRate"></a>step 2-1 : 回到ProgressDIY，引入剛剛寫的useRate</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import useRate from &#39;.&#x2F;useRate.js&#39;;</span><br></pre></td></tr></table></figure>
+<h3 id="step-2-2-把percent指定為useRate，我們不要setPercent了。"><a href="#step-2-2-把percent指定為useRate，我們不要setPercent了。" class="headerlink" title="step 2-2 : 把percent指定為useRate，我們不要setPercent了。"></a>step 2-2 : 把percent指定為useRate，我們不要setPercent了。</h3><p>因為useRate已經會回傳「目前漸變的值」，所以我們不需要再在ProgressDIY中做漸變的動作，只需要用一個變數去接它傳出來的值就好。記得把props.value丟到useRate的參數。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import React from &#39;react&#39;;</span><br><span class="line">import useRate from &#39;.&#x2F;useRate.js&#39;;</span><br><span class="line">const ProgressDIY&#x3D;(props)&#x3D;&gt;&#123;</span><br><span class="line"></span><br><span class="line">  const percent&#x3D;usePercent(props.value);</span><br><span class="line">  </span><br><span class="line">  return(</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;div className&#x3D;&quot;progress-back&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;rgba(0,0,0,0.2)&quot;,width:&quot;200px&quot;,height:&quot;7px&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;</span><br><span class="line">        &lt;div className&#x3D;&quot;progress-bar&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;#fe5196&quot;,width:percent.toString()+&quot;%&quot;,height:&quot;100%&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      目前比率: &#123;percent&#125;%</span><br><span class="line">      &lt;button value&#x3D;&#123;90&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;增加比率至90&lt;&#x2F;button&gt;</span><br><span class="line">      &lt;button value&#x3D;&#123;10&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;減少比率至10&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>到這邊，ProgressDIY已經可以和之前一模一樣的運作。</p>
+<h2 id="step-3-加入新的元件"><a href="#step-3-加入新的元件" class="headerlink" title="step 3 : 加入新的元件"></a>step 3 : 加入新的元件</h2><h3 id="step-3-1-新增檔案"><a href="#step-3-1-新增檔案" class="headerlink" title="step 3-1 : 新增檔案"></a>step 3-1 : 新增檔案</h3><p>現在，請再建立一個Cheer.js。 並加入以下的程式碼</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import React from &#39;react&#39;;</span><br><span class="line"></span><br><span class="line">const Cheer&#x3D;(props)&#x3D;&gt;&#123;</span><br><span class="line">    return (</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;h1&gt;美心加油器&lt;&#x2F;h1&gt;</span><br><span class="line">            &lt;div&gt;目前分數&#123;props.value&#125;&lt;br&#x2F;&gt;還有沒有! 再來&#123;88-props.value&#125;分!&lt;&#x2F;div&gt;</span><br><span class="line">            &lt;button value&#x3D;&#123;Number(props.value)+1&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;加1分&lt;&#x2F;button&gt;</span><br><span class="line">            &lt;button value&#x3D;&#123;Number(props.value)+7&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;加7分&lt;&#x2F;button&gt;</span><br><span class="line">            &lt;button value&#x3D;&#123;Number(props.value)+10&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;加10分&lt;&#x2F;button&gt;</span><br><span class="line">            &lt;button value&#x3D;&#123;0&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;0分&lt;&#x2F;button&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default Cheer;</span><br></pre></td></tr></table></figure>
+
+<p>這個程式碼的邏輯很簡單，就是我們會用props去接收並在螢幕顯示目前的分數，如果使用者覺得分數不夠高，可以點擊加1/7/10分。如果使用者覺得分數太高，可以讓分數歸0。</p>
+<h3 id="step-3-2-引入在App-js中"><a href="#step-3-2-引入在App-js中" class="headerlink" title="step 3-2 :  引入在App.js中"></a>step 3-2 :  引入在App.js中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123;useState&#125; from &#39;react&#39;;</span><br><span class="line">import ProgressDIY from &#39;.&#x2F;ProgressDIY&#39;;</span><br><span class="line">import Cheer from &#39;.&#x2F;Cheer&#39;;</span><br><span class="line"></span><br><span class="line">const App&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">const [value,setValue]&#x3D;useState(0);</span><br><span class="line">const [score,setScore]&#x3D;useState(0);</span><br><span class="line">return(</span><br><span class="line">      &lt;div id&#x3D;&quot;App&quot;&gt;</span><br><span class="line">        &lt;ProgressDIY value&#x3D;&#123;value&#125; onClick&#x3D;&#123;(e)&#x3D;&gt;&#123;setValue(e.target.value)&#125;&#125;&#x2F;&gt;</span><br><span class="line">        &lt;Cheer value&#x3D;&#123;score&#125; onClick&#x3D;&#123;(e)&#x3D;&gt;&#123;setScore(e.target.value)&#125;&#125;&#x2F;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>不過這樣Cheer還是不能運作，因為它需要一個props來控制他的值。</p>
+<h3 id="step-3-3-在App-js中用一個state去給與Cheer-js一個value"><a href="#step-3-3-在App-js中用一個state去給與Cheer-js一個value" class="headerlink" title="step 3-3 :在App.js中用一個state去給與Cheer.js一個value"></a>step 3-3 :在App.js中用一個state去給與Cheer.js一個value</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123;useState&#125; from &#39;react&#39;;</span><br><span class="line">import ProgressDIY from &#39;.&#x2F;ProgressDIY&#39;;</span><br><span class="line">import Cheer from &#39;.&#x2F;Cheer&#39;;</span><br><span class="line"></span><br><span class="line">const App&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">const [value,setValue]&#x3D;useState(0);</span><br><span class="line">const [score,setScore]&#x3D;useState(0);</span><br><span class="line">return(</span><br><span class="line">      &lt;div id&#x3D;&quot;App&quot;&gt;</span><br><span class="line">        &lt;ProgressDIY value&#x3D;&#123;value&#125; onClick&#x3D;&#123;(e)&#x3D;&gt;&#123;setValue(e.target.value)&#125;&#125;&#x2F;&gt;</span><br><span class="line">        &lt;Cheer value&#x3D;&#123;score&#125; onClick&#x3D;&#123;(e)&#x3D;&gt;&#123;setScore(e.target.value)&#125;&#125;&#x2F;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>到這邊，我們已經可以來看現在Cheer.js在幹嘛了。<br>上面是剛剛的Progresss，下面是剛剛引入的Cheer.js。<br><img src="https://i.imgur.com/EprAKV3.gif" alt=""><br>跟剛剛說的一樣，它是一個會顯示目前分數、顯示離88分的分數、可以操控分數的一個計分器。</p>
+<h2 id="step-4-也讓Cheer-js的分數漸變吧"><a href="#step-4-也讓Cheer-js的分數漸變吧" class="headerlink" title="step 4 : 也讓Cheer.js的分數漸變吧!"></a>step 4 : 也讓Cheer.js的分數漸變吧!</h2><p>如果在這裡也要讓分數漸變，是不是又要再寫一次生命週期跟state呢? 答案是不用，因為我們剛剛寫好了「會輸出朝著輸入目標漸變的數字」的custom hook。</p>
+<h3 id="step-4-1-在Cheer-js引入custom-hook"><a href="#step-4-1-在Cheer-js引入custom-hook" class="headerlink" title="step 4-1 : 在Cheer.js引入custom hook"></a>step 4-1 : 在Cheer.js引入custom hook</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import useRate from &#39;.&#x2F;useRate.js&#39;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="step-4-2-在Cheer-js用一個變數去接收custom-hook的return值"><a href="#step-4-2-在Cheer-js用一個變數去接收custom-hook的return值" class="headerlink" title="step 4-2 : 在Cheer.js用一個變數去接收custom hook的return值"></a>step 4-2 : 在Cheer.js用一個變數去接收custom hook的return值</h3><p>記得要把設定值props.value丟入參數。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const score&#x3D;usePercent(props.value);</span><br></pre></td></tr></table></figure>
+
+<h3 id="step-4-3-最後一步-在Cheer-js把顯示值改成剛剛用來接的變數"><a href="#step-4-3-最後一步-在Cheer-js把顯示值改成剛剛用來接的變數" class="headerlink" title="step 4-3 : 最後一步 - 在Cheer.js把顯示值改成剛剛用來接的變數"></a>step 4-3 : 最後一步 - 在Cheer.js把顯示值改成剛剛用來接的變數</h3><p>把div中兩個用來顯示分數的值改成score</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">import React from &#39;react&#39;;</span><br><span class="line">import usePercent from &#39;.&#x2F;usePercent.js&#39;;</span><br><span class="line"></span><br><span class="line">const Cheer&#x3D;(props)&#x3D;&gt;&#123;</span><br><span class="line">    const score&#x3D;usePercent(props.value);</span><br><span class="line">    return (</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;h1&gt;美心加油器&lt;&#x2F;h1&gt;</span><br><span class="line">            &lt;div&gt;目前分數&#123;score&#125;&lt;br&#x2F;&gt;還有沒有! 再來&#123;88-score&#125;分!&lt;&#x2F;div&gt;</span><br><span class="line">            &lt;button value&#x3D;&#123;Number(props.value)+1&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;加1分&lt;&#x2F;button&gt;</span><br><span class="line">            &lt;button value&#x3D;&#123;Number(props.value)+7&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;加7分&lt;&#x2F;button&gt;</span><br><span class="line">            &lt;button value&#x3D;&#123;Number(props.value)+10&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;加10分&lt;&#x2F;button&gt;</span><br><span class="line">            &lt;button value&#x3D;&#123;0&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;0分&lt;&#x2F;button&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default Cheer;</span><br></pre></td></tr></table></figure>
+<p>執行結果:<br><img src="https://i.imgur.com/8l2XHeL.gif" alt=""></p>
+<h2 id="小結"><a href="#小結" class="headerlink" title="小結:"></a>小結:</h2><p>注意到了嗎? 在這個練習中，兩個元件雖然都使用了useRate這個函式。但是兩個接收到的值不受彼此影響，也就是<strong>custom hook在兩者中的state和生命週期是獨立運作的</strong>。而且我們在兩個元件都沒有寫出漸變的函式，只是引入模組化好的useRate。原本在ProgressDIY我們光寫漸變就花了十幾行。現在我們因為做了模組化，即使兩個元件都要漸變，他們卻都省掉了漸變所需要用的那十幾行，可讀性大幅的提高，也少去重複寫的麻煩。</p>
+<p>這就是另一個大家超推React hook的理由。</p>
+<p>因為本系列是重點是React入門，有關React hook的介紹就到這邊告一個段落。其他像是useContext、useRef、useReducer…還有很多好用的React hook，可以參考目前鐵人賽許多以React hook以主體的系列，當你習慣後一定會有不少收穫。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

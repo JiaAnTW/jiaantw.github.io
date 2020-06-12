@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/23 - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129888855-4', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首頁</a></li>
+<li><a href="/">關於我</a></li>
+</ul>
+<h1 id="WEB開發">WEB開發</h1>
+<h2 id="React-js">React.js</h2>
+<ul>
+<li><a href="/2020/06/12/tech/react/01">環境設定</a></li>
+<li><a href="/2020/06/12/tech/react/02">使用create-react-app</a></li>
+<li><a href="/2020/06/12/tech/react/03">DOM和ES6</a></li>
+<li><a href="/2020/06/12/tech/react/04">HelloWorld!</a></li>
+<li><a href="/2020/06/12/tech/react/05">JSX (上)</a></li>
+<li><a href="/2020/06/12/tech/react/06">JSX (下)</a></li>
+<li><a href="/2020/06/12/tech/react/07">function component</a></li>
+<li><a href="/2020/06/12/tech/react/08">props:綁定資料</a></li>
+<li><a href="/2020/06/12/tech/react/09">props:綁定函式</a></li>
+<li><a href="/2020/06/12/tech/react/10">props: children</a></li>
+<li><a href="/2020/06/12/tech/react/11">class component</a></li>
+<li><a href="/2020/06/12/tech/react/12">state與詳解setState語法</a></li>
+<li><a href="/2020/06/12/tech/react/13">useState</a></li>
+<li><a href="/2020/06/12/tech/react/14">React-Developer-Tools</a></li>
+<li><a href="/2020/06/12/tech/react/15">Http request:Fetch Api</a></li>
+<li><a href="/2020/06/12/tech/react/16">生命週期(1/4):Mount(上)</a></li>
+<li><a href="/2020/06/12/tech/react/17">生命週期(2/4):Mount(下)</a></li>
+<li><a href="/2020/06/12/tech/react/18">生命週期(3/4):Unmount</a></li>
+<li><a href="/2020/06/12/tech/react/19">生命週期(4/4):Update</a></li>
+<li><a href="/2020/06/12/tech/react/20">useEffect</a></li>
+<li><a href="/2020/06/12/tech/react/21_1">各階層Component的溝通</a></li>
+<li><a href="/2020/06/12/tech/react/21_2">useContext和useReducer</a></li>
+<li><a href="/2020/06/12/tech/react/22">元件練習(上)</a></li>
+<li><a href="/2020/06/12/tech/react/23">元件練習(下)</a></li>
+<li><a href="/2020/06/12/tech/react/24">Custom hook</a></li>
+<li><a href="/2020/06/12/tech/react/25">Custom hook練習</a></li>
+<li><a href="/2020/06/12/tech/react/26">輸入元素與控制組件</a></li>
+<li><a href="/2020/06/12/tech/react/27">react-router-dom (上)</a></li>
+<li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
+<li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+</ul>
+<h1 id="產品開發">產品開發</h1>
+<h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
+<ul>
+<li><a href="/2020/06/12/product/UX/maskMap">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js入門-23】-總集合練習-利用recursive-遞迴-state實作動畫-下"><a href="#【React-js入門-23】-總集合練習-利用recursive-遞迴-state實作動畫-下" class="headerlink" title="【React.js入門 - 23】 總集合練習 - 利用recursive(遞迴)+state實作動畫(下)"></a>【React.js入門 - 23】 總集合練習 - 利用recursive(遞迴)+state實作動畫(下)</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><p>在這篇，我們要以function component製作和<a href="https://ithelp.ithome.com.tw/articles/10224160" target="_blank" rel="noopener">【React.js入門 - 22】 元件練習(上) - 在class利用遞迴+state實作動畫</a>相同的元件。</p>
+<blockquote>
+<p>我們要做一個像是這個樣子的動態進度條:</p>
+</blockquote>
+<p><img src="https://i.imgur.com/AvKWUP3.gif" alt="image alt"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">index.js</span><br><span class="line">|____ App.js</span><br><span class="line">      |____ProgressDIY.js</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>目標:</p>
+<ol>
+<li>我們先以class component製作ProgressDIY.js。</li>
+<li>在App.js使用我們的進度條元件(ProgressDIY.js)。</li>
+<li>用App.js的value放在props，來控制內進度條的比例(長度)。</li>
+<li>ProgressDIY.js要能顯示目前進度，並且放兩個按鍵在旁邊。</li>
+<li>按第一個按鍵(增加到90)時，此進度條會從目前的進度以動畫方式逐漸改變至90%。</li>
+<li>按第二個按鍵(減少到10)時，此進度條會從目前的進度以動畫方式逐漸改變至90%。</li>
+<li>即使還沒有跑到前一個目標進度，當目標進度被更新時，進度條不能停下，必須直接往新的目標長度更動。</li>
+<li>外進度條的色碼為<code>rgba(0,0,0,0.2)</code>，長度為200px，圓角為10px，高度為7px。</li>
+<li>內進度條色碼為:<code>#fe5196</code>，長度、圓角和外進度條相同。</li>
+</ol>
+</blockquote>
+<p>這個是把上一篇的recursive改在<code>componentDidUpdate</code>中做的程式碼:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; Component &#125; from &#39;react&#39;;</span><br><span class="line">class ProgressDIY extends Component&#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state&#x3D;&#123; </span><br><span class="line">        percent:0,</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  componentDidMount()&#123;</span><br><span class="line">        this.setState(&#123;percent:this.props.value&#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  componentDidUpdate(prevProps, prevState)&#123;</span><br><span class="line">    if((prevProps.value!&#x3D;&#x3D;this.props.value)||(prevState.percent!&#x3D;this.state.percent))&#123;</span><br><span class="line">        if(this.state.percent&gt;this.props.value)&#123;</span><br><span class="line">          if(this.tm)  </span><br><span class="line">            clearTimeout(this.tm)</span><br><span class="line">          this.tmtwo&#x3D;setTimeout(()&#x3D;&gt;&#123;this.setState(&#123;percent:this.state.percent-1&#125;)&#125;, 20)</span><br><span class="line">        &#125;</span><br><span class="line">        else if(this.state.percent&lt;this.props.value)&#123;</span><br><span class="line">          if(this.tmTwo)  </span><br><span class="line">            clearTimeout(this.tmTwo)</span><br><span class="line">          this.tm&#x3D;setTimeout(()&#x3D;&gt;&#123;this.setState(&#123;percent:this.state.percent+1&#125;)&#125;, 20)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        return(</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">            &lt;div className&#x3D;&quot;progress-back&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;rgba(0,0,0,0.2)&quot;,width:&quot;200px&quot;,height:&quot;7px&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;</span><br><span class="line">              &lt;div className&#x3D;&quot;progress-bar&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;#fe5196&quot;,width:this.state.percent.toString()+&quot;%&quot;,height:&quot;100%&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            目前比率: &#123;this.state.percent&#125;%</span><br><span class="line">            &lt;button value&#x3D;&#123;90&#125; onClick&#x3D;&#123;this.props.onClick&#125;&gt;增加比率至90&lt;&#x2F;button&gt;</span><br><span class="line">            &lt;button value&#x3D;&#123;10&#125; onClick&#x3D;&#123;this.props.onClick&#125;&gt;減少比率至10&lt;&#x2F;button&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">export default ProgressDIY;</span><br></pre></td></tr></table></figure>
+<h2 id="Step-1-做好ProgressDIY-js的基本架構"><a href="#Step-1-做好ProgressDIY-js的基本架構" class="headerlink" title="Step 1 : 做好ProgressDIY.js的基本架構"></a>Step 1 : 做好ProgressDIY.js的基本架構</h2><p>以函式為架構宣告，記得參數要有<code>props</code>，<code>export</code>也要記得寫。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const ProgressDIY&#x3D;(props)&#x3D;&gt;&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">export default ProgressDIY;</span><br></pre></td></tr></table></figure>
+<h2 id="Step-2-引入useState、useEffect、useRef，不用引入component"><a href="#Step-2-引入useState、useEffect、useRef，不用引入component" class="headerlink" title="Step 2 : 引入useState、useEffect、useRef，不用引入component"></a>Step 2 : 引入useState、useEffect、useRef，不用引入component</h2><p>因為我們不希望一開始就漸變，所以要用到純componentDidUpdate，必須多引入useRef。因為function component不會需要繼承React.Component，所以就不引入。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; useState,useEffect,useRef&#125; from &#39;react&#39;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Step-3-用useState建立控制目前的寬度的state和setState函式"><a href="#Step-3-用useState建立控制目前的寬度的state和setState函式" class="headerlink" title="Step 3 : 用useState建立控制目前的寬度的state和setState函式"></a>Step 3 : 用useState建立控制目前的寬度的state和setState函式</h2><p>用<code>percent</code>當作用來控制目前的寬度的參數。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const [percent,setPercent]&#x3D;useState(10);</span><br></pre></td></tr></table></figure>
+<h2 id="Step-4-在return-中弄出進度條跟按鍵的元素"><a href="#Step-4-在return-中弄出進度條跟按鍵的元素" class="headerlink" title="Step 4 : 在return()中弄出進度條跟按鍵的元素"></a>Step 4 : 在return()中弄出進度條跟按鍵的元素</h2><p>如果你是用class component去改，<code>this.state.percent</code>要變成<code>percent</code>，<code>this.props.名稱</code>要變成<code>props.名稱</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">return(</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;div className&#x3D;&quot;progress-back&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;rgba(0,0,0,0.2)&quot;,width:&quot;200px&quot;,height:&quot;7px&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;</span><br><span class="line">      &lt;div className&#x3D;&quot;progress-bar&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;#fe5196&quot;,width:percent.toString()+&quot;%&quot;,height:&quot;100%&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    目前比率: &#123;percent&#125;%</span><br><span class="line">    &lt;button value&#x3D;&#123;90&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;增加比率至90&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;button value&#x3D;&#123;10&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;減少比率至10&lt;&#x2F;button&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h2 id="在Step-5-開始之前-思考該有多少useEffect"><a href="#在Step-5-開始之前-思考該有多少useEffect" class="headerlink" title="在Step 5 開始之前: 思考該有多少useEffect"></a>在Step 5 開始之前: 思考該有多少useEffect</h2><p>在開始加入useEffect前，我們要思考的事情是:</p>
+<blockquote>
+<p>我目前要實現的事情中，有哪些事情是依賴「監控相同參數的變動」? 是不是第一次要執行?</p>
+</blockquote>
+<p>共三件事情要實踐: </p>
+<ol>
+<li>第一次渲染時的初始值設定 (只有第一次要執行)</li>
+<li>由長變短漸變。(依賴props.value和percent，但第一次不能執行)</li>
+<li>由短變長漸變。(依賴props.value和percent，但第一次不能執行)</li>
+</ol>
+<p>也就是我們2和3一定可以放在同一個effect中。又因為任何effect第一次都會執行，所以只要想辦法在這個effect中分隔出「渲染前、渲染後」，就能把這三件事都放在同一個effect中。</p>
+<h2 id="Step-5-在useEffect中，搭配useRef去紀錄是否為第一次渲染，讓第一次和非第一次渲染可以做不同的事。"><a href="#Step-5-在useEffect中，搭配useRef去紀錄是否為第一次渲染，讓第一次和非第一次渲染可以做不同的事。" class="headerlink" title="Step 5: 在useEffect中，搭配useRef去紀錄是否為第一次渲染，讓第一次和非第一次渲染可以做不同的事。"></a>Step 5: 在useEffect中，搭配useRef去紀錄是否為第一次渲染，讓第一次和非第一次渲染可以做不同的事。</h2><p>在開始進入</p>
+<p>這邊有兩點要注意:</p>
+<ol>
+<li>要用之前提過配合<code>useRef</code>的方法去分隔出在mount後才開始運作的componentDidUpdate</li>
+<li>第二個參數的監控值除了<code>props.value</code>外，因為要做recursive，也要監控<code>percent</code>。 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const mounted&#x3D;useRef();</span><br><span class="line">useEffect(()&#x3D;&gt;&#123;</span><br><span class="line">  if(!mounted.current)&#123; &#x2F;&#x2F;componentDidMount</span><br><span class="line"></span><br><span class="line">    mounted.current&#x3D;true;</span><br><span class="line">  &#125;</span><br><span class="line">  else&#123;  &#x2F;&#x2F;componentDidUpdate</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">&#125;,[props.value,percent]);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="Step-6-在第一次渲染的定義區中完成初始化"><a href="#Step-6-在第一次渲染的定義區中完成初始化" class="headerlink" title="Step 6: 在第一次渲染的定義區中完成初始化"></a>Step 6: 在第一次渲染的定義區中完成初始化</h2><p>這邊要用定義的set函式，並且由於props是從函式參數取得，初始值要去掉<code>this</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const mounted&#x3D;useRef();</span><br><span class="line"></span><br><span class="line">useEffect(()&#x3D;&gt;&#123;</span><br><span class="line">  if(!mounted.current)&#123; &#x2F;&#x2F;componentDidMount</span><br><span class="line">    setPercent(props.value);</span><br><span class="line">    mounted.current&#x3D;true;</span><br><span class="line">  &#125;</span><br><span class="line">  else&#123; &#x2F;&#x2F;componentDidUpdate</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;,[props.value,percent]);</span><br></pre></td></tr></table></figure>
+<h2 id="Step-7-創建用來存setTimeout的變數"><a href="#Step-7-創建用來存setTimeout的變數" class="headerlink" title="Step 7: 創建用來存setTimeout的變數"></a>Step 7: 創建用來存setTimeout的變數</h2><p>和剛剛紀錄是否mount的變數一樣，這裡也是要用useRef去創造用來存setTimeout的變數。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const mounted&#x3D;useRef();</span><br><span class="line">const tm&#x3D;useRef();</span><br><span class="line">const tmTwo&#x3D;useRef();</span><br><span class="line"></span><br><span class="line">useEffect(()&#x3D;&gt;&#123;</span><br><span class="line">  if(!mounted.current)&#123; &#x2F;&#x2F;componentDidMount</span><br><span class="line">    setPercent(props.value);</span><br><span class="line">    mounted.current&#x3D;true;</span><br><span class="line">  &#125;</span><br><span class="line">  else&#123; &#x2F;&#x2F;componentDidUpdate</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;,[props.value,percent]);</span><br></pre></td></tr></table></figure>
+<h2 id="Step-8-在非第一次渲染的定義區域中完成recursive"><a href="#Step-8-在非第一次渲染的定義區域中完成recursive" class="headerlink" title="Step 8: 在非第一次渲染的定義區域中完成recursive"></a>Step 8: 在非第一次渲染的定義區域中完成recursive</h2><p>這裡的運作邏輯跟我們在最一開始提供的「用componentDidUpdate」做recursive一模一樣:</p>
+<blockquote>
+<p>用一個state來當作用來控制目前的寬度的參數，定義每一次都把該state增加/減少1的函式，並且在每次加完後和props上的value做比較。如果還沒達到，就用<code>setTimeout</code>去設定在短時間內再次呼叫此函式；這邊要先把setTimeout存起來，晚點就能用<code>clearTimeout</code>把剛剛的<code>setTimeout</code>移除，再結束整個流程。這樣可以避免如果在漸變到一半時突然換目標數字，會有某幾個瞬間同時存在上升函數和下降函數的情形。</p>
+</blockquote>
+<p><img src="https://i.imgur.com/XXPqBKQ.png" alt=""><br>轉化為程式碼:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">const mounted&#x3D;useRef();</span><br><span class="line">const tm&#x3D;useRef();</span><br><span class="line">const tmTwo&#x3D;useRef();</span><br><span class="line"></span><br><span class="line">useEffect(()&#x3D;&gt;&#123;</span><br><span class="line">  if(!mounted.current)&#123;&#x2F;&#x2F;componentDidMount</span><br><span class="line">    setPercent(props.value);</span><br><span class="line">    mounted.current&#x3D;true;</span><br><span class="line">  &#125;</span><br><span class="line">  else&#123; &#x2F;&#x2F;componentDidUpdate</span><br><span class="line">    if(percent&gt;props.value)&#123;</span><br><span class="line">      if(tm.current)</span><br><span class="line">        clearTimeout(tm.current)</span><br><span class="line">      tmTwo.current&#x3D;setTimeout(()&#x3D;&gt;&#123;setPercent(percent-1)&#125;,20);</span><br><span class="line">    &#125;</span><br><span class="line">    else if(percent&lt;props.value)&#123;</span><br><span class="line">      if(tmTwo.current)</span><br><span class="line">        clearTimeout(tmTwo.current)</span><br><span class="line">      tm.current&#x3D;setTimeout(()&#x3D;&gt;&#123;setPercent(percent+1)&#125;,20);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;,[props.value,percent]);</span><br></pre></td></tr></table></figure>
+<p>所有的程式碼:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; useState,useEffect,useRef,Component&#125; from &#39;react&#39;;</span><br><span class="line">const ProgressDIY&#x3D;(props)&#x3D;&gt;&#123;</span><br><span class="line">  const [percent,setPercent]&#x3D;useState(10);</span><br><span class="line">  </span><br><span class="line">  const mounted&#x3D;useRef();</span><br><span class="line">  const tm&#x3D;useRef();</span><br><span class="line">  const tmTwo&#x3D;useRef();</span><br><span class="line">  </span><br><span class="line">  useEffect(()&#x3D;&gt;&#123; </span><br><span class="line">    if(!mounted.current)&#123;&#x2F;&#x2F;componentDidMount</span><br><span class="line">      setPercent(props.value);</span><br><span class="line">      mounted.current&#x3D;true;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123; &#x2F;&#x2F;componentDidUpdate</span><br><span class="line">      if(percent&gt;props.value)&#123;</span><br><span class="line">        if(tm.current)</span><br><span class="line">          clearTimeout(tm.current)</span><br><span class="line">        tmTwo.current&#x3D;setTimeout(()&#x3D;&gt;&#123;setPercent(percent-1)&#125;,20);</span><br><span class="line">      &#125;</span><br><span class="line">      else if(percent&lt;props.value)&#123;</span><br><span class="line">        if(tmTwo.current)</span><br><span class="line">          clearTimeout(tmTwo.current)</span><br><span class="line">        tm.current&#x3D;setTimeout(()&#x3D;&gt;&#123;setPercent(percent+1)&#125;,20);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;,[props.value,percent]);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  return(</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;div className&#x3D;&quot;progress-back&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;rgba(0,0,0,0.2)&quot;,width:&quot;200px&quot;,height:&quot;7px&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;</span><br><span class="line">        &lt;div className&#x3D;&quot;progress-bar&quot; style&#x3D;&#123;&#123;backgroundColor:&quot;#fe5196&quot;,width:percent.toString()+&quot;%&quot;,height:&quot;100%&quot;,borderRadius:&quot;10px&quot;&#125;&#125;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      目前比率: &#123;percent&#125;%</span><br><span class="line">      &lt;button value&#x3D;&#123;90&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;增加比率至90&lt;&#x2F;button&gt;</span><br><span class="line">      &lt;button value&#x3D;&#123;10&#125; onClick&#x3D;&#123;props.onClick&#125;&gt;減少比率至10&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="小結"><a href="#小結" class="headerlink" title="小結:"></a>小結:</h2><p>在React hook推出後，React開發社群開始推廣function component，並降低對於class component的依賴。而使用React hook的思維邏輯有些地方會跟class component不太一樣，所以我在Step 5之前特別去講設計架構時的想法。這次鐵人賽中，很多React系列都是以function component為主題，主要也是因為希望讀者能不被class component的設計邏輯侷限。</p>
+<p>在這一篇之後，我們也會盡量用function component來實現所有的東西。</p>
+<p>本篇範例中，class component和function component的程式碼長度其實差不多，而下一篇，我們將會用custom hook去讓程式碼更簡潔。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

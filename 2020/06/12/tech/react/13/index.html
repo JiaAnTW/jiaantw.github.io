@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/13 - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129888855-4', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首頁</a></li>
+<li><a href="/">關於我</a></li>
+</ul>
+<h1 id="WEB開發">WEB開發</h1>
+<h2 id="React-js">React.js</h2>
+<ul>
+<li><a href="/2020/06/12/tech/react/01">環境設定</a></li>
+<li><a href="/2020/06/12/tech/react/02">使用create-react-app</a></li>
+<li><a href="/2020/06/12/tech/react/03">DOM和ES6</a></li>
+<li><a href="/2020/06/12/tech/react/04">HelloWorld!</a></li>
+<li><a href="/2020/06/12/tech/react/05">JSX (上)</a></li>
+<li><a href="/2020/06/12/tech/react/06">JSX (下)</a></li>
+<li><a href="/2020/06/12/tech/react/07">function component</a></li>
+<li><a href="/2020/06/12/tech/react/08">props:綁定資料</a></li>
+<li><a href="/2020/06/12/tech/react/09">props:綁定函式</a></li>
+<li><a href="/2020/06/12/tech/react/10">props: children</a></li>
+<li><a href="/2020/06/12/tech/react/11">class component</a></li>
+<li><a href="/2020/06/12/tech/react/12">state與詳解setState語法</a></li>
+<li><a href="/2020/06/12/tech/react/13">useState</a></li>
+<li><a href="/2020/06/12/tech/react/14">React-Developer-Tools</a></li>
+<li><a href="/2020/06/12/tech/react/15">Http request:Fetch Api</a></li>
+<li><a href="/2020/06/12/tech/react/16">生命週期(1/4):Mount(上)</a></li>
+<li><a href="/2020/06/12/tech/react/17">生命週期(2/4):Mount(下)</a></li>
+<li><a href="/2020/06/12/tech/react/18">生命週期(3/4):Unmount</a></li>
+<li><a href="/2020/06/12/tech/react/19">生命週期(4/4):Update</a></li>
+<li><a href="/2020/06/12/tech/react/20">useEffect</a></li>
+<li><a href="/2020/06/12/tech/react/21_1">各階層Component的溝通</a></li>
+<li><a href="/2020/06/12/tech/react/21_2">useContext和useReducer</a></li>
+<li><a href="/2020/06/12/tech/react/22">元件練習(上)</a></li>
+<li><a href="/2020/06/12/tech/react/23">元件練習(下)</a></li>
+<li><a href="/2020/06/12/tech/react/24">Custom hook</a></li>
+<li><a href="/2020/06/12/tech/react/25">Custom hook練習</a></li>
+<li><a href="/2020/06/12/tech/react/26">輸入元素與控制組件</a></li>
+<li><a href="/2020/06/12/tech/react/27">react-router-dom (上)</a></li>
+<li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
+<li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+</ul>
+<h1 id="產品開發">產品開發</h1>
+<h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
+<ul>
+<li><a href="/2020/06/12/product/UX/maskMap">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js入門-13】useState-在function-component用state">【React.js入門 - 13】useState - 在function component用state</h1>
+<h6 id="tags-第11屆鐵人賽">tags: <code>第11屆鐵人賽</code></h6>
+<blockquote>
+<p>我也想要在function component中使用state，可是function不能夠用extend繼承，怎麼辦?</p>
+</blockquote>
+<p>在以前，你就只能乖乖的用class component。在React Ver.16.8後，React hook出現了，它提供了一系列讓你能在function component中使用「在class component常用的功能」的方法，<code>useState</code>就是其中之一。</p>
+<h2 id="useState是什麼">useState是什麼?</h2>
+<p>你可以把useState當成是在function component中state和setState的集合體。它的使用方式是:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">變數型態 [state變數名稱, setState函式名稱] = useState(state變數初始值)</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 舉例來說 */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> [percent, setPercent] = useState(<span class="string">"20%"</span>);</span><br></pre></td></tr></table></figure>
+<p>在上面的例子，我們宣告了一個變數和一個函式，第一個<code>percent</code>是變數，變成了等同於在class component中的<code>this.state.percent</code>；而第二個<code>changePercent</code>變成了等同於<code>(值)=&gt;{this.setState({percent:值})}</code>的函式(這裡的函式在語法上沒有限定命名原則，但一般會以set做為開頭，這篇是為了配合前一篇的程式碼才用change當開頭)。當我們在function component中使用:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">changePercent(<span class="string">"70%"</span>);</span><br></pre></td></tr></table></figure>
+<p>這時percent就會變成<code>70%</code>。</p>
+<h2 id="我們用useState做了什麼">我們用useState做了什麼?</h2>
+<p>實際上<code>useState</code>只是一個函式，它會接收一作為初始值的參數並回傳一個包含兩個值的array，第一個值是state、第二個值是用來對剛那個state做setState的函式。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log( useState(<span class="string">"初始值"</span>))</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/ffOii0c.png" alt=""></p>
+<p>而我們所做的<code>const [percent, changePercent]=</code>，是利用<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener">javascript的解構賦值</a>，也就是我們一次宣告兩個變數，percent會變成等號後面賦予的array的第一個值，changePercent會變成等號後面賦予的array的第二個值。</p>
+<h2 id="把class-component變成function-component吧">把class component變成function component吧!</h2>
+<p>在之前，我們有一個<code>App.js</code>:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state=&#123;</span><br><span class="line">      percent:<span class="string">"30%"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">this</span>.changePercent=<span class="keyword">this</span>.changePercent.bind(<span class="keyword">this</span>); changePercent</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  changePercent()&#123; </span><br><span class="line">    <span class="keyword">this</span>.setState(&#123;<span class="attr">percent</span>:<span class="string">"70%"</span>&#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span>(</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">            &lt;div className=<span class="string">"progress-back"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"rgba(0,0,0,0.2)"</span>,<span class="attr">width</span>:<span class="string">"200px"</span>,<span class="attr">height</span>:<span class="string">"7px"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;</span><br><span class="line">              &lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:<span class="keyword">this</span>.state.percent,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">            &lt;button onClick=&#123;<span class="keyword">this</span>.changePercent&#125;&gt;轉換百分比 &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">          &lt;/</span>div&gt;</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure>
+<p>現在，我們來新增一個<code>Progress.js</code>，讓他有跟剛剛<code>App.js</code>一模一樣的功能，但是是用function component實現:</p>
+<ol>
+<li>
+<p>引入React以及useState</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; useState &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>建立Progress function，並把剛剛<code>App.js</code>的<code>render()</code>部份貼過來</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Progress=<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">     <span class="keyword">return</span>(</span><br><span class="line">       &lt;div&gt;</span><br><span class="line">         &lt;div className=<span class="string">"progress-back"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"rgba(0,0,0,0.2)"</span>,<span class="attr">width</span>:<span class="string">"200px"</span>,<span class="attr">height</span>:<span class="string">"7px"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;</span><br><span class="line">           &lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:<span class="keyword">this</span>.state.percent,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">         &lt;/</span>div&gt;</span><br><span class="line">         &lt;button onClick=&#123;<span class="keyword">this</span>.changePercent&#125;&gt;轉換百分比 &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">       &lt;/</span>div&gt;</span><br><span class="line">     );</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>用useState在function中建立我們要的state變數以及改變它的方法</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Progress=<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">const</span> [percent, changePercent] = useState(<span class="string">"30%"</span>);</span><br><span class="line">    <span class="keyword">return</span>(</span><br><span class="line">        (略)</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>把在<code>return()</code>中使用原本class的state以及function的地方，改成使用剛剛建立的<code>percent</code>以及函數</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:percent,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onClick=&#123;()=&gt;&#123;changePercent(<span class="string">"70%"</span>)&#125;&#125;&gt;轉換百分比 &lt;<span class="regexp">/button&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>最後，記得export後在index.js中使用</p>
+ <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; useState &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> Baby <span class="keyword">from</span> <span class="string">'./Baby'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Progress=<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">const</span> [percent, changePercent] = useState(<span class="string">"20%"</span>);</span><br><span class="line">    <span class="built_in">console</span>.log( useState(<span class="string">"初始值"</span>))    </span><br><span class="line">    <span class="keyword">return</span>(</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;div className=<span class="string">"progress-back"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"rgba(0,0,0,0.2)"</span>,<span class="attr">width</span>:<span class="string">"200px"</span>,<span class="attr">height</span>:<span class="string">"7px"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;</span><br><span class="line">            &lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:percent,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">        &lt;button onClick=&#123;()=&gt;&#123;changePercent(<span class="string">"70%"</span>)&#125;&#125;&gt; 轉換百分比 &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/</span>div&gt;</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Progress;</span><br></pre></td></tr></table></figure>
+<p>index.js</p>
+ <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'./index.css'</span>;</span><br><span class="line"><span class="keyword">import</span> Progress <span class="keyword">from</span> <span class="string">'./Progress'</span></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> serviceWorker <span class="keyword">from</span> <span class="string">'./serviceWorker'</span>;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;Progress/&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;,</span></span><br><span class="line"><span class="regexp">    document.getElementById('root')</span></span><br><span class="line"><span class="regexp">);</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">serviceWorker.unregister();</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>這樣就以function完成了一個和上一篇一模一樣的component。</p>
+<h2 id="useState-和其他的React-hook-不能在function-component中的迴圈、if-else、nest-function-在function-scope中宣告的function-被定義使用。">useState(和其他的React hook)不能在function component中的迴圈、if-else、nest function(在function scope中宣告的function)被定義使用。</h2>
+<p>精確的說法是你不能在這些地方去定義產生React hook。(例如，宣告由變數和函式並從useState取得)</p>
+<p>為什麼會這樣呢? 原因是和React hook的運作原理有關。</p>
+<p>剛剛提到，我們只是用變數去接useState提供給我們的state和setState函式。對useState而言，它是<strong>依照順序去分辨每一個hook，而不是用我們用定義內容/來接的變數的名字去分辨</strong>。<br>
+這是第一次render發生的事:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; ------------</span><br><span class="line">&#x2F;&#x2F; 你做的事情</span><br><span class="line">&#x2F;&#x2F; ------------</span><br><span class="line"></span><br><span class="line">useState(0)           </span><br><span class="line">useState(&#39;哈哈哈&#39;)        </span><br><span class="line">useState(true) </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; -------------</span><br><span class="line">&#x2F;&#x2F; 對React hook而言</span><br><span class="line">&#x2F;&#x2F; -------------</span><br><span class="line"></span><br><span class="line">我產生了一個hook，它是第1個，製造一個state並把其值指定為0</span><br><span class="line">我產生了一個hook，它是第2個，製造一個state並把其值指定為&#39;哈哈哈&#39;</span><br><span class="line">我產生了一個hook，它是第3個，製造一個state並把其值指定為true</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; ...</span><br></pre></td></tr></table></figure>
+<p>re-render時:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; ------------</span><br><span class="line">&#x2F;&#x2F; 你做的事情</span><br><span class="line">&#x2F;&#x2F; ------------</span><br><span class="line"></span><br><span class="line">useState(0)           </span><br><span class="line">useState(&#39;哈哈哈&#39;)        </span><br><span class="line">useState(true) </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; -------------</span><br><span class="line">&#x2F;&#x2F; 對React hook而言</span><br><span class="line">&#x2F;&#x2F; -------------</span><br><span class="line"></span><br><span class="line">去找第1個hook -&gt; 找到useState(0) </span><br><span class="line">去找第2個hook -&gt; 找到useState(&#39;哈哈哈&#39;)   </span><br><span class="line">去找第3個hook -&gt; 找到useState(true) </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; ...</span><br></pre></td></tr></table></figure>
+<p>而迴圈、if-else、nest function有可能在某次re-render時不會執行。，以剛剛為例，如果今天沒有任何防護措施，假設今天把第2個React hook放在某個if，當某次re-render時這個if的執行條件為false，就會發生:<br>
+這是第一次render發生的事:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; ------------</span><br><span class="line">&#x2F;&#x2F; 你做的事情</span><br><span class="line">&#x2F;&#x2F; ------------</span><br><span class="line"></span><br><span class="line">useState(0)           </span><br><span class="line">useState(&#39;哈哈哈&#39;)        </span><br><span class="line">useState(true) </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; -------------</span><br><span class="line">&#x2F;&#x2F; 對React hook而言</span><br><span class="line">&#x2F;&#x2F; -------------</span><br><span class="line"></span><br><span class="line">我產生了一個hook，它是第1個，製造一個state並把其值指定為0</span><br><span class="line">我產生了一個hook，它是第2個，製造一個state並把其值指定為&#39;哈哈哈&#39;</span><br><span class="line">我產生了一個hook，它是第3個，製造一個state並把其值指定為true</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; ...</span><br></pre></td></tr></table></figure>
+<p>re-render時(當沒有執行<code>useState('哈哈哈')</code>):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; ------------</span><br><span class="line">&#x2F;&#x2F; 你做的事情(這一次 useState(&#39;哈哈哈&#39;) 並沒有被執行)</span><br><span class="line">&#x2F;&#x2F; ------------</span><br><span class="line"></span><br><span class="line">useState(0)</span><br><span class="line">useState(true) </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; -------------</span><br><span class="line">&#x2F;&#x2F; 對React hook而言</span><br><span class="line">&#x2F;&#x2F; -------------</span><br><span class="line"></span><br><span class="line">去找第1個hook -&gt; 找到useState(0)</span><br><span class="line">去找第2個hook -&gt; 找到useState(&#39;哈哈哈&#39;) </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; ...</span><br></pre></td></tr></table></figure>
+<p>這樣會取得錯誤的hook。因此，React所選擇的防護措施是不產生你在這些scope中產生React hook。以確保每次render時的順序一模一樣。</p>
+<h2 id="小結-為什麼不用class-component就好">小結: 為什麼不用class component就好?</h2>
+<p>其中一個原因是元件結構會變簡單。</p>
+<p>以前，當我們的專案到一定的規模後，component越來越多，JSX夾雜各處。有的時候即使只是很簡單的元件，卻因為要follow class component的語法而變得看起來雜亂、一大堆巢狀結構。於是，工程師開始思考能不能在結構相對陽春的function component中，使用class component常用的功能。</p>
+<p>於是，React hook就出現了。</p>
+<p>現在，請你比較一下<code>App.js</code>和<code>Progress.js</code>。功能完全一模一樣的元件，前者用了二十幾行，後者用了十幾行。</p>
+<p>從這次鐵人賽不少以React hook為主體的系列文就可以知道，目前像這樣更簡易的元件設計方式正在被React社群大力推行。<s>你就知道工程師看code看到多爆氣了</s></p>
+<p>總之，多用React hook吧!</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

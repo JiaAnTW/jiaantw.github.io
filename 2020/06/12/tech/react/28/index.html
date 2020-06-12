@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/28 - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129888855-4', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首頁</a></li>
+<li><a href="/">關於我</a></li>
+</ul>
+<h1 id="WEB開發">WEB開發</h1>
+<h2 id="React-js">React.js</h2>
+<ul>
+<li><a href="/2020/06/12/tech/react/01">環境設定</a></li>
+<li><a href="/2020/06/12/tech/react/02">使用create-react-app</a></li>
+<li><a href="/2020/06/12/tech/react/03">DOM和ES6</a></li>
+<li><a href="/2020/06/12/tech/react/04">HelloWorld!</a></li>
+<li><a href="/2020/06/12/tech/react/05">JSX (上)</a></li>
+<li><a href="/2020/06/12/tech/react/06">JSX (下)</a></li>
+<li><a href="/2020/06/12/tech/react/07">function component</a></li>
+<li><a href="/2020/06/12/tech/react/08">props:綁定資料</a></li>
+<li><a href="/2020/06/12/tech/react/09">props:綁定函式</a></li>
+<li><a href="/2020/06/12/tech/react/10">props: children</a></li>
+<li><a href="/2020/06/12/tech/react/11">class component</a></li>
+<li><a href="/2020/06/12/tech/react/12">state與詳解setState語法</a></li>
+<li><a href="/2020/06/12/tech/react/13">useState</a></li>
+<li><a href="/2020/06/12/tech/react/14">React-Developer-Tools</a></li>
+<li><a href="/2020/06/12/tech/react/15">Http request:Fetch Api</a></li>
+<li><a href="/2020/06/12/tech/react/16">生命週期(1/4):Mount(上)</a></li>
+<li><a href="/2020/06/12/tech/react/17">生命週期(2/4):Mount(下)</a></li>
+<li><a href="/2020/06/12/tech/react/18">生命週期(3/4):Unmount</a></li>
+<li><a href="/2020/06/12/tech/react/19">生命週期(4/4):Update</a></li>
+<li><a href="/2020/06/12/tech/react/20">useEffect</a></li>
+<li><a href="/2020/06/12/tech/react/21_1">各階層Component的溝通</a></li>
+<li><a href="/2020/06/12/tech/react/21_2">useContext和useReducer</a></li>
+<li><a href="/2020/06/12/tech/react/22">元件練習(上)</a></li>
+<li><a href="/2020/06/12/tech/react/23">元件練習(下)</a></li>
+<li><a href="/2020/06/12/tech/react/24">Custom hook</a></li>
+<li><a href="/2020/06/12/tech/react/25">Custom hook練習</a></li>
+<li><a href="/2020/06/12/tech/react/26">輸入元素與控制組件</a></li>
+<li><a href="/2020/06/12/tech/react/27">react-router-dom (上)</a></li>
+<li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
+<li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+</ul>
+<h1 id="產品開發">產品開發</h1>
+<h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
+<ul>
+<li><a href="/2020/06/12/product/UX/maskMap">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js入門-28】-我要更多更多的分頁-react-router-dom-下"><a href="#【React-js入門-28】-我要更多更多的分頁-react-router-dom-下" class="headerlink" title="【React.js入門 - 28】 我要更多更多的分頁 - react-router-dom (下)"></a>【React.js入門 - 28】 我要更多更多的分頁 - react-router-dom (下)</h1><h6 id="tags-第11屆鐵人賽"><a href="#tags-第11屆鐵人賽" class="headerlink" title="tags: 第11屆鐵人賽"></a>tags: <code>第11屆鐵人賽</code></h6><h2 id="Link-v-s-lt-a-gt"><a href="#Link-v-s-lt-a-gt" class="headerlink" title="Link v.s &lt;a&gt;"></a>Link v.s <code>&lt;a&gt;</code></h2><p>如果我們想讓使用者用GUI導向不同頁面，過去會使用<code>&lt;a&gt;</code>。而react-router-dom提供了一個和<code>&lt;a&gt;</code>功能相同的元件 - Link。他的基礎語法是:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Link to&#x3D;&quot;路徑&quot;&gt; 顯示文字 &lt;&#x2F;Link&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>咦? 為什麼不用<code>&lt;a&gt;</code>就好，還要多生一個Link出來?</p>
+</blockquote>
+<p>主要的原因是<code>&lt;a&gt;</code>的根路徑沒有辦法根據前端router去更動，而Link可以。以在我們的上一篇的練習為例，但如果要使用<code>&lt;a&gt;</code>的話，我們要自己幫<code>&lt;a&gt;</code>中的路徑加上「#」，才能導向正確路徑。</p>
+<blockquote>
+<p>那我就加個「#」就好啦?</p>
+</blockquote>
+<p>以前我也是這樣想，直到某天我必須「在伺服器的子使用者建立專案」。我的專案部署路徑是在<code>主使用者domain/~子使用者名稱</code>底下，預設也是讓使用者用這個路徑來存取我的網頁。可是<code>&lt;a&gt;</code>無法偵測子使用者。所以當我在自己電腦開發時使用<code>&lt;a href=&quot;/#/home&quot;&gt;&lt;/a&gt;</code>，實際部署時卻會導向<code>主使用者domain/#/home</code>，而不是<code>主使用者domain/~子使用者名稱#/home</code>。導致最後我要把自己電腦開發和部署分成不同的版本，hen麻煩。</p>
+<p>另外Link可以透過to以類似GET或POST的方法傳參數到前一篇講過的location物件中，有興趣的可以了解一下。</p>
+<p>現在，我們來在firstPage.js和SecondPage.js中都加入可以切換頁面的UI。</p>
+<p>先引入Link:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123;Link&#125; from &#39;react-router-dom&#39;;</span><br></pre></td></tr></table></figure>
+<p>再加入可以導向兩個頁面的Link作為<code>nav</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">return(</span><br><span class="line">    &lt;div style&#x3D;&#123;StyleSheet&#125;&gt;</span><br><span class="line">        &lt;nav&gt;</span><br><span class="line">            &lt;Link to&#x3D;&quot;&#x2F;&quot;&gt;點我連到第一頁&lt;&#x2F;Link&gt;</span><br><span class="line">            &lt;Link to&#x3D;&quot;&#x2F;second&quot; style&#x3D;&#123;&#123;marginLeft:&quot;20px&quot;&#125;&#125;&gt;點我連到第二頁&lt;&#x2F;Link&gt;</span><br><span class="line">        &lt;&#x2F;nav&gt; </span><br><span class="line">        &lt;h1 style&#x3D;&#123;&#123;color:&quot;white&quot;,fontFamily:&quot;Microsoft JhengHei&quot;&#125;&#125;&gt;我是第一頁&lt;&#x2F;h1&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>記得先回去把route的path中要求的參數移除或是設為非必須。</p>
+<p>執行結果:<br><img src="https://i.imgur.com/XyrKwNE.gif" alt=""></p>
+<h2 id="在react-router-dom實現固定Layout的方法"><a href="#在react-router-dom實現固定Layout的方法" class="headerlink" title="在react-router-dom實現固定Layout的方法"></a>在react-router-dom實現固定Layout的方法</h2><p>在前面的練習中，我們的Link在firstPage.js和SecondPage.js中都是固定的Layout，卻因為在不同的Component而導致要重新render。這並不是我們喜歡的狀況。所以，現在我們就讓背景和Link獨立出來成固定Layout，讓頁面改變的只有文字。</p>
+<h3 id="step-1-首先，請新增一個Layout-js，並宣告、輸出同名的函式。"><a href="#step-1-首先，請新增一個Layout-js，並宣告、輸出同名的函式。" class="headerlink" title="step 1: 首先，請新增一個Layout.js，並宣告、輸出同名的函式。"></a>step 1: 首先，請新增一個Layout.js，並宣告、輸出同名的函式。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import React from &#39;react&#39;;</span><br><span class="line"></span><br><span class="line">const Layout&#x3D;(props)&#x3D;&gt;&#123;</span><br><span class="line">    return(</span><br><span class="line"></span><br><span class="line">    );</span><br><span class="line">&#125;</span><br><span class="line">export default Layout;</span><br></pre></td></tr></table></figure>
+<h3 id="step-2-接著，把剛剛背景跟Link的部分移過來"><a href="#step-2-接著，把剛剛背景跟Link的部分移過來" class="headerlink" title="step 2: 接著，把剛剛背景跟Link的部分移過來"></a>step 2: 接著，把剛剛背景跟Link的部分移過來</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123;Link&#125; from &#39;react-router-dom&#39;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">const Layout&#x3D;(props)&#x3D;&gt;&#123;</span><br><span class="line">    const StyleSheet&#x3D;&#123;</span><br><span class="line">        width:&quot;100vw&quot;,</span><br><span class="line">        height:&quot;100vh&quot;,</span><br><span class="line">        backgroundColor:&quot;#FF2E63&quot;,</span><br><span class="line">        display: &quot;flex&quot;,</span><br><span class="line">        alignItems:&quot;center&quot;,</span><br><span class="line">        justifyContent:&quot;center&quot;,</span><br><span class="line">        flexDirection:&quot;column&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    return(</span><br><span class="line">        &lt;div style&#x3D;&#123;StyleSheet&#125;&gt;</span><br><span class="line">            &lt;nav&gt;</span><br><span class="line">                &lt;Link to&#x3D;&quot;&#x2F;&quot;&gt;點我連到第一頁&lt;&#x2F;Link&gt;</span><br><span class="line">                &lt;Link to&#x3D;&quot;&#x2F;second&quot; style&#x3D;&#123;&#123;marginLeft:&quot;20px&quot;&#125;&#125;&gt;點我連到第二頁&lt;&#x2F;Link&gt;</span><br><span class="line">            &lt;&#x2F;nav&gt; </span><br><span class="line"></span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="step-3-刪掉FirstPage-js和SecondPage-js中背景和Link的地方"><a href="#step-3-刪掉FirstPage-js和SecondPage-js中背景和Link的地方" class="headerlink" title="step 3: 刪掉FirstPage.js和SecondPage.js中背景和Link的地方"></a>step 3: 刪掉FirstPage.js和SecondPage.js中背景和Link的地方</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">return(</span><br><span class="line">        &lt;h1 style&#x3D;&#123;&#123;color:&quot;white&quot;,fontFamily:&quot;Microsoft JhengHei&quot;&#125;&#125;&gt;我是第一頁&lt;&#x2F;h1&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="step-4-在App-js中，在Switch和Route之間，用Layout把Route夾起來"><a href="#step-4-在App-js中，在Switch和Route之間，用Layout把Route夾起來" class="headerlink" title="step 4: 在App.js中，在Switch和Route之間，用Layout把Route夾起來"></a>step 4: 在App.js中，在Switch和Route之間，用Layout把Route夾起來</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import React from &#39;react&#39;;</span><br><span class="line">import &#123;HashRouter,Route,Switch&#125; from &quot;react-router-dom&quot;;</span><br><span class="line">import FirstPage from &quot;.&#x2F;FirstPage&quot;;</span><br><span class="line">import SecondPage from &quot;.&#x2F;SecondPage&quot;;</span><br><span class="line">import Layout from &quot;.&#x2F;Layout&quot;; &#x2F;&#x2F;記得要引入</span><br><span class="line"></span><br><span class="line">const App&#x3D;()&#x3D;&gt;&#123;</span><br><span class="line">    return( </span><br><span class="line">        &lt;HashRouter&gt;</span><br><span class="line">            &lt;Switch&gt;</span><br><span class="line">                &lt;Layout&gt;</span><br><span class="line">                    &lt;Route exact path&#x3D;&quot;&#x2F;&quot; component&#x3D;&#123;FirstPage&#125;&#x2F;&gt;</span><br><span class="line">                    &lt;Route path&#x3D;&quot;&#x2F;second&quot; component&#x3D;&#123;SecondPage&#125;&#x2F;&gt;</span><br><span class="line">                &lt;&#x2F;Layout&gt;</span><br><span class="line">            &lt;&#x2F;Switch&gt;</span><br><span class="line">        &lt;&#x2F;HashRouter&gt;</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br><span class="line">export default App;</span><br></pre></td></tr></table></figure>
+
+<h3 id="step-5-回到Layout-js，在原本文字的地方加入props-children"><a href="#step-5-回到Layout-js，在原本文字的地方加入props-children" class="headerlink" title="step 5: 回到Layout.js，在原本文字的地方加入props.children"></a>step 5: 回到Layout.js，在原本文字的地方加入props.children</h3><p>因為route回傳的元素夾在Layout標籤內，所以要用children來取得</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">return(</span><br><span class="line">    &lt;div style&#x3D;&#123;StyleSheet&#125;&gt;</span><br><span class="line">        &lt;nav&gt;</span><br><span class="line">            &lt;Link to&#x3D;&quot;&#x2F;&quot;&gt;點我連到第一頁&lt;&#x2F;Link&gt;</span><br><span class="line">            &lt;Link to&#x3D;&quot;&#x2F;second&quot; style&#x3D;&#123;&#123;marginLeft:&quot;20px&quot;&#125;&#125;&gt;點我連到第二頁&lt;&#x2F;Link&gt;</span><br><span class="line">        &lt;&#x2F;nav&gt; </span><br><span class="line">        &#123;props.children&#125;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>以上是固定的背景和Link的做法，不過我們原本會一起改變的背景顏色也被固定了，所以來讓它根據路徑來更改吧!</p>
+<h3 id="Bonus-讓Layout-js根據路徑改變背景顏色"><a href="#Bonus-讓Layout-js根據路徑改變背景顏色" class="headerlink" title="Bonus: 讓Layout.js根據路徑改變背景顏色"></a>Bonus: 讓Layout.js根據路徑改變背景顏色</h3><p>這邊要用到上一篇提過的location當中的pathname，比較如果為<code>/</code>就讓backgroundColor變成紅色，否則變成青色。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const StyleSheet&#x3D;&#123;</span><br><span class="line">    width:&quot;100vw&quot;,</span><br><span class="line">    height:&quot;100vh&quot;,</span><br><span class="line">    backgroundColor:(props.location.pathname&#x3D;&#x3D;&#x3D;&quot;&#x2F;&quot;)?&quot;#FF2E63&quot;:&quot;#08D9D6&quot;,</span><br><span class="line">    display: &quot;flex&quot;,</span><br><span class="line">    alignItems:&quot;center&quot;,</span><br><span class="line">    justifyContent:&quot;center&quot;,</span><br><span class="line">    flexDirection:&quot;column&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>這樣就完成了只更改不同route的Layout架構。</p>
+<h3 id="你可能會查到的舊資料"><a href="#你可能會查到的舊資料" class="headerlink" title="你可能會查到的舊資料"></a>你可能會查到的舊資料</h3><p>在過去react-router-dom實踐固定layout的方法是這樣的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Route path&#x3D;&quot;&#x2F;&quot; component&#x3D;&#123;Layout&#125;&#x2F;&gt;</span><br><span class="line">    &lt;Route exact path&#x3D;&quot;&quot; component&#x3D;&#123;FirstPage&#125;&#x2F;&gt;</span><br><span class="line">    &lt;Route path&#x3D;&quot;second&quot; component&#x3D;&#123;SecondPage&#125;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;Route&gt;</span><br></pre></td></tr></table></figure>
+<p>但是大約在react-router-dom Ver.4 的時候，新增了route不能成為route的children的規定，所以必須使用前述的方式來實現固定layout。</p>
+<h2 id="綁定在Route中元件的props"><a href="#綁定在Route中元件的props" class="headerlink" title="綁定在Route中元件的props"></a>綁定在Route中元件的props</h2><p>如果是用Route的component去綁定元件的話，是沒有辦法綁props的。必須使用Route另一個props - <code>render</code>，以函式return值的方式綁定在它上面。以下是用這種方式「在SecondPage的props綁定一個為5的id」的語法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Route path&#x3D;&quot;&#x2F;second&quot; render&#x3D;&#123;()&#x3D;&gt;&#123;return( &lt;SecondPage id&#x3D;&#123;5&#125;&#x2F;&gt; )&#125;&#125;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p>原本綁component的方式是透過<code>React.creactElement</code>的方式創造元件。而這種綁render的方式等同於你在Route的props中製造並呼叫一個「渲染的元件的function」。在<a href="https://medium.com/@ilovezcd/difference-between-render-and-component-prop-on-react-router-v4-368ca7fedbechttps://medium.com/@ilovezcd/difference-between-render-and-component-prop-on-react-router-v4-368ca7fedbec" target="_blank" rel="noopener">這一篇文章</a>中有做詳細的解釋。</p>
+<p>透過在Route中綁定元件的props，我們就能在Route與Route之間(子對子)、Route與Layout之間(子對子)、Route與做為Router控制中心的元件之間(子對父or父對子)做溝通。溝通的方法和我在<a href="https://">【React.js入門 - 21】 Component的溝通</a>所講的相同，就不再詳述了。</p>
+<h2 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h2><p>這篇是此系列最後一個獨立出來講的React.js工具，下一篇把之前都沒有特別講但很常用到的東西提一下(像是css檔之類的)，然後我會開始慢慢把這個系列作收尾，來統整一下個人認為新手可能遇到的狀況。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

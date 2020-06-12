@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          tech/react/12 - Bunny&#39;s Tech
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-129888855-4', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>BUNNY&#39;S TECH</span>
+  </a>
+</div>
+    <div class="book-menu">
+  <ul>
+<li><a href="/">首頁</a></li>
+<li><a href="/">關於我</a></li>
+</ul>
+<h1 id="WEB開發">WEB開發</h1>
+<h2 id="React-js">React.js</h2>
+<ul>
+<li><a href="/2020/06/12/tech/react/01">環境設定</a></li>
+<li><a href="/2020/06/12/tech/react/02">使用create-react-app</a></li>
+<li><a href="/2020/06/12/tech/react/03">DOM和ES6</a></li>
+<li><a href="/2020/06/12/tech/react/04">HelloWorld!</a></li>
+<li><a href="/2020/06/12/tech/react/05">JSX (上)</a></li>
+<li><a href="/2020/06/12/tech/react/06">JSX (下)</a></li>
+<li><a href="/2020/06/12/tech/react/07">function component</a></li>
+<li><a href="/2020/06/12/tech/react/08">props:綁定資料</a></li>
+<li><a href="/2020/06/12/tech/react/09">props:綁定函式</a></li>
+<li><a href="/2020/06/12/tech/react/10">props: children</a></li>
+<li><a href="/2020/06/12/tech/react/11">class component</a></li>
+<li><a href="/2020/06/12/tech/react/12">state與詳解setState語法</a></li>
+<li><a href="/2020/06/12/tech/react/13">useState</a></li>
+<li><a href="/2020/06/12/tech/react/14">React-Developer-Tools</a></li>
+<li><a href="/2020/06/12/tech/react/15">Http request:Fetch Api</a></li>
+<li><a href="/2020/06/12/tech/react/16">生命週期(1/4):Mount(上)</a></li>
+<li><a href="/2020/06/12/tech/react/17">生命週期(2/4):Mount(下)</a></li>
+<li><a href="/2020/06/12/tech/react/18">生命週期(3/4):Unmount</a></li>
+<li><a href="/2020/06/12/tech/react/19">生命週期(4/4):Update</a></li>
+<li><a href="/2020/06/12/tech/react/20">useEffect</a></li>
+<li><a href="/2020/06/12/tech/react/21_1">各階層Component的溝通</a></li>
+<li><a href="/2020/06/12/tech/react/21_2">useContext和useReducer</a></li>
+<li><a href="/2020/06/12/tech/react/22">元件練習(上)</a></li>
+<li><a href="/2020/06/12/tech/react/23">元件練習(下)</a></li>
+<li><a href="/2020/06/12/tech/react/24">Custom hook</a></li>
+<li><a href="/2020/06/12/tech/react/25">Custom hook練習</a></li>
+<li><a href="/2020/06/12/tech/react/26">輸入元素與控制組件</a></li>
+<li><a href="/2020/06/12/tech/react/27">react-router-dom (上)</a></li>
+<li><a href="/2020/06/12/tech/react/28">react-router-dom (下)</a></li>
+<li><a href="/2020/06/12/tech/react/29">圖片、css檔、問題集</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+<li><a href="/2020/06/12/tech/react/30">學了React之後</a></li>
+</ul>
+<h1 id="產品開發">產品開發</h1>
+<h2 id="有關前端技術的那些UX事">有關前端技術的那些UX事</h2>
+<ul>
+<li><a href="/2020/06/12/product/UX/maskMap">口罩地圖(GIS)</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="【React-js入門-11】-state-與-setState的語法">【React.js入門 - 11】 state 與 setState的語法</h1>
+<h6 id="tags-第11屆鐵人賽">tags: <code>第11屆鐵人賽</code></h6>
+<p>在前一章，我們發現當變數name被改變時，我們的按鍵並沒有被更新。這是因為React 的 virtual DOM 只有在兩個東西被改變時才會更新，第一個是先前提過的props，<strong>第二個則是state</strong>。</p>
+<p>state是class component的預設好的一個特殊的member data。就如同上述所言，當state被改變時，會進入re-render的update程序，更新畫面。</p>
+<p>接下來我們會用state，來設定並改變以下這個進度條的寬度:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span>(</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">            &lt;div className=<span class="string">"progress-back"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"rgba(0,0,0,0.2)"</span>,<span class="attr">width</span>:<span class="string">"200px"</span>,<span class="attr">height</span>:<span class="string">"7px"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;</span><br><span class="line">              &lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:<span class="string">"10%"</span>,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">          &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">        );</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">export default App;</span></span><br></pre></td></tr></table></figure>
+<h2 id="宣告與初始化">宣告與初始化</h2>
+<p>state的結構也是一個物件，建立的方法很簡單，在建構子裡宣告即可:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">  <span class="keyword">super</span>(props);</span><br><span class="line">  <span class="keyword">this</span>.state=&#123; 變數名稱A: 初始化值, 變數名稱B: 初始化值, (...類推)&#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 排版習慣為 */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">  <span class="keyword">super</span>(props);</span><br><span class="line">  <span class="keyword">this</span>.state=&#123; </span><br><span class="line">      變數名稱A: 初始化值, </span><br><span class="line">      變數名稱B: 初始化值, </span><br><span class="line">      (...類推)</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="讀取">讀取</h2>
+<p>讀取的方式和props一樣，也就是:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.state.變數名稱</span><br></pre></td></tr></table></figure>
+<p>例如在下面的程式碼(App.js)中，我們用<code>percent</code>這個state去控制progress-bar的width:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state=&#123; <span class="comment">// 宣告state物件，內包含一個變數percent</span></span><br><span class="line">      percent:<span class="string">"30%"</span> </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span>(</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">            &lt;div className=<span class="string">"progress-back"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"rgba(0,0,0,0.2)"</span>,<span class="attr">width</span>:<span class="string">"200px"</span>,<span class="attr">height</span>:<span class="string">"7px"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;</span><br><span class="line">              &lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:<span class="keyword">this</span>.state.percent,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">          &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">        );</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">export default App;</span></span><br></pre></td></tr></table></figure>
+<p>執行結果:<br>
+<img src="https://i.imgur.com/Lffb0zk.png" alt=""></p>
+<h2 id="修改">修改</h2>
+<p>state這個變數是read-only的，我們並不能用<code>this.state.變數=值</code>直接修改state，而是必須要透過React預寫好的函式<code>setState()</code>來更改。(註:跟使用其他函式一樣，前面要加上this)<br>
+例如:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">changePercent()&#123;</span><br><span class="line">  <span class="keyword">this</span>.setState(&#123; <span class="attr">percent</span>:<span class="string">"70%"</span> &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>state是一個物件，所以丟入<code>setstate()</code>中的也必須是一個物件(也就是範例中的<code>{ percent:&quot;70%&quot; }</code>)。</p>
+<p>接續上面的範例，我們用changePercent去修改剛剛progress-bar的寬度</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state=&#123;</span><br><span class="line">      percent:<span class="string">"30%"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">this</span>.changePercent=<span class="keyword">this</span>.changePercent.bind(<span class="keyword">this</span>); <span class="comment">//綁定changePercent</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  changePercent()&#123; <span class="comment">//加入changePercent函式</span></span><br><span class="line">    <span class="keyword">this</span>.setState(&#123;<span class="attr">percent</span>:<span class="string">"70%"</span>&#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span>(</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">            &lt;div className=<span class="string">"progress-back"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"rgba(0,0,0,0.2)"</span>,<span class="attr">width</span>:<span class="string">"200px"</span>,<span class="attr">height</span>:<span class="string">"7px"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;</span><br><span class="line">              &lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:<span class="keyword">this</span>.state.percent,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">          &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">        );</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">export default App;</span></span><br></pre></td></tr></table></figure>
+<p>然後加入一個按鍵去觸發<code>changePercent</code>:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onClick=&#123;<span class="keyword">this</span>.changePercent&#125;&gt;轉換百分比 &lt;<span class="regexp">/button&gt;</span></span><br></pre></td></tr></table></figure>
+<p>所有的程式碼:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span></span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="keyword">this</span>.state=&#123;</span><br><span class="line">      percent:<span class="string">"30%"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">this</span>.changePercent=<span class="keyword">this</span>.changePercent.bind(<span class="keyword">this</span>); <span class="comment">//綁定changePercent</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  changePercent()&#123; <span class="comment">//加入changePercent函式</span></span><br><span class="line">    <span class="keyword">this</span>.setState(&#123;<span class="attr">percent</span>:<span class="string">"70%"</span>&#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span>(</span><br><span class="line">          &lt;div&gt;</span><br><span class="line">            &lt;div className=<span class="string">"progress-back"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"rgba(0,0,0,0.2)"</span>,<span class="attr">width</span>:<span class="string">"200px"</span>,<span class="attr">height</span>:<span class="string">"7px"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;</span><br><span class="line">              &lt;div className=<span class="string">"progress-bar"</span> style=&#123;&#123;<span class="attr">backgroundColor</span>:<span class="string">"#fe5196"</span>,<span class="attr">width</span>:<span class="keyword">this</span>.state.percent,<span class="attr">height</span>:<span class="string">"100%"</span>,<span class="attr">borderRadius</span>:<span class="string">"10px"</span>&#125;&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">            &lt;button onClick=&#123;<span class="keyword">this</span>.changePercent&#125;&gt;轉換百分比 &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">          &lt;/</span>div&gt;</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure>
+<p>執行之後，當按下按鍵，粉紅色的部分就會變成寬占滿70%:<br>
+<img src="https://i.imgur.com/NJLnNyU.png" alt=""><br>
+(我不是gif，所以不會動)</p>
+<h2 id="setState中「存在但沒有被寫到的state」不會被移除，不存在的state會被建立。">setState中「存在但沒有被寫到的state」不會被移除，不存在的state會被建立。</h2>
+<p>假設目前state為</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.state=&#123;</span><br><span class="line">    percent: <span class="number">20</span>,</span><br><span class="line">    mounted: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>當我們使用<code>this.setState({percent: 70})</code>時，mounted並不會從state中被移除。</p>
+<p>比較需要說明的是「不存在的state會被建立」，這句話的意思是我們不一定要在constructor中建立state/所有state。當setState被呼叫時，如果它發現有member data不屬於目前的state，就會自動建立它；如果沒有在constructor連state的宣告都沒寫，就會自動建立state。<br>
+例如在這個狀態下:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.state=&#123;</span><br><span class="line">    percent: <span class="number">20</span>,</span><br><span class="line">    mounted: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以下的函式就代表在改變percent為40的同時，創造一個叫做counter的state</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.setState(&#123;<span class="attr">percent</span>:<span class="number">40</span>,<span class="attr">counter</span>:<span class="number">0</span>&#125;);</span><br></pre></td></tr></table></figure>
+<p>新的state:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.state=&#123;</span><br><span class="line">    percent: <span class="number">40</span>,</span><br><span class="line">    mounted: <span class="literal">false</span>,</span><br><span class="line">    counter:<span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="使用變數設定state值時，可以只寫this-setState-變數名稱">使用變數設定state值時，可以只寫<code>this.setState({變數名稱})</code></h2>
+<p>當寫成<code>this.setState({變數名稱})</code>時，setState會自動去找state中有沒有和該變數同名字的member data。如果有，就會把它設定為變數值。如果沒有，就會自動在state中建立同名字的member data。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> counter=<span class="number">5</span>;</span><br><span class="line"><span class="keyword">this</span>.setState(&#123;counter&#125;);</span><br><span class="line"><span class="comment">/* 如果目前的state有counter,把它指定為5。如果沒有，則創造一個叫counter的state */</span></span><br></pre></td></tr></table></figure>
+<h2 id="對於state中的物件不能只修改單一屬性">對於state中的物件不能只修改單一屬性</h2>
+<p>要特別注意的是，如果在state<strong>裡面</strong>宣告物件，修改時<strong>並不能夠單獨修改物件的單一屬性</strong>。<br>
+例如:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.state=&#123;</span><br><span class="line">    styleData:&#123;</span><br><span class="line">        width: <span class="string">"30%"</span>,</span><br><span class="line">        height: <span class="string">"50%"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果我們使用</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.setState(&#123; <span class="attr">styleData</span>:&#123;<span class="attr">width</span>:<span class="string">"70%"</span>&#125; &#125;);</span><br></pre></td></tr></table></figure>
+<p>state裡面的<strong>styleData並不會保留height屬性，而是直接變成只有<code>width:&quot;70%&quot;</code>的物件</strong>。如果想要只更改state內的物件的單一屬性並保留其他屬性，可以這樣寫:</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.setState(&#123; </span><br><span class="line">    styleData:&#123;</span><br><span class="line">        width: <span class="string">"70%"</span>,</span><br><span class="line">        height: <span class="keyword">this</span>.state.styleData.height</span><br><span class="line">    &#125; </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="setState不會馬上做完">setState不會馬上做完</h2>
+<p><code>setState</code>通常需要花一點細微的時間，雖然不會察覺，但是由於這點加上js的非同步特性，在<code>setState</code>後面用到state的函式常常會拿到改變前的state值。一般會搭配Promise來解決這個問題。</p>
+<h2 id="小結">小結:</h2>
+<p>終於把前面一直提過的state講完了，另外雖然這裡提了相當多有關<code>setState</code>的語法，不過使用時建議還是統一以免造成同事困擾XD</p>
+<p>下一篇會來講現在火紅的React hook中的useState。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/images/profile.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Andy Chang</div>
+      <div>2020-06-12</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>
