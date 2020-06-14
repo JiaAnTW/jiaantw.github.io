@@ -1,7 +1,7 @@
 function Card(container,content){
     let icon=document.createElement("div");
     icon.style.backgroundImage='url("'+content.mainSkillIcon+'")';
-    //icon.style.backgroundColor=content.mainSkillColor;
+    icon.style.backgroundColor=content.mainSkillColor;
     icon.setAttribute("class","card-icon");
 
     let image=document.createElement("div");
