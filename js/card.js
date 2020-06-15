@@ -11,9 +11,15 @@ function Card(container,content){
 
     let topic=document.createElement("h5");
     topic.textContent=content.topic;
+
+    let skill=document.createElement("p");
+    skill.setAttribute("class","card-content");
+    skill.textContent=content.skill.join("、");
+
     let outerBox=document.createElement("div");
     outerBox.setAttribute("class","card");
     outerBox.appendChild(image);
     outerBox.appendChild(topic);
+    outerBox.appendChild(skill);
     container.appendChild(outerBox);
 }
